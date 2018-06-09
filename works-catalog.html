@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Книги</title>
@@ -33,9 +33,99 @@
 		<p>
 			Данный ресурс посвящён разным формам творчества. Здесь вы сможете найти: иллюстрации, арты и книги авторства Р.М. Врата раскрывают множество путей, отведущих ваше воображение по тропам к давно сгинувшим мирам, а может даже к истокам истории. За ними изложены и показаны судьбы. Шаг за врата, уступка любопытству, и я постараюсь рассказать все, что знаю.
 		</p>
-		<section class="filter">
+		<section class="filters">
 			<h2 class="visually-hidden">Фильтр книг</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" action="#" method="get">
+				<fieldset>
+					<legend>Сортировка:</legend>
+					<ul>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
+							<label for="popular-checkbox">По популярности</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="old" id="old-checkbox">
+							<label for="old-checkbox">По давности</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="free" id="free-checkbox">
+							<label for="free-checkbox">Бесплатные</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
+							<label for="pay-checkbox">Платные</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Формат:</legend>
+					<ul>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="fiction" id="fiction-checkbox">
+							<label for="fiction-checkbox">Художественная литература</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="poetry" id="poetry-checkbox">
+							<label for="poetry-checkbox">Стихотворения</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="articles" id="articles-checkbox">
+							<label for="articles-checkbox">Статьи</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="worlds" id="worlds-checkbox" checked>
+							<label for="worlds-checkbox">О мирах</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Размер:</legend>
+					<ul>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="little" id="little-checkbox" checked>
+							<label for="little-checkbox">Рассказы</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="middle" id="middle-checkbox">
+							<label for="middle-checkbox">Средний (150 - 200 стр.)</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="big" id="big-checkbox">
+							<label for="big-checkbox">Большой (больше 200 стр.)</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Жанры:</legend>
+					<ul>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="tale" id="tale-checkbox" checked>
+							<label for="tale-checkbox">Сказка</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="novel" id="novel-checkbox">
+							<label for="novel-checkbox">Роман</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="encyclopedia" id="encyclopedia-checkbox">
+							<label for="encyclopedia-checkbox">Энциклопедия</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="drama" id="drama-checkbox">
+							<label for="drama-checkbox">Драма</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="memoirs" id="memoirs-checkbox">
+							<label for="memoirs-checkbox">Мемуары</label>
+						</li>
+						<li>
+							<input class="visually-hidden filter-checkbox" type="checkbox" name="folk" id="folk-checkbox">
+							<label for="folk-checkbox">Фольклеристика</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="filter-button button">Применить</button>
+			</form>
 		</section>
 		<section class="works-catalog">
 			<h2 class="visually-hidden">Список произведений</h2>
@@ -49,7 +139,7 @@
 					<a href="#">Открыть</a>
 				</li>
 				<li class="work-catalog-item">
-					<h3>Неугосимый огонь</h3>
+					<h3>Неугосимый огонь аваыфафыауфыуафауа</h3>
 					<p class="works-catalog-item-image">
 						<a href="#"> <img src="img/works-catalog/02.jpg" width="258" height="347" alt="Неугосимый огонь"></a>
 					</p>
@@ -129,16 +219,29 @@
 	</footer>
 
 	<!-- Модальные окна -->
-	<section class="modal modal-registration">
-		<h2>Оформить читательский билет</h2>
-		<!-- 	Здесь будет форма -->
-		<span class="modal-close">x</span>
-	</section>
-
-	<section class="modal modal-login">
-		<h2>Представиться</h2>
-		<!-- 	Здесь будет форма -->
-		<span class="modal-close">x</span>
+		<section class="modal modal-login">
+		<h2 class="visually-hidden">Здесь можно представиться</h2>
+		<p>Здравствуйте</p>
+			<form class="modal-form-login" action="#" method="get">
+				<p>
+					<label for="modal-form-login-name" class="visually-hidden">Ваше имя...</label>
+					<input class="modal-form-login-input" id="modal-form-login-name" type="text" name="name" placeholder="Ваше имя...">
+				</p>
+				<p>
+					<label for="modal-form-login-pass" class="visually-hidden">Ваш пароль</label>
+					<input class="modal-form-login-input" id="modal-form-login-pass" type="password" name="password" placeholder="Ваш ключ...">
+				</p>
+				<p class="login-password-info">
+					<label class="login-checkbox">
+						<input type="checkbox" name="remember" class="visually-hidden">
+						<span class="checkbox-indicator"></span>
+						Запомните меня до следующего раза
+					</label>
+					<a class="restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="button" type="submit">Представиться</button>
+			</form>
+		<button class="modal-close">Закрыть</button>
 	</section>
 </body>
 </html>

@@ -1,0 +1,448 @@
+/* Fonts Family */
+@font-face {
+    font-family: 'Cormorant Infant';
+    src: url('../fonts/CormorantInfant-Regular.eot');
+    src: url('../fonts/CormorantInfant-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CormorantInfant-Regular.woff2') format('woff2'),
+        url('../fonts/CormorantInfant-Regular.woff') format('woff'),
+        url('../fonts/CormorantInfant-Regular.ttf') format('truetype'),
+        url('../fonts/CormorantInfant-Regular.svg#CormorantInfant-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Benguiat Rus';
+    src: url('../fonts/Benguiat.eot');
+    src: url('../fonts/Benguiat.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Benguiat.woff2') format('woff2'),
+        url('../fonts/Benguiat.woff') format('woff'),
+        url('../fonts/Benguiat.ttf') format('truetype'),
+        url('../fonts/Benguiat.svg#Benguiat') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '1Isadora M';
+    src: url('../fonts/1IsadoraMBold.eot');
+    src: url('../fonts/1IsadoraMBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/1IsadoraMBold.woff2') format('woff2'),
+        url('../fonts/1IsadoraMBold.woff') format('woff'),
+        url('../fonts/1IsadoraMBold.ttf') format('truetype'),
+        url('../fonts/1IsadoraMBold.svg#1IsadoraMBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+/* Colors */
+@link-btn-color: #fdf30d;
+@basic: #1a172a;
+@sign: #0b2f0c;
+@text-color: black;
+@Gate: #4b2f69; /* Цвет спана Врата */
+
+/* Size-fonts */
+@h-1: 3rem;
+@h-2: 2.5rem;
+@text: 2rem;
+@menu: 2.4rem;
+
+/* Mixins */
+.head(@h-1) {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	font-family: 'Cormorant Infant', serif;
+	font-size: @h-1;
+	font-weight: bold;
+	color: @text-color;
+}
+.article (@text) {
+	font-family: 'Times New Roman';
+	font-size: @text;
+	font-weight: 300;
+	color: @text-color;
+}
+.link () {
+	font-family: 'Benguiat Rus';
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+}
+.sign () {
+	font-size: 1.4rem;
+	color: @sign;
+}
+
+/* Gradient for menu */
+@main-page: linear-gradient(45deg, #c2edb0, #97d1b3, #77bab4);
+@book: linear-gradient(45deg, #daec92, #aecc82, #95b97b);
+@gallery: linear-gradient(45deg, #eada8b, #c9b383, #b49a7b);
+@about: linear-gradient(45deg, #e6b68e, #c08184, #ac657e);
+@reviews: linear-gradient(45deg, #f8c6c5, #cb8cc7, #b26cc8);
+@FAQ: linear-gradient(45deg, #d4c1c2, #a28fbd, #7964b9);
+
+/* -----------------------hover----------------------- */
+
+@main-page-hover1: saturate(#c2edb0, 30%);
+@main-page-hover2: saturate(#97d1b3, 30%);
+@main-page-hover3: saturate(#77bab4, 30%);
+
+@book-hover1: saturate(#daec92, 30%);
+@book-hover2: saturate(#aecc82, 30%);
+@book-hover3: saturate(#aecc82, 30%);
+
+@gallery-hover1: saturate(#eada8b, 30%);
+@gallery-hover2: saturate(#c9b383, 30%);
+@gallery-hover3: saturate(#b49a7b, 30%);
+
+@about-hover1: saturate(#e6b68e, 30%);
+@about-hover2: saturate(#c08184, 30%);
+@about-hover3: saturate(#ac657e, 30%);
+
+@reviews-hover1: saturate(#f8c6c5, 30%);
+@reviews-hover2: saturate(#cb8cc7, 30%);
+@reviews-hover3: saturate(#b26cc8, 30%);
+
+@FAQ-hover1: saturate(#d4c1c2, 30%);
+@FAQ-hover2: saturate(#a28fbd, 30%);
+@FAQ-hover3: saturate(#7964b9, 30%);
+
+/* Basic settings */
+html {
+	font-size: 10px;
+}
+body, html {
+	height: 100%;
+}
+body {
+	.article(@text);
+	background-color: @basic;
+	background-size: 100% 50%;
+	background-repeat: repeat-y;
+}
+input:focus, button:focus {
+	outline: none;
+} 
+.section, .news {
+	margin-top: 1rem;
+}
+/* Фоны хедера и футера + обертка */
+.background-header {
+	background-image: url(../bg/top.jpg);
+	background-size: 100%;
+	position: absolute;
+	width: 100%;
+	height: 63rem;
+	background-repeat: no-repeat;
+}
+.background-footer {
+	background-image: url(../bg/bottom.jpg);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-size: 100%;
+	z-index: -1;
+	height: 650px;
+	width: 100%;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+/* ------------------------------- */
+
+/* Хедер */
+.header {
+	margin-top: 0 auto;
+	padding-top: 3rem;
+}
+.logo {
+	
+	img {
+		width: 16.4rem;
+		height: 5rem;
+	}
+}
+.form {
+	padding-top: 1rem;
+	text-align: right;
+
+	&-reg {
+		display: inline-block;
+		margin-bottom: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		.link ();
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: @link-btn-color;
+		background-color: rgba(46, 41, 75, 0.5);
+		border: 0.5px solid white;
+		border-radius: 6px;
+		&:hover {
+			@link-hover: darken(@link-btn-color, 30%);
+			/* background: linear-gradient(@link-hover, @link-btn-color); */
+			color: @basic;
+			/* filter: grayscale(30%);	 */
+		}
+
+
+	}
+}
+/* Menu */
+.menu {
+	margin-top: 5rem;
+	margin-right: -6rem;
+}
+.nav {
+	.link ();
+	font-size: 2.3rem;
+	list-style: none;
+	a {
+		font-weight: bold;
+		color: @text-color;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+
+	&-box {
+		margin: 0px auto 3rem auto;
+		width: 14rem;
+		background: @main-page;
+		text-align: center;
+		padding: 1.5rem 2rem;
+		&:hover {
+			background: linear-gradient(45deg, @main-page-hover1, @main-page-hover2, @main-page-hover3);
+		}
+	}
+	&-book {
+		background: @book;
+		&:hover {
+			background: linear-gradient(45deg, @book-hover1, @book-hover2, @book-hover3);
+		}
+	}
+	&-gallery {
+		background: @gallery;
+		&:hover {
+			background: linear-gradient(45deg, @gallery-hover1, @gallery-hover2, @gallery-hover3);
+		}
+	}
+	&-about {
+		background: @about;
+		&:hover {
+			background: linear-gradient(45deg, @about-hover1, @about-hover2, @about-hover3);
+		}
+	}
+	&-reviews {
+		background: @reviews;
+		&:hover {
+			background: linear-gradient(45deg, @reviews-hover1, @reviews-hover2, @reviews-hover3);
+		}
+	}
+	&-FAQ {
+		background: @FAQ;
+		&:hover {
+			background: linear-gradient(45deg, @FAQ-hover1, @FAQ-hover2, @FAQ-hover3);
+		}
+	}
+}
+/* Main content */
+/* First section */
+.global {
+	margin-top: 5rem;;
+}
+.bg-img {
+	background-color: rgba(255,255,255, 0.6);
+	border: 5px solid white;
+	border-radius: 7px;
+	/* background-image: url("bg/main.jpg"); */
+	/* background-repeat: repeat-y;
+	background-size: 100%; */
+} 
+.headline {
+	.head(@h-1);
+	span {
+		color: @Gate;
+	}
+}
+.main {
+	&-text {
+		.article (@text);
+		text-align: justify;
+		padding-left: 1.8rem;
+		padding-right: 1.8rem;
+	}
+}
+/* Second section */
+.headline-2 {
+	.head(2.5rem);
+}
+.section-2 {
+	padding-right: 1.8rem;
+	padding-left: 1.8rem;
+}
+.book img, .art img {
+	width: 100%;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+	
+}
+.signature {
+	.sign ();
+}
+/* Third section. News */
+.news {
+	&-box {
+		padding-left: 1.8rem;
+	}
+	&-art img {
+		width: 100%;
+		height: 14rem;
+		margin-bottom: 1rem;
+		border: 2px solid white;
+	}
+	h3 {
+		margin: 0 auto;
+		font-size: @text;
+		font-weight: 700;
+	}
+	&-content {
+		.article (1.6rem);
+		text-align: justify;
+	}
+}
+/* Footer */
+.footer {
+	margin-top: 5rem;
+	font-family: Marmelad, sans-serif;
+	font-weight: 300;
+	color: @link-btn-color;
+	&-logo img{
+		width: 10rem;
+	}
+}
+.copyright {
+	font-weight: bold;
+	font-size: 1.6rem;
+	text-align: center;
+}
+.contact {
+	text-align: right;
+	p, a {
+		text-decoration: none;
+	}
+}
+/* Модальные окна */
+.popup {
+
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	&-content {
+		@content: #fdf30d; /* желтый цвет */
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 25%;
+		background-color: fadeOut(@content, 20%);
+		filter: grayscale(60%);
+		width: 500px;
+		height: 420px;
+		border: 7px solid rgba(142, 141, 134, 0.2);
+		border-radius: 5px;
+	}
+	&-close {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		background-color: @basic;
+		color: #736064;
+		font-size: 18px;
+		border: none;
+		
+		border-radius: 16px;
+	}
+	&-header {
+		@header: #fdf30d; /* желтый цвет */
+		padding: 17px 105px;
+		color: #000;
+		background-color: @header;
+		filter: grayscale(60%);	
+		text-align: center;
+		border-radius: 5px;
+		h4 {
+			font-size: 2.5rem;
+		}
+	}
+	&-form {
+		padding: 25px;
+		&-wrapper {
+			width: 400px;
+			margin: 0 auto;
+		}
+		&-wrap {
+			margin-top: 20px;
+			border-radius: 5px;
+			background-color: #2d1c2e;
+		}
+	}
+	&-input {
+		display: block;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		padding-left: 17px;
+		background-color: @basic;
+		border: none;
+		border-radius: 5px;
+		width: 400px;
+		font-size: 16px;
+		color: #fff;
+		&-top {
+			border: 1px solid #2c1b2d;
+			border-bottom: 1px solid #231625;
+		}
+		&-bottom {
+			border: 1px solid #2c1b2d;
+			border-bottom: 1px solid #39253c;
+			border-top: 1px solid #39253c;
+		}
+	}
+	&-button-login {
+		@lightbutton: lighten(@basic, 20%);
+		margin-top: 100px;
+		padding: 5px 105px;
+		border: 1px solid #311833;
+	background: -webkit-linear-gradient(@lightbutton, @basic);
+	background: -o-linear-gradient(@lightbutton, @basic);
+	background: linear-gradient(@lightbutton, @basic);
+		border-radius: 5px;
+		color: #e5d2e6;
+		&:hover {
+			background: desaturate(@basic, 20%);
+		}
+	}
+}
+
+/* Media */
+@media (max-width: 991px) {
+	.nav li {
+		display: inline-block;
+		z-index: 333;
+	}
+	.nav-box {
+		width: 11rem;
+	}
+	
+}

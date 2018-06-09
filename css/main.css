@@ -1,0 +1,375 @@
+/* Fonts Family */
+@font-face {
+  font-family: 'Cormorant Infant';
+  src: url('../fonts/CormorantInfant-Regular.eot');
+  src: url('../fonts/CormorantInfant-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/CormorantInfant-Regular.woff2') format('woff2'), url('../fonts/CormorantInfant-Regular.woff') format('woff'), url('../fonts/CormorantInfant-Regular.ttf') format('truetype'), url('../fonts/CormorantInfant-Regular.svg#CormorantInfant-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Benguiat Rus';
+  src: url('../fonts/Benguiat.eot');
+  src: url('../fonts/Benguiat.eot?#iefix') format('embedded-opentype'), url('../fonts/Benguiat.woff2') format('woff2'), url('../fonts/Benguiat.woff') format('woff'), url('../fonts/Benguiat.ttf') format('truetype'), url('../fonts/Benguiat.svg#Benguiat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: '1Isadora M';
+  src: url('../fonts/1IsadoraMBold.eot');
+  src: url('../fonts/1IsadoraMBold.eot?#iefix') format('embedded-opentype'), url('../fonts/1IsadoraMBold.woff2') format('woff2'), url('../fonts/1IsadoraMBold.woff') format('woff'), url('../fonts/1IsadoraMBold.ttf') format('truetype'), url('../fonts/1IsadoraMBold.svg#1IsadoraMBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Colors */
+/* Цвет спана Врата */
+/* Size-fonts */
+/* Mixins */
+/* Gradient for menu */
+/* -----------------------hover----------------------- */
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Times New Roman';
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000000;
+  background-color: #1a172a;
+  background-size: 100% 50%;
+  background-repeat: repeat-y;
+}
+input:focus,
+button:focus {
+  outline: none;
+}
+.section,
+.news {
+  margin-top: 1rem;
+}
+/* Фоны хедера и футера + обертка */
+.background-header {
+  background-image: url(../bg/top.jpg);
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  height: 63rem;
+  background-repeat: no-repeat;
+}
+.background-footer {
+  background-image: url(../bg/bottom.jpg);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: 100%;
+  z-index: -1;
+  height: 650px;
+  width: 100%;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+/* ------------------------------- */
+/* Хедер */
+.header {
+  margin-top: 0 auto;
+  padding-top: 3rem;
+}
+.logo img {
+  width: 16.4rem;
+  height: 5rem;
+}
+.form {
+  padding-top: 1rem;
+  text-align: right;
+}
+.form-reg {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Benguiat Rus';
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fdf30d;
+  background-color: rgba(46, 41, 75, 0.5);
+  border: 0.5px solid white;
+  border-radius: 6px;
+}
+.form-reg:hover {
+  /* background: linear-gradient(@link-hover, @link-btn-color); */
+  color: #1a172a;
+  /* filter: grayscale(30%);	 */
+}
+/* Menu */
+.menu {
+  margin-top: 5rem;
+  margin-right: -6rem;
+}
+.nav {
+  font-family: 'Benguiat Rus';
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  font-size: 2.3rem;
+  list-style: none;
+}
+.nav a {
+  font-weight: bold;
+  color: #000000;
+}
+.nav a:hover {
+  text-decoration: none;
+}
+.nav-box {
+  margin: 0px auto 3rem auto;
+  width: 14rem;
+  background: linear-gradient(45deg, #c2edb0, #97d1b3, #77bab4);
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+.nav-box:hover {
+  background: linear-gradient(45deg, #bcfca1, #81e7b2, #58d9cd);
+}
+.nav-book {
+  background: linear-gradient(45deg, #daec92, #aecc82, #95b97b);
+}
+.nav-book:hover {
+  background: linear-gradient(45deg, #e5ff7f, #b3e668, #b3e668);
+}
+.nav-gallery {
+  background: linear-gradient(45deg, #eada8b, #c9b383, #b49a7b);
+}
+.nav-gallery:hover {
+  background: linear-gradient(45deg, #ffe876, #e4bd68, #d39d5c);
+}
+.nav-about {
+  background: linear-gradient(45deg, #e6b68e, #c08184, #ac657e);
+}
+.nav-about:hover {
+  background: linear-gradient(45deg, #fbb479, #dc656a, #d04173);
+}
+.nav-reviews {
+  background: linear-gradient(45deg, #f8c6c5, #cb8cc7, #b26cc8);
+}
+.nav-reviews:hover {
+  background: linear-gradient(45deg, #ffbfbe, #e473dd, #c24ee6);
+}
+.nav-FAQ {
+  background: linear-gradient(45deg, #d4c1c2, #a28fbd, #7964b9);
+}
+.nav-FAQ:hover {
+  background: linear-gradient(45deg, #e4b1b4, #9d74d8, #6842db);
+}
+/* Main content */
+/* First section */
+.global {
+  margin-top: 5rem;
+}
+.bg-img {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 5px solid white;
+  border-radius: 7px;
+  /* background-image: url("bg/main.jpg"); */
+  /* background-repeat: repeat-y;
+	background-size: 100%; */
+}
+.headline {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+}
+.headline span {
+  color: #4b2f69;
+}
+.main-text {
+  font-family: 'Times New Roman';
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000000;
+  text-align: justify;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+/* Second section */
+.headline-2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+.section-2 {
+  padding-right: 1.8rem;
+  padding-left: 1.8rem;
+}
+.book img,
+.art img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.signature {
+  font-size: 1.4rem;
+  color: #0b2f0c;
+}
+/* Third section. News */
+.news-box {
+  padding-left: 1.8rem;
+}
+.news-art img {
+  width: 100%;
+  height: 14rem;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+}
+.news h3 {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.news-content {
+  font-family: 'Times New Roman';
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #000000;
+  text-align: justify;
+}
+/* Footer */
+.footer {
+  margin-top: 5rem;
+  font-family: Marmelad, sans-serif;
+  font-weight: 300;
+  color: #fdf30d;
+}
+.footer-logo img {
+  width: 10rem;
+}
+.copyright {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.contact {
+  text-align: right;
+}
+.contact p,
+.contact a {
+  text-decoration: none;
+}
+/* Модальные окна */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  /* желтый цвет */
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 25%;
+  background-color: rgba(253, 243, 13, 0.8);
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+  width: 500px;
+  height: 420px;
+  border: 7px solid rgba(142, 141, 134, 0.2);
+  border-radius: 5px;
+}
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #1a172a;
+  color: #736064;
+  font-size: 18px;
+  border: none;
+  border-radius: 16px;
+}
+.popup-header {
+  /* желтый цвет */
+  padding: 17px 105px;
+  color: #000;
+  background-color: #fdf30d;
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+  text-align: center;
+  border-radius: 5px;
+}
+.popup-header h4 {
+  font-size: 2.5rem;
+}
+.popup-form {
+  padding: 25px;
+}
+.popup-form-wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+.popup-form-wrap {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #2d1c2e;
+}
+.popup-input {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+  background-color: #1a172a;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  font-size: 16px;
+  color: #fff;
+}
+.popup-input-top {
+  border: 1px solid #2c1b2d;
+  border-bottom: 1px solid #231625;
+}
+.popup-input-bottom {
+  border: 1px solid #2c1b2d;
+  border-bottom: 1px solid #39253c;
+  border-top: 1px solid #39253c;
+}
+.popup-button-login {
+  margin-top: 100px;
+  padding: 5px 105px;
+  border: 1px solid #311833;
+  background: -webkit-gradient(linear, left top, left bottom, from(#433b6c), to(#1a172a));
+  background: linear-gradient(#433b6c, #1a172a);
+  border-radius: 5px;
+  color: #e5d2e6;
+}
+.popup-button-login:hover {
+  background: #1e1d24;
+}
+/* Media */
+@media (max-width: 991px) {
+  .nav li {
+    display: inline-block;
+    z-index: 333;
+  }
+  .nav-box {
+    width: 11rem;
+  }
+}

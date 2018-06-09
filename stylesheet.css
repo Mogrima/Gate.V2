@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Behrens AntiquaC';
+    src: url('BehrensAntiqua.eot');
+    src: url('BehrensAntiqua.eot?#iefix') format('embedded-opentype'),
+        url('BehrensAntiqua.woff2') format('woff2'),
+        url('BehrensAntiqua.woff') format('woff'),
+        url('BehrensAntiqua.ttf') format('truetype'),
+        url('BehrensAntiqua.svg#BehrensAntiqua') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Benguiat Rus';
+    src: url('Benguiat.eot');
+    src: url('Benguiat.eot?#iefix') format('embedded-opentype'),
+        url('Benguiat.woff2') format('woff2'),
+        url('Benguiat.woff') format('woff'),
+        url('Benguiat.ttf') format('truetype'),
+        url('Benguiat.svg#Benguiat') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '1Isadora M';
+    src: url('1IsadoraMBold.eot');
+    src: url('1IsadoraMBold.eot?#iefix') format('embedded-opentype'),
+        url('1IsadoraMBold.woff2') format('woff2'),
+        url('1IsadoraMBold.woff') format('woff'),
+        url('1IsadoraMBold.ttf') format('truetype'),
+        url('1IsadoraMBold.svg#1IsadoraMBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
