@@ -200,22 +200,33 @@ a {
 
 /* Популярные рисунки */
 
-.popular-arts-list {
+.arts-list {
 	list-style: none;
 }
 
-.popular-arts-item {
+.arts-item {
 	text-align: center;
 }
 
-.popular-arts-item-image img {
+.arts-item a {
+	color: #000000;
+}
+
+.arts-item a:hover,
+.arts-item a:focus,
+.warts-item a:active {
+
+	text-decoration: underline;
+}
+
+.arts-item-image img {
 	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.61);
 	border: 3px solid #f7f1f1;
 	border-radius: 4px;
 }
 
-.popular-arts-item-image img:hover,
-.popular-arts-item-image img:focus {
+.arts-item-image img:hover,
+.arts-item-image img:focus {
 	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
 }
 
@@ -311,6 +322,10 @@ a {
 .footer-navigation-list a:focus,
 .footer-navigation-list a:active {
 
+}
+
+.footer-navigation-current a {
+	color: #ffffff;
 }
 
 .footer-copyright {

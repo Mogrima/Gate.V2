@@ -3,11 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Галерея</title>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700&amp;subset=cyrillic" rel="stylesheet"> <!-- для заголовков -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="logo">
-			<a href="index.html.html"><img src="img/logo.svg" width="164" height="54" alt="Логотип Врата"></a>
+			<a href="index.html.html"><img src="img/Logo.png" width="164" height="54" alt="Логотип Врата"></a>
 		</div>
 		<ul class="user-navigation">
 			<li class="registration-link"><a href="registration.html">Оформить читательский билет</a></li>
@@ -26,131 +29,133 @@
 	</nav>
 
 	<main>
-		<h1>Галерея</h1>
-		<ul class="breadcrumb">
-			<li><a href="index.html.html">Новости</a></li>
-			<li class="breadcrumb-current">Галерея</li>
-		</ul>
-		<p>
-			Данный ресурс посвящён разным формам творчества. Здесь вы сможете найти: иллюстрации, арты и книги авторства Р.М. Врата раскрывают множество путей, отведущих ваше воображение по тропам к давно сгинувшим мирам, а может даже к истокам истории. За ними изложены и показаны судьбы. Шаг за врата, уступка любопытству, и я постараюсь рассказать все, что знаю.
-		</p>
-		<section class="filters">
-			<h2 class="visually-hidden">Фильтр рисунков</h2>
-			<form class="filter" action="#" method="get">
-				<fieldset>
-					<legend>Сортировка:</legend>
-					<ul>
-						<li>
-							<input class="visually-hidden filter-checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
-							<label for="popular-checkbox">По популярности</label>
-						</li>
-						<li>
-							<input class="visually-hidden filter-checkbox" type="checkbox" name="old" id="old-checkbox">
-							<label for="old-checkbox">Иллюстрации из книг</label>
-						</li>
-						<li>
-							<input class="visually-hidden filter-checkbox" type="checkbox" name="free" id="free-checkbox">
-							<label for="free-checkbox">Цветные</label>
-						</li>
-						<li>
-							<input class="visually-hidden filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
-							<label for="pay-checkbox">Черно-белые</label>
-						</li>
-						<li>
-							<input class="visually-hidden filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
-							<label for="pay-checkbox">Истории</label>
-						</li>
-					</ul>
-				</fieldset>
-				<button class="filter-button button">Применить</button>
-			</form>
-		</section>
-		<section class="works-catalog">
-			<h2 class="visually-hidden">Список рисунков</h2>
-			<ul class="works-catalog-list">
-				<li class="work-catalog-item">
-					<h3>Расплата</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"><img src="img/arts-catalog/atonement.jpg" width="258" height="347" alt="Расплата"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
-				<li class="work-catalog-item">
-					<h3>Вельзевул</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"> <img src="img/arts-catalog/Beelzebub.jpg" width="258" height="347" alt="Вельзевул"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
-				<li class="work-catalog-item">
-					<h3>Прояснение</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"><img src="img/arts-catalog/clarification.jpg" width="258" height="347" alt="Прояснение"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
-				<li class="work-catalog-item">
-					<h3>Недовольство</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"><img src="img/arts-catalog/dissatisfaction.jpg" width="258" height="347" alt="Недовольство"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
-				<li class="work-catalog-item">
-					<h3>Гефест</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"><img src="img/arts-catalog/gefest.jpg" width="258" height="347" alt="Гефест"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
-				<li class="work-catalog-item">
-					<h3>В последний раз</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"><img src="img/arts-catalog/last_time.jpg" width="258" height="347" alt="В последний раз"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
-				<li class="work-catalog-item">
-					<h3>Шипы</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"><img src="img/arts-catalog/thorns.jpg" width="258" height="347" alt="Шипы"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
-				<li class="work-catalog-item">
-					<h3>Триумф</h3>
-					<p class="works-catalog-item-image">
-						<a href="#"><img src="img/arts-catalog/triumph.jpg" width="258" height="347" alt="Триумф"></a>
-					</p>
-					<p>Описание</p>
-					<a href="#">Открыть</a>
-				</li>
+		<div class="substrate"> <!-- Подложка -->
+			<h1 class="section-header main-header">Галерея</h1>
+			<ul class="breadcrumb">
+				<li><a href="index.html.html">Новости</a></li>
+				<li class="breadcrumb-current">Галерея</li>
 			</ul>
-			<ul class="pagination-list">
-				<li class="pagination-item pagination-item-current"><a>1</a></li>
-				<li class="pagination-item"><a href="#">2</a></li>
-				<li class="pagination-item"><a href="#">3</a></li>
-				<li class="pagination-item"><a href="#">4</a></li>
-			</ul>
-		</section>
+			<p class="description">
+				Данный ресурс посвящён разным формам творчества. Здесь вы сможете найти: иллюстрации, арты и книги авторства Р.М. Врата раскрывают множество путей, отведущих ваше воображение по тропам к давно сгинувшим мирам, а может даже к истокам истории. За ними изложены и показаны судьбы. Шаг за врата, уступка любопытству, и я постараюсь рассказать все, что знаю.
+			</p>
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр рисунков</h2>
+				<form class="filter" action="#" method="get">
+					<fieldset>
+						<legend>Сортировка:</legend>
+						<ul>
+							<li>
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
+								<label for="popular-checkbox">По популярности</label>
+							</li>
+							<li>
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="old" id="old-checkbox">
+								<label for="old-checkbox">Иллюстрации из книг</label>
+							</li>
+							<li>
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="free" id="free-checkbox">
+								<label for="free-checkbox">Цветные</label>
+							</li>
+							<li>
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
+								<label for="pay-checkbox">Черно-белые</label>
+							</li>
+							<li>
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
+								<label for="pay-checkbox">Истории</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="filter-button button">Применить</button>
+				</form>
+			</section>
+			<section class="works-catalog">
+				<h2 class="visually-hidden">Список рисунков</h2>
+				<ul class="arts-list">
+					<li class="arts-item">
+						<h3 class="catalog-item-header">Расплата</h3>
+						<p class="arts-item-image">
+							<a href="#"><img src="img/arts-catalog/atonement.jpg" width="258" height="347" alt="Расплата"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="arts-item">
+						<h3 class="catalog-item-header">Вельзевул</h3>
+						<p class="arts-item-image">
+							<a href="#"> <img src="img/arts-catalog/Beelzebub.jpg" width="258" height="347" alt="Вельзевул"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="arts-item">
+						<h3 class="catalog-item-header">Прояснение</h3>
+						<p class="arts-item-image">
+							<a href="#"><img src="img/arts-catalog/clarification.jpg" width="258" height="347" alt="Прояснение"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="arts-item">
+						<h3 class="catalog-item-header">Недовольство</h3>
+						<p class="arts-item-image">
+							<a href="#"><img src="img/arts-catalog/dissatisfaction.jpg" width="258" height="347" alt="Недовольство"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="arts-item">
+						<h3 class="catalog-item-header">Гефест</h3>
+						<p class="arts-item-image">
+							<a href="#"><img src="img/arts-catalog/gefest.jpg" width="258" height="347" alt="Гефест"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="arts-item">
+						<h3 class="catalog-item-header">В последний раз</h3>
+						<p class="arts-item-image">
+							<a href="#"><img src="img/arts-catalog/last_time.jpg" width="258" height="347" alt="В последний раз"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="arts-item">
+						<h3 class="catalog-item-header">Шипы</h3>
+						<p class="arts-item-image">
+							<a href="#"><img src="img/arts-catalog/thorns.jpg" width="258" height="347" alt="Шипы"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="arts-item">
+						<h3 class="catalog-item-header">Триумф</h3>
+						<p class="arts-item-image">
+							<a href="#"><img src="img/arts-catalog/triumph.jpg" width="258" height="347" alt="Триумф"></a>
+						</p>
+						<p>Описание</p>
+						<a href="#">Открыть</a>
+					</li>
+				</ul>
+				<ul class="pagination-list">
+					<li class="pagination-item pagination-item-current"><a>1</a></li>
+					<li class="pagination-item"><a href="#">2</a></li>
+					<li class="pagination-item"><a href="#">3</a></li>
+					<li class="pagination-item"><a href="#">4</a></li>
+				</ul>
+			</section>
+		</div> <!-- Подложка -->
 	</main>
 	<footer class="main-footer">
 		<nav class="footer-navigation">
 			<ul class="footer-navigation-list">
 				<li class="footer-navigation-item">
 					<a>
-						<img src="img/logo.svg" width="100" height="30" alt="Врата">
+						<img src="img/Logo.png" width="100" height="30" alt="Врата">
 					</a>
 				</li>
 				<li class="footer-navigation-item"><a href="works-catalog.html">Книги</a></li>
-				<li class="footer-navigation-item footer-navigation-item-current"><a>Галерея</a></li>
+				<li class="footer-navigation-item footer-navigation-current"><a>Галерея</a></li>
 				<li class="footer-navigation-item"><a href="about.html">О нас</a></li>
 				<li class="footer-navigation-item"><a href="feedback.html">Отзывы</a></li>
 				<li class="footer-navigation-item"><a href="FAQ.html">FAQ</a></li>
