@@ -18,12 +18,13 @@ body {
 	font-family: "Times New Roman", serif;
 	font-size: 16px;
 	line-height: 24px;
-	color: #ffffff;
+	color: #000000;
 
 	background-color: #1a172a;
 }
 
 a {
+	font-family: 'Benguiat Rus', Garamond, serif;
 	text-decoration: none;
 }
 
@@ -39,11 +40,19 @@ a {
 	font-weight: bold;
 }
 
+/* <!-- Подложка --> */
+
+.substrate {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
 /* Конец глобальных (типографских) настроек */
 
 /* Стилизация навигаций */
 
 .main-navigation {
+	font-family: 'Benguiat Rus', Garamond, serif;
+	font-weight: bold;
 	font-size: 22px;
 	line-height: 30px;
 	color: #ffffff;
@@ -54,9 +63,20 @@ a {
 	list-style: none;
 }
 
-.user-navigation a,
+.user-navigation a {
+	font-size: 20px;
+	color: #fdf30d;
+
+	background-color: rgba(46, 41, 75, 0.5);
+	border: 1px solid #ffffff;
+	border-radius: 6px;
+}
 .main-navigation-list a {
-	color: #fff;
+	color: #000000;
+}
+
+.main-navigation-item-current a {
+	color: #ffffff;
 }
 
 .user-navigation a:hover,
@@ -68,6 +88,70 @@ a {
 
 .user-navigation {
 	text-align: right;
+}
+
+/* Градиент меню */
+
+.main-navigation-item {
+	background: linear-gradient(45deg, #c2edb0, #97d1b3, #77bab4);
+}
+
+.main-navigation-item:nth-child(2) {
+	background: linear-gradient(45deg, #daec92, #aecc82, #95b97b);
+}
+
+.main-navigation-item:nth-child(3) {
+	background: linear-gradient(45deg, #eada8b, #c9b383, #b49a7b);
+}
+
+.main-navigation-item:nth-child(4) {
+	background: linear-gradient(45deg, #e6b68e, #c08184, #ac657e);
+}
+
+.main-navigation-item:nth-child(5) {
+	background: linear-gradient(45deg, #f8c6c5, #cb8cc7, #b26cc8);
+}
+
+.main-navigation-item:nth-child(6) {
+	background: linear-gradient(45deg, #d4c1c2, #a28fbd, #7964b9);
+}
+
+/* Градиент меню активное состояние*/
+
+.main-navigation-item:hover,
+.main-navigation-item:focus,
+.main-navigation-item:active {
+	background: linear-gradient(45deg, #bcfca1, #81e7b2, #58d9cd);
+}
+
+.main-navigation-item:nth-child(2):hover,
+.main-navigation-item:nth-child(2):focus,
+.main-navigation-item:nth-child(2):active {
+	background: linear-gradient(45deg, #e5ff7f, #b3e668, #b3e668);
+}
+
+.main-navigation-item:nth-child(3):hover,
+.main-navigation-item:nth-child(3):focus,
+.main-navigation-item:nth-child(3):active {
+	background: linear-gradient(45deg, #ffe876, #e4bd68, #d39d5c);
+}
+
+.main-navigation-item:nth-child(4):hover,
+.main-navigation-item:nth-child(4):focus,
+.main-navigation-item:nth-child(4):active {
+	background: linear-gradient(45deg, #fbb479, #dc656a, #d04173);
+}
+
+.main-navigation-item:nth-child(5):hover,
+.main-navigation-item:nth-child(5):focus,
+.main-navigation-item:nth-child(5):active {
+	background: linear-gradient(45deg, #ffbfbe, #e473dd, #c24ee6);
+}
+
+.main-navigation-item:nth-child(6):hover,
+.main-navigation-item:nth-child(6):focus,
+.main-navigation-item:nth-child(6):active {
+	background: linear-gradient(45deg, #e4b1b4, #9d74d8, #6842db);
 }
 
 /* Стилизация основного контента */
@@ -129,6 +213,12 @@ a {
 	list-style: none;
 }
 
+.item-header a {
+	font-family: "Times New Roman", serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 .news-item a {
 	color: #ffffff;
 }
@@ -185,10 +275,18 @@ a {
 
 /* Стилизация футера */
 
+.main-footer {
+	color: #fdf30d;
+}
+.main-footer a {
+	color: #fdf30d;
+}
+
 .footer-navigation {
+	font-family: 'Benguiat Rus', Garamond, serif;
+	font-weight: bold;
 	font-size: 18px;
 	line-height: 27px;
-	color: #ffffff;
 }
 
 .footer-navigation-list {
@@ -196,7 +294,6 @@ a {
 }
 
 .footer-navigation-list a {
-	color: #ffffff;
 }
 
 .footer-navigation-list a:hover,
@@ -213,12 +310,14 @@ a {
 	text-align: right;
 }
 
+.footer-social b {
+}
+
 .footer-social ul {
 	list-style: none;
 }
 
 .social-button {
-	color: #ffffff;
 }
 
 .social-button:hover,
@@ -226,6 +325,7 @@ a {
 .social-button:active {
 	text-decoration: underline;
 }
+
 
 /* Модальные окна */
 
