@@ -1,0 +1,264 @@
+/* Шрифт для ссылок и пунктов меню */
+@font-face {
+    font-family: 'Benguiat Rus';
+    src: url('../fonts/Benguiat.eot');
+    src: url('../fonts/Benguiat.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Benguiat.woff2') format('woff2'),
+        url('../fonts/Benguiat.woff') format('woff'),
+        url('../fonts/Benguiat.ttf') format('truetype'),
+        url('../fonts/Benguiat.svg#Benguiat') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Times New Roman", serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+
+	background-color: #1a172a;
+}
+
+a {
+	text-decoration: none;
+}
+
+.section-header {
+	font-family: 'Cormorant Infant', serif;
+	font-size: 25px;
+	text-align: center;
+}
+
+.item-header {
+	font-family: "Times New Roman", serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Конец глобальных (типографских) настроек */
+
+/* Стилизация навигаций */
+
+.main-navigation {
+	font-size: 22px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.user-navigation, 
+.main-navigation-list {
+	list-style: none;
+}
+
+.user-navigation a,
+.main-navigation-list a {
+	color: #fff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.main-navigation-list a:hover,
+.main-navigation-list a:focus {
+	
+}
+
+.user-navigation {
+	text-align: right;
+}
+
+/* Стилизация основного контента */
+.description {
+	text-align: center;
+}
+
+.section-header span {
+	color: #4b2f69;
+}
+
+.main-title {
+ 	font-size: 30px;
+}
+/* Популярные произведения */
+
+.popular-works-list {
+	list-style: none;
+}
+
+.popular-works-item {
+	text-align: center;
+}
+
+.popular-works-item-image img {
+	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.61);
+	border: 3px solid #f7f1f1;
+	border-radius: 4px;
+}
+
+.popular-works-item-image img:hover,
+.popular-works-item-image img:focus {
+	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
+}
+
+/* Популярные рисунки */
+
+.popular-arts-list {
+	list-style: none;
+}
+
+.popular-arts-item {
+	text-align: center;
+}
+
+.popular-arts-item-image img {
+	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.61);
+	border: 3px solid #f7f1f1;
+	border-radius: 4px;
+}
+
+.popular-arts-item-image img:hover,
+.popular-arts-item-image img:focus {
+	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
+}
+
+/* Новости */
+.news-list {
+	list-style: none;
+}
+
+.news-item a {
+	color: #ffffff;
+}
+
+.news-item a:hover,
+.news-item a:focus {
+
+}
+
+.news-item img {
+	border: 2px solid #ffffff;
+	border-radius: 4px;
+}
+
+.news-item time {
+	font-size: 14px;
+	color: #d4d2d6;
+}
+
+.news-link:hover {
+	text-decoration: underline;
+}
+
+/* Пагинация */
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-list a {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus,
+.pagination-list a:active {
+	background-color: ;
+}
+
+.pagination-item-current a {
+	color: #ffffff;
+	background-color: transparent;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+	color: #ffffff;
+
+	background-color: none;
+}
+
+/* Стилизация футера */
+
+.footer-navigation {
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+}
+
+.footer-navigation-list {
+	list-style: none;
+}
+
+.footer-navigation-list a {
+	color: #ffffff;
+}
+
+.footer-navigation-list a:hover,
+.footer-navigation-list a:focus,
+.footer-navigation-list a:active {
+
+}
+
+.footer-copyright {
+	text-align: center;
+}
+
+.footer-social {
+	text-align: right;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.social-button {
+	color: #ffffff;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+	text-decoration: underline;
+}
+
+/* Модальные окна */
+
+.modal-login h3 {
+	font-family: 'Cormorant Infant', serif;
+	font-size: 25px;
+}
+
+.modal-form-login input[type="text"],
+.modal-form-login input[type="password"] {
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+
+	background-color: ;
+	border: 2px solid #000000;
+}
+
+.modal-form-login input:focus {
+	border-color: ;
+}
+
+.modal-form-login:hover,
+.modal-form-login:focus {
+	color: ;
+}
+
+.restore {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+	text-decoration: none;
+}

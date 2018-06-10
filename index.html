@@ -3,12 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Врата. Версия 6</title>
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700&amp;subset=cyrillic" rel="stylesheet"> <!-- для заголовков -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="logo">
-			<img src="img/logo.svg" width="164" height="54" alt="Логотип Врата">
+			<img src="img/Logo.png" width="164" height="54" alt="Логотип Врата">
 		</div>
 		<ul class="user-navigation">
 			<li class="registration-link"><a href="registration.html">Оформить читательский билет</a></li>
@@ -31,14 +33,14 @@
 		<h1 class="visually-hidden">Врата</h1>
 		
 		<section class="description">
-			<h2>Добро пожаловать во <span>Врата</span></h2>
+			<h2 class="section-header main-title">Добро пожаловать во <span>Врата</span></h2>
 			<p>Данный ресурс посвящён разным формам творчества. Здесь вы сможете найти: иллюстрации, арты и книги авторства Р.М. Врата раскрывают множество путей, отведущих ваше воображение по тропам к давно сгинувшим мирам, а может даже к истокам истории. За ними изложены и показаны судьбы. Шаг за врата, уступка любопытству, и я постараюсь рассказать все, что знаю.</p>
 		</section>
 		<section class="popular-works">
-			<h2>Популярные произведения</h2>
+			<h2 class="section-header">Популярные произведения</h2>
 			<ul class="popular-works-list">
 				<li class="popular-works-item">
-					<h3>Привратник и овощи</h3>
+					<h3 class="item-header">Привратник и овощи</h3>
 					<p class="popular-works-item-image">
 						<a href="#">
 							<img src="img/works-catalog/01.jpg" width="258" height="347" alt="Привратник и овощи">
@@ -46,7 +48,7 @@
 					</p>
 				</li>
 				<li class="popular-works-item">
-					<h3>Неугосимый огонь</h3>
+					<h3 class="item-header">Неугосимый огонь</h3>
 					<p class="popular-works-item-image">
 						<a href="#">
 							<img src="img/works-catalog/02.jpg" width="258" height="347" alt="Неугосимый огонь">
@@ -54,7 +56,7 @@
 					</p>
 				</li>
 				<li class="popular-works-item">
-					<h3>Принц и Скрипач</h3>
+					<h3 class="item-header">Принц и Скрипач</h3>
 					<p class="popular-works-item-image">
 						<a href="#">
 							<img src="img/works-catalog/03.jpg" width="258" height="347" alt="Принц и Скрипач">
@@ -65,10 +67,10 @@
 		</section>
 
 		<section class="popular-arts">
-			<h2>Популярные рисунки</h2>
+			<h2 class="section-header">Популярные рисунки</h2>
 			<ul class="popular-arts-list">
 				<li class="popular-arts-item">
-					<h3>Вельзувел</h3>
+					<h3 class="item-header">Вельзувел</h3>
 					<p class="popular-arts-item-image">
 						<a href="#">
 							<img src="img/arts-catalog/Beelzebub.jpg" width="258" height="347" alt="Вельзувел">
@@ -76,7 +78,7 @@
 					</p>
 				</li>
 				<li class="popular-arts-item">
-					<h3>Прояснение</h3>
+					<h3 class="item-header">Прояснение</h3>
 					<p class="popular-arts-item-image">
 						<a href="#">
 							<img src="img/arts-catalog/clarification.jpg" width="258" height="347" alt="Прояснение">
@@ -84,7 +86,7 @@
 					</p>
 				</li>
 				<li class="popular-arts-item">
-					<h3>Гефест</h3>
+					<h3 class="item-header">Гефест</h3>
 					<p class="popular-arts-item-image">
 						<a href="#">
 							<img src="img/arts-catalog/gefest.jpg" width="258" height="347" alt="Гефест">
@@ -95,37 +97,40 @@
 		</section>
 
 		<section class="news">
-			<h2>Новости</h2>
+			<h2 class="section-header">Новости</h2>
 			<ul class="news-list">
 				<li class="news-item">
-					<h3>
+					<h3 class="item-header">
 						<a href="news-1.html">Заголовок новости</a>
 					</h3>
 						<img src="img/news.jpg" width="121" height="123" alt="Рисунок новости">
 						<p>
 						Повседневная практика показывает, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
-						<a href="news-1.html">Читать далее</a>
-					</p>
+						<time datetime="2016-01-11">11 января</time>
+						</p>
+						<a class="news-link" href="news-1.html">Читать далее</a>
 				</li>
 				<li class="news-item">
-					<h3>
+					<h3 class="item-header">
 						<a href="news-1.html">Заголовок новости</a>
 					</h3>
 						<img src="img/news.jpg" width="121" height="123" alt="Рисунок новости">
 						<p>
 						Повседневная практика показывает, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
-						<a href="news-1.html">Читать далее</a>
-					</p>
+						<time datetime="2016-01-11">11 января</time>
+						</p>
+						<a class="news-link" href="news-1.html">Читать далее</a>
 				</li>
 				<li class="news-item">
-					<h3>
+					<h3 class="item-header">
 						<a href="news-1.html">Заголовок новости</a>
 					</h3>
 						<img src="img/news.jpg" width="121" height="123" alt="Рисунок новости">
 						<p>
 						Повседневная практика показывает, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
-						<a href="news-1.html">Читать далее</a>
-					</p>
+						<time datetime="2016-01-11">11 января</time>
+						</p>
+						<a class="news-link" href="news-1.html">Читать далее</a>
 				</li>
 			</ul>
 			<ul class="pagination-list">
@@ -141,7 +146,7 @@
 			<ul class="footer-navigation-list">
 				<li class="footer-navigation-item">
 					<a>
-						<img src="img/logo.svg" width="100" height="30" alt="Врата">
+						<img src="img/Logo.png" width="100" height="30" alt="Врата">
 					</a>
 				</li>
 				<li class="footer-navigation-item"><a href="books.html">Книги</a></li>
@@ -153,8 +158,7 @@
 		</nav>
 
 		<p class="footer-copyright">
-			<b>Разработано: <!-- Ro&Mo --></b> <br>	
-			<img src="img/romo.svg" width="80" height="40" alt=Ro&Mo""> <br>
+			<b>Разработано: Ro&Mo</b> <br>
 			<span>© Все права защищены. 2018</span>
 		</p>
 
@@ -171,10 +175,10 @@
 	<!-- Модальные окна -->
 	<section class="modal modal-login">
 		<h2 class="visually-hidden">Здесь можно представиться</h2>
-		<p>Здравствуйте</p>
+		<h3>Здравствуйте</h3>
 			<form class="modal-form-login" action="#" method="get">
 				<p>
-					<label for="modal-form-login-name" class="visually-hidden">Ваше имя...</label>
+					<label for="modal-form-login-name" class="visually-hidden">Ваше имя</label>
 					<input class="modal-form-login-input" id="modal-form-login-name" type="text" name="name" placeholder="Ваше имя...">
 				</p>
 				<p>
