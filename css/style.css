@@ -166,24 +166,35 @@ a {
 .main-title {
  	font-size: 30px;
 }
-/* Популярные произведения */
+/* Секция и раздел произведения */
 
-.popular-works-list {
+.works-list {
 	list-style: none;
 }
 
-.popular-works-item {
+.work-item {
 	text-align: center;
 }
 
-.popular-works-item-image img {
+.work-item a {
+	color: #000000;
+}
+
+.work-item a:hover,
+.work-item a:focus,
+.work-item a:active {
+
+	text-decoration: underline;
+}
+
+.works-item-image img {
 	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.61);
 	border: 3px solid #f7f1f1;
 	border-radius: 4px;
 }
 
-.popular-works-item-image img:hover,
-.popular-works-item-image img:focus {
+.works-item-image img:hover,
+.works-item-image img:focus {
 	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
 }
 
@@ -326,6 +337,63 @@ a {
 	text-decoration: underline;
 }
 
+/* Стили для раздела Книги */
+
+.main-header {
+	font-size: 35px;
+}
+
+.breadcrumb {
+	font-family: 'Benguiat Rus', Garamond, serif;
+	font-weight: bold;
+
+	list-style: none;
+}
+
+.breadcrumb a {
+	color: #000000;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+	text-decoration: underline;
+}
+
+.breadcrumb-current {
+	color: #d3d0ce;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-family: 'Cormorant Infant', serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 18px;
+}
+
+.filter-checkbox:focus + label,
+.filter-checkbox:hover + label {
+	color: ;
+}
+
+.filter-checkbox:disabled + label {
+	color: #000000;
+
+	opacity: 0.5;
+}
+
+.catalog-item-header {
+	font-family: 'Cormorant Infant', serif;
+	font-weight: bold;
+	font-size: 24px;
+}
 
 /* Модальные окна */
 
