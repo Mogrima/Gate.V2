@@ -7,15 +7,17 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="works-page">
 	<header class="header">
-		<div class="logo">
-			<a href="index.html.html"><img src="img/Logo.png" width="164" height="54" alt="Логотип Врата"></a>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html.html"><img src="img/Logo.png" width="164" height="54" alt="Логотип Врата"></a>
+			</div>
+			<ul class="user-navigation">
+				<li class="registration-link"><a href="registration.html">Оформить читательский билет</a></li>
+				<li class="login-link"><a href="#">Представиться</a></li>
+			</ul>
 		</div>
-		<ul class="user-navigation">
-			<li class="registration-link"><a href="registration.html">Оформить читательский билет</a></li>
-			<li class="login-link"><a href="#">Представиться</a></li>
-		</ul>
 	</header>
 	<nav class="main-navigation">
 		<ul class="main-navigation-list">
@@ -27,7 +29,7 @@
 			<li class="main-navigation-item"><a href="FAQ.html">FAQ</a></li>
 		</ul>
 	</nav>
-	<main>
+	<main class="container">
 		<div class="substrate">
 			<h1 class="section-header main-header">Книги</h1>
 			<ul class="breadcrumb">
@@ -40,94 +42,96 @@
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр книг</h2>
 				<form class="filter" action="#" method="get">
-					<fieldset>
-						<legend>Сортировка:</legend>
-						<ul>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
-								<label for="popular-checkbox">По популярности</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="old" id="old-checkbox" >
-								<label for="old-checkbox">По давности</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="free" id="free-checkbox">
-								<label for="free-checkbox">Бесплатные</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
-								<label for="pay-checkbox">Платные</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset>
-						<legend>Формат:</legend>
-						<ul>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="fiction" id="fiction-checkbox">
-								<label for="fiction-checkbox">Художественная литература</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="poetry" id="poetry-checkbox">
-								<label for="poetry-checkbox">Стихотворения</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="articles" id="articles-checkbox">
-								<label for="articles-checkbox">Статьи</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="worlds" id="worlds-checkbox" checked>
-								<label for="worlds-checkbox">О мирах</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset>
-						<legend>Размер:</legend>
-						<ul>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="little" id="little-checkbox" checked>
-								<label for="little-checkbox">Рассказы</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="middle" id="middle-checkbox">
-								<label for="middle-checkbox">Средний (150 - 200 стр.)</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="big" id="big-checkbox">
-								<label for="big-checkbox">Большой (больше 200 стр.)</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset>
-						<legend>Жанры:</legend>
-						<ul>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="tale" id="tale-checkbox" checked>
-								<label for="tale-checkbox">Сказка</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="novel" id="novel-checkbox">
-								<label for="novel-checkbox">Роман</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="encyclopedia" id="encyclopedia-checkbox">
-								<label for="encyclopedia-checkbox">Энциклопедия</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="drama" id="drama-checkbox">
-								<label for="drama-checkbox">Драма</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="memoirs" id="memoirs-checkbox">
-								<label for="memoirs-checkbox">Мемуары</label>
-							</li>
-							<li>
-								<input class="visually-hidden filter-checkbox" type="checkbox" name="folk" id="folk-checkbox">
-								<label for="folk-checkbox">Фольклеристика</label>
-							</li>
-						</ul>
-					</fieldset>
+					<div class="filter-wrapper">
+						<fieldset>
+							<legend>Сортировка:</legend>
+							<ul>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
+									<label for="popular-checkbox">По популярности</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="old" id="old-checkbox" >
+									<label for="old-checkbox">По давности</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="free" id="free-checkbox">
+									<label for="free-checkbox">Бесплатные</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
+									<label for="pay-checkbox">Платные</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Формат:</legend>
+							<ul>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="fiction" id="fiction-checkbox">
+									<label for="fiction-checkbox">Художественная литература</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="poetry" id="poetry-checkbox">
+									<label for="poetry-checkbox">Стихотворения</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="articles" id="articles-checkbox">
+									<label for="articles-checkbox">Статьи</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="worlds" id="worlds-checkbox" checked>
+									<label for="worlds-checkbox">О мирах</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Размер:</legend>
+							<ul>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="little" id="little-checkbox" checked>
+									<label for="little-checkbox">Рассказы</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="middle" id="middle-checkbox">
+									<label for="middle-checkbox">Средний (150 - 200 стр.)</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="big" id="big-checkbox">
+									<label for="big-checkbox">Большой (больше 200 стр.)</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Жанры:</legend>
+							<ul>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="tale" id="tale-checkbox" checked>
+									<label for="tale-checkbox">Сказка</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="novel" id="novel-checkbox">
+									<label for="novel-checkbox">Роман</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="encyclopedia" id="encyclopedia-checkbox">
+									<label for="encyclopedia-checkbox">Энциклопедия</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="drama" id="drama-checkbox">
+									<label for="drama-checkbox">Драма</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="memoirs" id="memoirs-checkbox">
+									<label for="memoirs-checkbox">Мемуары</label>
+								</li>
+								<li>
+									<input class="visually-hidden filter-checkbox" type="checkbox" name="folk" id="folk-checkbox">
+									<label for="folk-checkbox">Фольклеристика</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
 					<button class="filter-button button">Применить</button>
 				</form>
 			</section>
@@ -182,6 +186,23 @@
 						<p>Описание произведения</p>
 						<a href="#">Открыть</a>
 					</li>
+
+					<li class="work-item">
+						<h3 class="catalog-item-header">Привратник и овощи</h3>
+						<p class="works-item-image">
+							<a href="#"><img src="img/works-catalog/01.jpg" width="258" height="347" alt="Привратник и овощи"></a>
+						</p>
+						<p>Описание произведения</p>
+						<a href="#">Открыть</a>
+					</li>
+					<li class="work-item">
+						<h3 class="catalog-item-header">Привратник и овощи</h3>
+						<p class="works-item-image">
+							<a href="#"><img src="img/works-catalog/01.jpg" width="258" height="347" alt="Привратник и овощи"></a>
+						</p>
+						<p>Описание произведения</p>
+						<a href="#">Открыть</a>
+					</li>
 				</ul>
 				<ul class="pagination-list">
 					<li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -193,33 +214,35 @@
 		</div>
 	</main>
 	<footer class="main-footer">
-		<nav class="footer-navigation">
-			<ul class="footer-navigation-list">
-				<li class="footer-navigation-item">
-					<a href="index.html.html">
-						<img src="img/Logo.png" width="100" height="30" alt="Врата">
-					</a>
-				</li>
-				<li class="footer-navigation-item footer-navigation-current"><a>Книги</a></li>
-				<li class="footer-navigation-item"><a href="gallery.html">Галерея</a></li>
-				<li class="footer-navigation-item"><a href="about.html">О нас</a></li>
-				<li class="footer-navigation-item"><a href="feedback.html">Отзывы</a></li>
-				<li class="footer-navigation-item"><a href="FAQ.html">FAQ</a></li>
-			</ul>
-		</nav>
-
-		<p class="footer-copyright">
-			<b>Разработано: Ro&Mo</b>
-			<span>© Все права защищены. 2018</span>
-		</p>
-
-		<div class="footer-social">
-			<b>Контакты для связи:</b>
-			<ul>
-				<li><a href="#" class="social-button">Вконтакте</a></li>
-				<li><a href="#" class="social-button">Фейсбук</a></li>
-				<li><a href="#" class="social-button">Инстаграмм</a></li>
-			</ul>
+		<div class="container">
+			<nav class="footer-navigation">
+				<ul class="footer-navigation-list">
+					<li class="footer-navigation-item">
+						<a href="index.html.html">
+							<img src="img/Logo.png" width="100" height="30" alt="Врата">
+						</a>
+					</li>
+					<li class="footer-navigation-item footer-navigation-current"><a>Книги</a></li>
+					<li class="footer-navigation-item"><a href="gallery.html">Галерея</a></li>
+					<li class="footer-navigation-item"><a href="about.html">О нас</a></li>
+					<li class="footer-navigation-item"><a href="feedback.html">Отзывы</a></li>
+					<li class="footer-navigation-item"><a href="FAQ.html">FAQ</a></li>
+				</ul>
+			</nav>
+			
+			<p class="footer-copyright">
+				<b>Разработано: Ro&Mo</b>
+				<span>© Все права защищены. 2018</span>
+			</p>
+			
+			<div class="footer-social">
+				<b>Контакты для связи:</b>
+				<ul>
+					<li><a href="#" class="social-button">Вконтакте</a></li>
+					<li><a href="#" class="social-button">Фейсбук</a></li>
+					<li><a href="#" class="social-button">Инстаграмм</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 
