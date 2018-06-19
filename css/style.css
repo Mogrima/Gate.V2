@@ -28,6 +28,17 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	border:0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+}
+
 .section-header {
 	font-family: 'Cormorant Infant', serif;
 	font-size: 25px;
@@ -156,7 +167,7 @@ a {
 
 /* Стилизация основного контента */
 .description {
-	text-align: center;
+	text-align: justify;
 }
 
 .section-header span {
@@ -457,4 +468,81 @@ html, body {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
+}
+
+.header {
+	margin-bottom: 30px;
+	padding: 10px 0;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 164px;
+	min-height: 54px;
+}
+
+.user-navigation {
+	margin: 0;
+	padding: 0;
+
+	width: 340px;
+}
+
+.main-navigation-list {
+	padding: 0;
+	margin: 0;
+}
+
+.main-navigation-item {
+	width: 150px;
+
+	text-align: center;
+}
+
+/* Сетка основного контента */
+
+.substrate {
+	padding: 20px 20px;
+}
+
+.works-list {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 0;
+	margin: 0;
+}
+
+.arts-list {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 0;
+	margin: 0;
+}
+
+.news-list {
+	margin: 0;
+	padding: 0;
+	margin-left: 123px;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-navigation-list {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-copyright {
+	margin: 0;
+	padding: 0;
 }
