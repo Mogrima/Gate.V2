@@ -40,6 +40,7 @@ a {
 }
 
 .section-header {
+	margin: 20px;
 	font-family: 'Cormorant Infant', serif;
 	font-size: 25px;
 	text-align: center;
@@ -515,6 +516,24 @@ html, body {
 	padding: 20px 20px;
 }
 
+.main-title {
+	margin: 25px;
+}
+
+.description {
+	margin-bottom: 50px;
+}
+
+.description p {
+	margin: 0;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.popular-works {
+	margin-bottom: 50px;
+}
+
 .works-list {
 	display: flex;
 	justify-content: space-between;
@@ -525,6 +544,10 @@ html, body {
 
 .work-item {
 	width: 264px;
+}
+
+.popular-arts {
+	margin-bottom: 50px;
 }
 
 .arts-list {
@@ -539,15 +562,21 @@ html, body {
 	width: 264px;
 }
 
+.news {
+	margin-bottom: 30px;
+}
+
 .news-list {
 	width: 600px;
 	margin: 0 auto;
+	margin-bottom: 20px;
 	padding: 0;
 	/* margin-left: 123px; */
 }
 
 .news-item {
 	width: 600px;
+	text-align: justify;
 }
 
 .pagination-list {
@@ -559,6 +588,10 @@ html, body {
 .main-footer .container {
 	display: flex;
 	justify-content: space-between;
+}
+
+.main-footer {
+	margin-top: 50px;
 }
 
 .footer-navigation {
@@ -578,4 +611,9 @@ html, body {
 
 .footer-social {
 	width: 180px;
+}
+
+/* Временно для сетки */
+.modal {
+	display: none;
 }
