@@ -493,6 +493,11 @@ html, body {
 	width: 340px;
 }
 
+.main-navigation {
+	width: 150px;
+
+}
+
 .main-navigation-list {
 	padding: 0;
 	margin: 0;
@@ -518,6 +523,10 @@ html, body {
 	margin: 0;
 }
 
+.work-item {
+	width: 264px;
+}
+
 .arts-list {
 	display: flex;
 	justify-content: space-between;
@@ -526,15 +535,34 @@ html, body {
 	margin: 0;
 }
 
-.news-list {
-	margin: 0;
-	padding: 0;
-	margin-left: 123px;
+.arts-item {
+	width: 264px;
 }
 
+.news-list {
+	width: 600px;
+	margin: 0 auto;
+	padding: 0;
+	/* margin-left: 123px; */
+}
+
+.news-item {
+	width: 600px;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+}
+
+/* Сетка для футера */
 .main-footer .container {
 	display: flex;
 	justify-content: space-between;
+}
+
+.footer-navigation {
+	width: 120px;
 }
 
 .footer-navigation-list {
@@ -543,6 +571,11 @@ html, body {
 }
 
 .footer-copyright {
+	width: 220px;
 	margin: 0;
 	padding: 0;
+}
+
+.footer-social {
+	width: 180px;
 }
