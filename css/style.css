@@ -542,8 +542,21 @@ html, body {
 	margin: 0;
 }
 
+.works-page .works-list {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 .work-item {
 	width: 264px;
+}
+
+.works-page .work-item {
+	margin-right: 30px;
+}
+
+.works-page .work-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .popular-arts {
@@ -611,6 +624,22 @@ html, body {
 
 .footer-social {
 	width: 180px;
+}
+
+/* Сеточные стили для остальных страниц */
+
+.filter-wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.filter ul {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-button {
+	margin-left: 28px;
 }
 
 /* Временно для сетки */
