@@ -445,3 +445,16 @@ a {
 .restore:focus {
 	text-decoration: none;
 }
+
+/* Cеточные стили */
+html, body {
+	min-width: 1122px;
+	min-height: 1750px;
+}
+
+/* Блок центровщик */
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
