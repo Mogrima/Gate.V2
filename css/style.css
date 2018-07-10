@@ -473,7 +473,7 @@ html, body {
 
 .header {
 	margin-bottom: 30px;
-	padding: 10px 0;
+	padding-top: 10px;
 }
 
 .header .container {
@@ -521,41 +521,51 @@ html, body {
 }
 
 .description {
+	width: 830px;
+	margin: 0 auto;
 	margin-bottom: 50px;
+/* 	padding-left: 35px;
+padding-right: 35px; */
 }
 
 .description p {
+	widows: 100px;
 	margin: 0;
-	padding-left: 35px;
-	padding-right: 35px;
+/* 	padding-left: 35px;
+padding-right: 35px; */
 }
 
 .popular-works {
 	margin-bottom: 50px;
 }
 
+.catalog-item-header {
+	display: inline-block;
+	min-height: 50px;
+}
 .works-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
 
 	padding: 0;
 	margin: 0;
 }
 
 .works-page .works-list {
-	justify-content: center;
-	flex-wrap: wrap;
+	
 }
 
 .work-item {
-	width: 264px;
+	width: 200px;
+	margin-right: 115px;
 }
 
 .works-page .work-item {
-	margin-right: 30px;
+	margin-right: 115px;
 }
 
-.works-page .work-item:nth-child(3n) {
+.work-item:nth-child(3n), .work-item:last-child {
 	margin-right: 0;
 }
 
@@ -565,18 +575,24 @@ html, body {
 
 .arts-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 
 	padding: 0;
 	margin: 0;
 }
 
 .arts-item {
-	width: 264px;
+	width: 200px;
+	margin-right: 115px;
 }
 
+.arts-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+
 .news {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .news-list {
@@ -628,6 +644,22 @@ html, body {
 
 /* Сеточные стили для остальных страниц */
 
+.section-header {
+	margin: 0;
+	margin-bottom: 30px;
+	padding-top: 30px;
+}
+
+.breadcrumb {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+}
+
+.filters {
+	margin-bottom: 50px;
+}
+
 .filter-wrapper {
 	display: flex;
 	justify-content: space-around;
@@ -640,6 +672,14 @@ html, body {
 
 .filter-button {
 	margin-left: 28px;
+}
+
+.works {
+	margin-bottom: 25px;
+}
+
+.catalog-item-header {
+	margin: 0;
 }
 
 /* Временно для сетки */
