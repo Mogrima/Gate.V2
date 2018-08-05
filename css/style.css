@@ -110,7 +110,7 @@ input[type="checkbox"].visually-hidden {
 /* Стилизация навигаций */
 
 .main-navigation {
-	width: 20%;
+	width: auto;
 	font-family: 'Benguiat Rus', Garamond, serif;
 	font-weight: bold;
 	font-size: 22px;
@@ -247,7 +247,7 @@ input[type="checkbox"].visually-hidden {
 
 /* Стилизация основного контента */
 main {
-	width: 70%;
+	
 }
 
 .description {
