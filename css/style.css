@@ -449,6 +449,8 @@ main {
 .main-footer {
 	display: flex;
 	justify-content: space-between;
+
+	padding: 0 30px;
 	color: #fdf30d;
 }
 .main-footer a {
@@ -463,6 +465,9 @@ main {
 }
 
 .footer-navigation-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
