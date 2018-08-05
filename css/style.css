@@ -534,8 +534,28 @@ main {
 	color: #d3d0ce;
 }
 
+.filter {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.flex-fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 .filter fieldset {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+
 	border: none;
+}
+
+.filter fieldset:nth-child(2n) {
+	
 }
 
 .filter legend {
@@ -545,6 +565,9 @@ main {
 }
 
 .filter ul {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 	line-height: 18px;
 }
