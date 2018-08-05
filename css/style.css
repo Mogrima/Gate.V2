@@ -28,7 +28,37 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(active),
+input[type="checkbox"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	width: 1100px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+.main-flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
 .section-header {
+	margin: 0;
 	font-family: 'Cormorant Infant', serif;
 	font-size: 25px;
 	text-align: center;
@@ -43,14 +73,44 @@ a {
 /* <!-- Подложка --> */
 
 .substrate {
+	width: 100%;
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Конец глобальных (типографских) настроек */
+.header {
+	margin-bottom: 60px;
+	padding-top: 30px;
+	width: 100%;
+
+	
+	background-size: cover;
+}
+
+.background-header {
+  background-image: url(../img/top.jpg);
+  background-size: 100%;
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 63rem;
+  background-repeat: no-repeat;
+}
+
+.header .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo, .logo img {
+	width: 164px;
+}
 
 /* Стилизация навигаций */
 
 .main-navigation {
+	width: 20%;
 	font-family: 'Benguiat Rus', Garamond, serif;
 	font-weight: bold;
 	font-size: 22px;
@@ -64,6 +124,8 @@ a {
 }
 
 .user-navigation a {
+	padding: 10px 15px;
+
 	font-size: 20px;
 	color: #fdf30d;
 
@@ -71,7 +133,30 @@ a {
 	border: 1px solid #ffffff;
 	border-radius: 6px;
 }
+
+.login-link {
+	margin-top: 30px;
+}
+
+.main-navigation-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation-item {
+	margin-bottom: 15px;
+	text-align: center;
+	
+}
+
 .main-navigation-list a {
+	display: block;
+	padding: 10px 15px;
 	color: #000000;
 }
 
@@ -87,6 +172,12 @@ a {
 }
 
 .user-navigation {
+	display: flex;
+	flex-direction: column;
+	
+	box-sizing: border-box;
+	width: 385px;
+
 	text-align: right;
 }
 
@@ -155,6 +246,10 @@ a {
 }
 
 /* Стилизация основного контента */
+main {
+	width: 70%;
+}
+
 .description {
 	text-align: center;
 }
@@ -169,11 +264,18 @@ a {
 /* Секция и раздел произведения */
 
 .works-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 }
 
 .work-item {
+	margin-right: 20px;
 	text-align: center;
+}
+
+.work-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .work-item a {
@@ -188,7 +290,7 @@ a {
 }
 
 .works-item-image img {
-	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.61);
+	box-shadow: 3px 10px 44px 0px rgba(0,0,0,0.61);
 	border: 3px solid #f7f1f1;
 	border-radius: 4px;
 }
@@ -201,11 +303,18 @@ a {
 /* Популярные рисунки */
 
 .arts-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 }
 
 .arts-item {
+	margin-right: 20px;
 	text-align: center;
+}
+
+.arts-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .arts-item a {
@@ -235,6 +344,21 @@ a {
 	list-style: none;
 }
 
+.item-header {
+	margin-top: 20px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+
 .item-header a {
 	font-family: "Times New Roman", serif;
 	font-size: 20px;
@@ -250,7 +374,9 @@ a {
 
 }
 
-.news-item img {
+.news-list__img {
+	float: left;
+	margin-right: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 4px;
 }
@@ -267,13 +393,19 @@ a {
 /* Пагинация */
 
 .pagination-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 200px;
 	list-style: none;
 }
 
 .pagination-list a {
+	padding: 5px 10px;
 	color: #ffffff;
 
 	background-color: #000000;
+
 }
 
 .pagination-list a:hover,
@@ -298,6 +430,8 @@ a {
 /* Стилизация футера */
 
 .main-footer {
+	display: flex;
+	justify-content: space-between;
 	color: #fdf30d;
 }
 .main-footer a {
@@ -411,6 +545,9 @@ a {
 }
 
 /* Модальные окна */
+.modal {
+	display: none;
+}
 
 .modal-login h3 {
 	font-family: 'Cormorant Infant', serif;
@@ -444,4 +581,46 @@ a {
 .restore:hover,
 .restore:focus {
 	text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+	.container {
+		width: 940px;
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 960px) {
+	.container {
+		width: 740px;
+		padding: 0 20px;
+	}
+	.user-navigation {
+		width: 340px;
+	}
+	.user-navigation a {
+	padding: 5px 8px; 
+	font-size: 16px;
+	}
+	.login-link {
+	margin-top: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: auto;
+	}
+	.header {
+	padding-top: 20px;
+	margin-bottom: 40px;
+	}
+	.header .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.user-navigation {
+	align-items: center;
+	}
 }
