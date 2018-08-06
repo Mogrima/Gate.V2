@@ -677,6 +677,7 @@ input[type='checkbox']{ height: 0; width: 0; }
 input[type='checkbox'] + label{
   position: relative;
   display: flex;
+  margin: 0;	
   align-items: center;
   color: #000000ab;
   transition: color 250ms cubic-bezier(.4,.0,.23,1);
