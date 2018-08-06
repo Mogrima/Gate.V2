@@ -672,7 +672,15 @@ main {
 
 
 
-input[type='checkbox']{ height: 0; width: 0; }
+input[type='checkbox']{ 
+	height: 0; width: 0; 
+/* Чтобы не было видно родного чекбокса в FF */
+  -ms-transform: scale(0); /* IE */
+  -moz-transform: scale(0); /* FF */
+  -webkit-transform: scale(0); /* Safari and Chrome */
+  -o-transform: scale(0); /* Opera */
+  padding: 10px;
+}
 
 input[type='checkbox'] + label{
   position: relative;
