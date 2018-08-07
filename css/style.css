@@ -118,7 +118,7 @@ input[type="checkbox"].visually-hidden {
 /* Стилизация навигаций */
 
 .main-navigation {
-	width: 840px;
+	width: 980px;
 	margin: 0 auto;
 	font-family: 'Benguiat Rus', Garamond, serif;
 	font-weight: bold;
@@ -160,9 +160,13 @@ input[type="checkbox"].visually-hidden {
 .main-navigation-item {
 	width: 120px;
 	margin-bottom: 0px;
-	margin-right: 20px;
+	margin-right: 50px;
 	text-align: center;
 	
+}
+
+.main-navigation-item:last-child {
+	margin-right: 0;
 }
 
 .main-navigation-list a {
@@ -263,6 +267,7 @@ main {
 
 .description {
 	margin: 24px 0;
+	padding: 0 50px;
 	text-align: center;
 }
 
