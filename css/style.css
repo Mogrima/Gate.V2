@@ -74,6 +74,7 @@ input[type="checkbox"].visually-hidden {
 
 .substrate {
 	width: 100%;
+	padding-top: 40px;
 	background-color: #ffffff;
 	/* background-color: rgba(255, 255, 255, 0.6); */
 }
@@ -152,7 +153,7 @@ input[type="checkbox"].visually-hidden {
 
 .main-navigation-item {
 	width: 120px;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 	margin-right: 20px;
 	text-align: center;
 	
@@ -255,6 +256,7 @@ main {
 }
 
 .description {
+	margin: 0;
 	text-align: center;
 }
 
@@ -297,6 +299,10 @@ main {
 	text-decoration: underline;
 }
 
+.works-item-image {
+	margin: 0;
+}
+
 .works-item-image img {
 	box-shadow: 3px 10px 44px 0px rgba(0,0,0,0.61);
 	border: 3px solid #f7f1f1;
@@ -306,6 +312,10 @@ main {
 .works-item-image img:hover,
 .works-item-image img:focus {
 	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
+}
+
+.work__description {
+	margin: 0;
 }
 
 /* Популярные рисунки */
@@ -413,7 +423,9 @@ main {
 	justify-content: space-between;
 	
 	width: 200px;
+	margin: 0;
 	margin-left: auto;
+	padding: 0;
 
 	list-style: none;
 }
@@ -516,22 +528,46 @@ main {
 }
 
 .breadcrumb {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
 	font-family: 'Benguiat Rus', Garamond, serif;
 	font-weight: bold;
 
 	list-style: none;
 }
 
-.breadcrumb a {
+.breadcrumb__item {
+	position: relative;
+	margin-left: 25px;
+}
+
+.breadcrumb__item::before {
+	content: "";
+	position: absolute;
+	top: 30%;
+	left: -35%;
+	width: 8px;
+	height: 8px;
+	background-color: #1a172a;
+	transform: rotate(45deg);
+}
+
+.breadcrumb__item:first-child::before {
+	display: none;
+}
+
+.breadcrumb__item a {
 	color: #000000;
 }
 
-.breadcrumb a:hover,
-.breadcrumb a:focus {
+.breadcrumb__item a:hover,
+.breadcrumb__item a:focus {
 	text-decoration: underline;
 }
 
-.breadcrumb-current {
+.breadcrumb__item--current {
 	color: #d3d0ce;
 }
 
@@ -624,6 +660,7 @@ main {
 }
 
 .catalog-item-header {
+	margin: 0;
 	font-family: 'Cormorant Infant', serif;
 	font-weight: bold;
 	font-size: 24px;
