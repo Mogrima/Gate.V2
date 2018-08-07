@@ -79,7 +79,8 @@ input[type="checkbox"].visually-hidden {
 
 .substrate {
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 35px;
+	padding-bottom: 50px;
 	background-color: #ffffff;
 	/* background-color: rgba(255, 255, 255, 0.6); */
 }
@@ -261,7 +262,7 @@ main {
 }
 
 .description {
-	margin: 0;
+	margin: 24px 0;
 	text-align: center;
 }
 
@@ -289,6 +290,7 @@ main {
 
 	width: 835px;
 	margin: 0 auto;
+	margin-bottom: 50px;
 
 	list-style: none;
 }
@@ -330,7 +332,7 @@ main {
 }
 
 .work__description {
-	margin: 0;
+	margin: 24px 0;
 	text-align: justify;
 }
 
@@ -479,7 +481,9 @@ main {
 	display: flex;
 	justify-content: space-between;
 
+	margin-bottom: 50px;
 	padding: 0 30px;
+	padding-top: 50px;
 	color: #fdf30d;
 }
 .main-footer a {
@@ -587,9 +591,12 @@ main {
 	color: #d3d0ce;
 }
 
+
 .filter {
 	width: 900px;
 	margin: 0 auto;
+	margin-bottom: 25px;
+	margin-top: 50px;
 }
 
 .flex-fieldset {
