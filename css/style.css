@@ -79,7 +79,7 @@ input[type="checkbox"].visually-hidden {
 
 .substrate {
 	width: 100%;
-	padding-top: 40px;
+	padding-top: 50px;
 	background-color: #ffffff;
 	/* background-color: rgba(255, 255, 255, 0.6); */
 }
@@ -263,6 +263,15 @@ main {
 .description {
 	margin: 0;
 	text-align: center;
+}
+
+.section-header {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.main-header {
+	margin-top: 25px;
 }
 
 .section-header span {
@@ -666,6 +675,9 @@ main {
 
 .catalog-item-header {
 	margin: 0;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	
 	font-family: 'Cormorant Infant', serif;
 	font-weight: bold;
 	font-size: 24px;
