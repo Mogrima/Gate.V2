@@ -74,7 +74,8 @@ input[type="checkbox"].visually-hidden {
 
 .substrate {
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: #ffffff;
+	/* background-color: rgba(255, 255, 255, 0.6); */
 }
 
 /* Конец глобальных (типографских) настроек */
@@ -581,6 +582,45 @@ main {
 	color: #000000;
 
 	opacity: 0.5;
+}
+
+.filter__button {
+	position: relative;
+	z-index: 10;
+	padding: 10px 20px;	
+	font-family: 'Cormorant Infant', serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1a172a;
+	background-color: transparent;
+	
+	border-image: linear-gradient(180deg, #000000, #000000, #1a172a, #1a172a);
+	border-image-slice: 1;
+}
+
+.filter__button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 0;
+	z-index: -1;
+
+	background: linear-gradient(180deg, rgba(253, 243, 13, .5), rgba(253, 243, 13, .5), rgba(26, 23, 42, .5), rgba(0, 0, 0, .8));
+	transition: .5s cubic-bezier(.165,.84,.44,1);
+}
+
+.filter__button:hover {
+	color: #1a172a;
+}
+
+.filter__button:hover::before {
+	bottom: 0;
+	top: auto;
+
+	height: 100%;
 }
 
 .catalog-item-header {
