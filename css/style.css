@@ -294,6 +294,7 @@ main {
 }
 
 .work-item {
+	width: 264px;
 	margin-right: 20px;
 	text-align: center;
 }
@@ -330,6 +331,7 @@ main {
 
 .work__description {
 	margin: 0;
+	text-align: justify;
 }
 
 /* Популярные рисунки */
@@ -677,7 +679,7 @@ main {
 	margin: 0;
 	margin-top: 50px;
 	margin-bottom: 25px;
-	
+
 	font-family: 'Cormorant Infant', serif;
 	font-weight: bold;
 	font-size: 24px;
