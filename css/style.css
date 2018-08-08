@@ -385,7 +385,7 @@ main {
 
 .works-item-image img:hover,
 .works-item-image img:focus {
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+	box-shadow: -2px 3px 15px 10px rgba(0,0,0,0.3);
 }
 
 .work__description {
@@ -425,7 +425,7 @@ main {
 }
 
 .arts-item-image img {
-	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.61);
+	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
 	border: 3px solid #f7f1f1;
 	border-radius: 4px;
 }
