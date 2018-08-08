@@ -311,14 +311,8 @@ main {
 }
 
 .work-item a {
-	color: #000000;
-}
-
-.work-item a:hover,
-.work-item a:focus,
-.work-item a:active {
-
-	text-decoration: underline;
+	color: #1a172a;
+	
 }
 
 .works-item-image {
@@ -367,8 +361,7 @@ main {
 }
 
 .arts-item a:hover,
-.arts-item a:focus,
-.warts-item a:active {
+.arts-item a:focus {
 
 	text-decoration: underline;
 }
@@ -670,7 +663,8 @@ main {
 	opacity: 0.5;
 }
 
-.filter__button {
+.filter__button,
+.works__button {
 	position: relative;
 	z-index: 10;
 	padding: 10px 20px;	
@@ -679,12 +673,13 @@ main {
 	font-weight: bold;
 	color: #1a172a;
 	background-color: transparent;
-	
+	border: 2px solid #1a172a;
 	border-image: linear-gradient(180deg, #000000, #000000, #1a172a, #1a172a);
 	border-image-slice: 1;
 }
 
-.filter__button::before {
+.filter__button::before,
+.works__button::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -698,11 +693,13 @@ main {
 	transition: .5s cubic-bezier(.165,.84,.44,1);
 }
 
-.filter__button:hover {
+.filter__button:hover,
+.works__button:hover {
 	color: #1a172a;
 }
 
-.filter__button:hover::before {
+.filter__button:hover::before,
+.works__button:hover::before {
 	bottom: 0;
 	top: auto;
 
