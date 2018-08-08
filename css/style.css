@@ -326,14 +326,14 @@ main {
 }
 
 .works-item-image img {
-	box-shadow: 3px 10px 44px 0px rgba(0,0,0,0.61);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 	border: 3px solid #f7f1f1;
 	border-radius: 4px;
 }
 
 .works-item-image img:hover,
 .works-item-image img:focus {
-	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .work__description {
