@@ -33,6 +33,12 @@ a {
 	text-decoration: none;
 }
 
+a:focus, button:focus {
+	outline-color: #fdf30d;
+	outline-width: 2px;
+	outline-style: solid;	
+}
+
 .visually-hidden:not(:focus):not(active),
 input[type="checkbox"].visually-hidden,
 input[type="checkbox"].visually-hidden {
@@ -173,6 +179,10 @@ input[type="checkbox"].visually-hidden {
 	display: block;
 	padding: 10px 15px;
 	color: #000000;
+}
+
+.main-navigation-list a:focus {
+	
 }
 
 .main-navigation-item-current a {
@@ -581,12 +591,13 @@ main {
 }
 
 .footer-navigation-list a {
+	color: rgba(253, 243, 13, .4);
 }
 
 .footer-navigation-list a:hover,
 .footer-navigation-list a:focus,
 .footer-navigation-list a:active {
-
+	color: rgb(253, 243, 13);
 }
 
 .footer-navigation-current a {
