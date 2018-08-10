@@ -12,8 +12,6 @@
 }
 
 body {
-	--def: #96B7C4; 	
-	--inv: #fff;
 	margin: 0;
 	padding: 0;
 
@@ -84,7 +82,7 @@ input[type="checkbox"].visually-hidden {
 	padding-top: 35px;
 	padding-bottom: 50px;
 	background-color: #ffffff;
-	background-color: rgba(255, 255, 255, 0.6);
+	/* background-color: rgba(255, 255, 255, 0.6); */
 }
 
 /* Конец глобальных (типографских) настроек */
@@ -531,7 +529,7 @@ main {
 .pagination-list a:hover,
 .pagination-list a:focus,
 .pagination-list a:active {
-	background-color: ;
+	background-color: #8d84bc;
 }
 
 .pagination-item-current {
@@ -550,7 +548,7 @@ main {
 .pagination-item-current a:active {
 	color:#1a172a;
 
-	background-color: none;
+	background-color: #d5cc02;
 }
 
 /* Стилизация футера */
@@ -946,3 +944,32 @@ input[type='checkbox']:checked + label > span:before{
   }
 }
 
+.transform-button {
+  	position: relative;
+	z-index: 2;
+	display: inline-block;
+
+	perspective: 500px;
+	transition: .3s;
+}
+
+.transform-button:before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: #1a172a;
+  transform-origin: right;
+  transition: .3s;
+}
+
+.transform-button:hover {
+  color: #68E5F7;
+ }
+
+ .transform-button:hover:before {transform: rotateY(92deg);}
