@@ -598,14 +598,39 @@ main {
 }
 
 .footer-social {
-	text-align: right;
+	width: 211px;
+	
 }
 
 .footer-social b {
+	display: block;
+	margin-bottom: 24px;
 }
 
-.footer-social ul {
+.social-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.social-list path {
+	fill: rgba(253, 243, 13, .4);
+}
+
+.social-list path:hover {
+	fill: rgb(253, 243, 13);
+}
+
+.social-list__item {
+	margin-right: 20px;
+}
+
+.social-list__item:last-child {
+	margin-right: 0px;
 }
 
 .social-button {
