@@ -577,6 +577,7 @@ main {
 }
 
 .footer-navigation {
+	width: 168px;	
 	font-family: 'Benguiat Rus', Garamond, serif;
 	font-weight: bold;
 	font-size: 18px;
@@ -605,7 +606,19 @@ main {
 }
 
 .footer-copyright {
+	width: 260px;	
+	margin: 0;	
 	text-align: center;
+}
+
+.footer-copyright b,
+.footer-social b {
+	color: rgba(255, 255, 255, .4);
+	letter-spacing: 2px;
+}
+
+.footer-copyright span {
+	letter-spacing: 2px;
 }
 
 .footer-social {
@@ -620,6 +633,7 @@ main {
 
 .social-list {
 	display: flex;
+	align-items: center;
 	flex-wrap: wrap;
 
 	margin: 0;
