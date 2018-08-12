@@ -36,7 +36,13 @@ a {
 a:focus, button:focus {
 	outline-color: #fdf30d;
 	outline-width: 2px;
-	outline-style: solid;	
+	outline-style: solid;
+	outline-style: solid;
+ 	outline-color: #68E5F7;	
+}
+
+a:active, button:active {
+	outline: none;
 }
 
 .visually-hidden:not(:focus):not(active),
@@ -394,6 +400,10 @@ main {
 .works-item-image img:hover,
 .works-item-image img:focus {
 	box-shadow: -2px 3px 15px 10px rgba(0,0,0,0.3);
+
+	animation-name: hoverWorks;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 
 .work__description {
@@ -596,9 +606,13 @@ main {
 }
 
 .footer-navigation-list a:hover,
-.footer-navigation-list a:focus,
-.footer-navigation-list a:active {
+.footer-navigation-list a:focus
+ {
 	color: rgb(253, 243, 13);
+}
+
+.footer-navigation-list a:active {
+	color: #ffffff;
 }
 
 .footer-navigation-current a {
@@ -774,14 +788,18 @@ main {
 	position: relative;
 	z-index: 10;
 	padding: 10px 20px;	
+
 	font-family: 'Cormorant Infant', serif;
 	font-size: 20px;
 	font-weight: bold;
 	color: #1a172a;
+
 	background-color: transparent;
 	border: 2px solid #1a172a;
 	border-image: linear-gradient(180deg, #000000, #000000, #1a172a, #1a172a);
 	border-image-slice: 1;
+
+	cursor: pointer;
 }
 
 .filter__button::before/* ,
@@ -802,6 +820,10 @@ main {
 .filter__button:hover/* ,
 .works__button:hover */ {
 	color: #1a172a;
+}
+
+.filter__button:active {
+	color: #ffffff;
 }
 
 .filter__button:hover::before/* ,
@@ -922,6 +944,7 @@ input[type='checkbox'] + label{
   align-items: center;
   color: #000000ab;
   transition: color 250ms cubic-bezier(.4,.0,.23,1);
+  cursor: pointer;
 }
 
 input[type='checkbox'] + label > span{
@@ -942,8 +965,12 @@ input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label,
 input[type='checkbox']:checked + label {
   color: #000000;
 }
-input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span{
-  background: rgba(255,255,255,.1);
+input[type='checkbox'] + label:hover > span {
+	background: rgba(0, 0, 0, .1);
+} 
+
+input[type='checkbox']:focus + label > span{
+  background: #8d84bc;
 }
 
 input[type='checkbox']:checked + label > span{
@@ -994,6 +1021,16 @@ input[type='checkbox']:checked + label > span:before{
   }
 }
 
+@keyframes hoverWorks {
+	0% {
+	 transform: scale(1);
+	}
+	
+	100% {
+		transform: scale(1.1);
+	}
+}
+
 .transform-button {
   	position: relative;
 	z-index: 2;
@@ -1018,8 +1055,10 @@ input[type='checkbox']:checked + label > span:before{
   transition: .3s;
 }
 
-.transform-button:hover {
+.transform-button:hover,
+.transform-button:focus {
   color: #68E5F7;
  }
 
- .transform-button:hover:before {transform: rotateY(92deg);}
+ .transform-button:hover:before {transform: rotateY(92deg);
+ 	outline: none;}
