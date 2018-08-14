@@ -919,8 +919,9 @@ input[type="checkbox"].visually-hidden {
 	text-align: center;
 }
 
-.modal-login {
-	display: block;
+.modal-login,
+.modal-registration {
+	display: none;
 	position: fixed;
 	top: 120px;
 	left: 50%;
@@ -1060,6 +1061,23 @@ input[type="checkbox"].visually-hidden {
 
 .modal-close::after {
 	transform: rotate(-45deg);
+}
+
+.modal-registration {
+	
+}
+
+.modal-registration .login-password-info {
+	justify-content: flex-start;
+	width: 300px;
+}
+
+.modal-registration .login__btn {
+	width: 200px;
+}
+
+.modal-show {
+	display: block;
 }
 
 
