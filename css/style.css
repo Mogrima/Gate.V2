@@ -1,4 +1,3 @@
-/* Шрифт для ссылок и пунктов меню */
 @font-face {
     font-family: 'Benguiat Rus';
     src: url('../fonts/Benguiat.eot');
@@ -10,6 +9,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* ----------------------------------------- Глобальные настройки ----------------------------------------- */
 
 body {
 	margin: 0;
@@ -63,10 +64,17 @@ input[type="checkbox"].visually-hidden {
 	overflow: hidden;
 }
 
+/* -------------------------- Часто повторяющиеся классы и блоки - контейнеры --------------------------------- */
+
 .container {
 	width: 1100px;
-	padding: 0 50px;
 	margin: 0 auto;
+	padding: 0 50px;
+}
+
+.user-navigation, 
+.main-navigation-list {
+	list-style: none;
 }
 
 .main-flex-container {
@@ -97,15 +105,7 @@ input[type="checkbox"].visually-hidden {
 	/* background-color: rgba(255, 255, 255, 0.6); */
 }
 
-/* Конец глобальных (типографских) настроек */
-.header {
-	margin-bottom: 130px;
-	padding-top: 30px;
-	width: 100%;
-
-	
-	background-size: cover;
-}
+/* -------------------------------------- Header ----------------------------------------- */
 
 .background-header {
   background-image: url(../img/top.jpg);
@@ -115,6 +115,14 @@ input[type="checkbox"].visually-hidden {
   width: 100%;
   height: 63rem;
   background-repeat: no-repeat;
+}
+
+.header {
+	width: 100%;
+	margin-bottom: 130px;
+	padding-top: 30px;
+
+	background-size: cover;
 }
 
 .header .container {
@@ -127,21 +135,14 @@ input[type="checkbox"].visually-hidden {
 	width: 164px;
 }
 
-/* Стилизация навигаций */
+.user-navigation {
+	display: flex;
+	flex-direction: column;
+	
+	box-sizing: border-box;
+	width: 385px;
 
-.main-navigation {
-	width: 980px;
-	margin: 0 auto;
-	font-family: 'Benguiat Rus', Garamond, serif;
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 30px;
-	color: #ffffff;
-}
-
-.user-navigation, 
-.main-navigation-list {
-	list-style: none;
+	text-align: right;
 }
 
 .user-navigation a {
@@ -157,6 +158,52 @@ input[type="checkbox"].visually-hidden {
 
 .login-link {
 	margin-top: 30px;
+}
+
+.user-navigation__link {
+  	position: relative;
+	z-index: 2;
+	display: inline-block;
+
+	perspective: 500px;
+	transition: .3s;
+}
+
+.user-navigation__link:before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: #1a172a;
+  transform-origin: right;
+  transition: .3s;
+}
+
+.user-navigation__link:hover,
+.user-navigation__link:focus {
+  color: #68E5F7;
+ }
+
+ .user-navigation__link:hover:before {
+ 	transform: rotateY(92deg);
+ 	outline: none;
+ }
+
+/* ------------------------------------------ Главная навигация --------------------------------------- */
+
+.main-navigation {
+	width: 980px;
+	margin: 0 auto;
+	font-family: 'Benguiat Rus', Garamond, serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+	color: #ffffff;
 }
 
 .main-navigation-list {
@@ -187,29 +234,8 @@ input[type="checkbox"].visually-hidden {
 	color: #000000;
 }
 
-.main-navigation-list a:focus {
-	
-}
-
 .main-navigation-item-current a {
 	color: #ffffff;
-}
-
-.user-navigation a:hover,
-.user-navigation a:focus,
-.main-navigation-list a:hover,
-.main-navigation-list a:focus {
-	
-}
-
-.user-navigation {
-	display: flex;
-	flex-direction: column;
-	
-	box-sizing: border-box;
-	width: 385px;
-
-	text-align: right;
 }
 
 /* Градиент меню */
@@ -276,10 +302,7 @@ input[type="checkbox"].visually-hidden {
 	background: linear-gradient(45deg, #e4b1b4, #9d74d8, #6842db);
 }
 
-/* Стилизация основного контента */
-main {
-	
-}
+/* ------------------------------------- Стилизация основного контента ----------------------------------------- */
 
 .description {
 	margin: 24px 0;
@@ -303,7 +326,7 @@ main {
 .main-title {
  	font-size: 30px;
 }
-/* Секция и раздел произведения */
+/* -------------------------------- Раздел произведения --------------------------------------------- */
 
 .works-list {
 	display: flex;
@@ -411,7 +434,7 @@ main {
 	text-align: justify;
 }
 
-/* Популярные рисунки */
+/* ----------------------------------- Популярные рисунки ----------------------------------------------------*/
 
 .arts-list {
 	display: flex;
@@ -453,7 +476,7 @@ main {
 	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
 }
 
-/* Новости */
+/*------------------------------------------ Новости -------------------------------------------- */
 .news-list {
 	width: 835px;
 	margin: 0 auto;
@@ -465,18 +488,7 @@ main {
 	margin-top: 20px;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
- 
-.clearfix { display: inline-block; }
-
-.item-header a {
+.item-header a { /* <<<<<<<<<<<<<< Нужно добавить класс, так как этот класс может использоваться не только в новостях */
 	font-family: "Times New Roman", serif;
 	font-size: 20px;
 	font-weight: bold;
@@ -484,11 +496,6 @@ main {
 
 .news-item a {
 	color: #ffffff;
-}
-
-.news-item a:hover,
-.news-item a:focus {
-
 }
 
 .news-list__img {
@@ -507,7 +514,26 @@ main {
 	text-decoration: underline;
 }
 
-/* Пагинация */
+.clearfix { 
+	display: inline-block; 
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*------------------------------------ Пагинация ------------------------------------------*/
+.pagination-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-right: -20px;
+}
 
 .pagination-list {
 	display: flex;
@@ -521,13 +547,6 @@ main {
 	padding: 0;
 
 	list-style: none;
-}
-
-.pagination-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-
-	margin-right: -20px;
 }
 
 .pagination-item {
@@ -557,7 +576,6 @@ main {
 }
 
 .pagination-item-current a {
-	
 	color: #1a172a;
 	background-color: #fdf30d;
 	border: 1px solid #1a172a;
@@ -571,7 +589,7 @@ main {
 	background-color: #d5cc02;
 }
 
-/* Стилизация футера */
+/*----------------------------------------------- Footer ---------------------------------------- */
 
 .main-footer {
 	display: flex;
@@ -611,11 +629,8 @@ main {
 	color: rgb(253, 243, 13);
 }
 
+.footer-navigation-current a, 
 .footer-navigation-list a:active {
-	color: #ffffff;
-}
-
-.footer-navigation-current a {
 	color: #ffffff;
 }
 
@@ -672,16 +687,7 @@ main {
 	margin-right: 0px;
 }
 
-.social-button {
-}
-
-.social-button:hover,
-.social-button:focus,
-.social-button:active {
-	text-decoration: underline;
-}
-
-/* Стили для раздела Книги */
+/*------------------------------- Стили для страницы works-catalog.html и не только ----------------------*/
 
 .main-header {
 	font-size: 35px;
@@ -731,6 +737,7 @@ main {
 	color: #d3d0ce;
 }
 
+/* --------------------------------- Стилизация фильтра ---------------------------------------- */
 
 .filter {
 	width: 900px;
@@ -754,10 +761,6 @@ main {
 	border: none;
 }
 
-.filter fieldset:nth-child(2n) {
-	
-}
-
 .filter legend {
 	font-family: 'Cormorant Infant', serif;
 	font-weight: bold;
@@ -772,160 +775,13 @@ main {
 	line-height: 18px;
 }
 
-.filter-checkbox:focus + label,
-.filter-checkbox:hover + label {
-	color: ;
-}
-
 .filter-checkbox:disabled + label {
 	color: #000000;
 
 	opacity: 0.5;
 }
 
-.filter__button/* ,
-.works__button */ {
-	position: relative;
-	z-index: 10;
-	padding: 10px 20px;	
-
-	font-family: 'Cormorant Infant', serif;
-	font-size: 20px;
-	font-weight: bold;
-	color: #1a172a;
-
-	background-color: transparent;
-	border: 2px solid #1a172a;
-	border-image: linear-gradient(180deg, #000000, #000000, #1a172a, #1a172a);
-	border-image-slice: 1;
-
-	cursor: pointer;
-}
-
-.filter__button::before/* ,
-.works__button::before */ {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-
-	width: 100%;
-	height: 0;
-	z-index: -1;
-
-	background: linear-gradient(180deg, rgba(253, 243, 13, .5), rgba(253, 243, 13, .5), rgba(26, 23, 42, .5), rgba(0, 0, 0, .8));
-	transition: .5s cubic-bezier(.165,.84,.44,1);
-}
-
-.filter__button:hover/* ,
-.works__button:hover */ {
-	color: #1a172a;
-}
-
-.filter__button:active {
-	color: #ffffff;
-}
-
-.filter__button:hover::before/* ,
-.works__button:hover::before */ {
-	bottom: 0;
-	top: auto;
-
-	height: 100%;
-}
-
-.catalog-item-header {
-	margin: 0;
-	margin-top: 50px;
-	margin-bottom: 25px;
-
-	font-family: 'Cormorant Infant', serif;
-	font-weight: bold;
-	font-size: 24px;
-}
-
-/* Модальные окна */
-.modal {
-	display: none;
-}
-
-.modal-login h3 {
-	font-family: 'Cormorant Infant', serif;
-	font-size: 25px;
-}
-
-.modal-form-login input[type="text"],
-.modal-form-login input[type="password"] {
-	font-size: 18px;
-	line-height: 24px;
-	color: #000000;
-
-	background-color: ;
-	border: 2px solid #000000;
-}
-
-.modal-form-login input:focus {
-	border-color: ;
-}
-
-.modal-form-login:hover,
-.modal-form-login:focus {
-	color: ;
-}
-
-.restore {
-	color: #000000;
-	text-decoration: underline;
-}
-
-.restore:hover,
-.restore:focus {
-	text-decoration: none;
-}
-
-@media (max-width: 1199px) {
-	.container {
-		width: 940px;
-		padding: 0 20px;
-	}
-}
-
-@media (max-width: 960px) {
-	.container {
-		width: 740px;
-		padding: 0 20px;
-	}
-	.user-navigation {
-		width: 340px;
-	}
-	.user-navigation a {
-	padding: 5px 8px; 
-	font-size: 16px;
-	}
-	.login-link {
-	margin-top: 15px;
-	}
-}
-
-@media (max-width: 767px) {
-	.container {
-		width: auto;
-	}
-	.header {
-	padding-top: 20px;
-	margin-bottom: 40px;
-	}
-	.header .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	}
-	.user-navigation {
-	align-items: center;
-	}
-}
-
-
+/*  ----------------------------- Стилизация чекбоксов ----------------------------------- */
 
 input[type='checkbox']{ 
 	height: 0; width: 0; 
@@ -969,9 +825,7 @@ input[type='checkbox'] + label:hover > span {
 	background: rgba(0, 0, 0, .1);
 } 
 
-input[type='checkbox']:focus + label > span{
-  background: #8d84bc;
-}
+
 
 input[type='checkbox']:checked + label > span{
   border: 2px solid #FFEB3B;
@@ -989,6 +843,152 @@ input[type='checkbox']:checked + label > span:before{
   animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
 
 }
+
+/*  ----------------------------- Конец стилизации чекбоксов ----------------------------------- */
+
+.filter__button {
+	position: relative;
+	z-index: 10;
+	padding: 10px 20px;	
+
+	font-family: 'Cormorant Infant', serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1a172a;
+
+	background-color: transparent;
+	border: 2px solid #1a172a;
+	border-image: linear-gradient(180deg, #000000, #000000, #1a172a, #1a172a);
+	border-image-slice: 1;
+
+	cursor: pointer;
+}
+
+.filter__button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 0;
+	z-index: -1;
+
+	background: linear-gradient(180deg, rgba(253, 243, 13, .5), rgba(253, 243, 13, .5), rgba(26, 23, 42, .5), rgba(0, 0, 0, .8));
+	transition: .5s cubic-bezier(.165,.84,.44,1);
+}
+
+.filter__button:hover {
+	color: #1a172a;
+}
+
+.filter__button:active {
+	color: #ffffff;
+}
+
+.filter__button:hover::before {
+	bottom: 0;
+	top: auto;
+
+	height: 100%;
+}
+
+.catalog-item-header {
+	margin: 0;
+	margin-top: 50px;
+	margin-bottom: 25px;
+
+	font-family: 'Cormorant Infant', serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+/*--------------------------------------- Модальные окна --------------------------------------------*/
+
+.modal {
+	display: block;
+	position: fixed;
+	top: 120px;
+	left: 50%;
+
+	width: 390px;
+	margin-left: -150px;
+	
+	color: #fdf30d;
+	background-color: #1a172a;
+}
+
+.modal__title {
+	margin: 0;	
+	margin-bottom: 10px;
+	font-size: 22px;
+
+	text-align: center;
+}
+
+.modal-login {
+	padding-top: 30px;
+}
+
+.modal-login h3 {
+	font-family: 'Cormorant Infant', serif;
+	font-size: 25px;
+}
+
+.modal-form-login p {
+	margin: 0;	
+}
+
+.modal-form-login input[type="text"],
+.modal-form-login input[type="password"] {
+	display: block;
+	box-sizing: border-box;
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 10px 15px;
+	padding-right: 40px;
+	font: inherit;
+	color: #000000;
+
+	/* background-color: #68E5F7; */
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+
+.login-password-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-password-info input[type='checkbox'] + label {
+	color: #fdf30d;
+}
+
+.login-password-info input[type='checkbox'] + label > span {
+	/* background-color: #fff; */
+	border-color: #fdf30d;
+}
+ 
+.login-password-info input[type='checkbox']:checked + label > span {
+  background: #ffffff;
+}
+
+.restore {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+	text-decoration: none;
+}
+
+.modal-close {
+	font-size: 0;
+}
+
+/* ------------------------------------------  Анимация ---------------------------------------- */
 
 @keyframes shrink-bounce{
   0%{
@@ -1031,34 +1031,44 @@ input[type='checkbox']:checked + label > span:before{
 	}
 }
 
-.transform-button {
-  	position: relative;
-	z-index: 2;
-	display: inline-block;
-
-	perspective: 500px;
-	transition: .3s;
+@media (max-width: 1199px) {
+	.container {
+		width: 940px;
+		padding: 0 20px;
+	}
 }
 
-.transform-button:before {
-  content: "";
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background: #1a172a;
-  transform-origin: right;
-  transition: .3s;
+@media (max-width: 960px) {
+	.container {
+		width: 740px;
+		padding: 0 20px;
+	}
+	.user-navigation {
+		width: 340px;
+	}
+	.user-navigation a {
+	padding: 5px 8px; 
+	font-size: 16px;
+	}
+	.login-link {
+	margin-top: 15px;
+	}
 }
 
-.transform-button:hover,
-.transform-button:focus {
-  color: #68E5F7;
- }
-
- .transform-button:hover:before {transform: rotateY(92deg);
- 	outline: none;}
+@media (max-width: 767px) {
+	.container {
+		width: auto;
+	}
+	.header {
+	padding-top: 20px;
+	margin-bottom: 40px;
+	}
+	.header .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.user-navigation {
+	align-items: center;
+	}
+}
