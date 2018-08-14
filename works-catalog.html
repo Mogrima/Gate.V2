@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Книги</title>
 	<!-- <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,700&amp;subset=cyrillic" rel="stylesheet"> --> <!-- для заголовков -->
+	<link rel="stylesheet" href="fonts/Cormorant Infant/CormorantInfant.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -251,7 +252,7 @@
 		<section class="modal modal-login">
 		<h2 class="visually-hidden">Здесь можно представиться</h2>
 		<p class="modal__title">Здравствуйте</p>
-			<form class="modal-form-login" action="#" method="get">
+			<form class="form-login" action="#" method="get">
 				<p>
 					<label for="modal-form-login-name" class="visually-hidden">Ваше имя...</label>
 					<input class="modal-form-login__name" id="modal-form-login-name" type="text" name="name" placeholder="Ваше имя...">
@@ -260,12 +261,14 @@
 					<label for="modal-form-login-pass" class="visually-hidden">Ваш пароль</label>
 					<input class="modal-form-login-input" id="modal-form-login-pass" type="password" name="password" placeholder="Ваш ключ...">
 				</p>
-				<p class="login-password-info">
-					<input class="filter-checkbox modal__checkbox" type="checkbox" name="login-checkbox" id="login-checkbox">
-					<label for="login-checkbox"><span></span>Запомните меня</label>
-					<a class="restore" href="#">Я забыл пароль!</a>
-				</p>
-				<button class="button" type="submit">Представиться</button>
+				<div class="login-password-info">
+					<!-- <div class="login__checobox-wrapper"> -->
+						<input class="filter-checkbox modal__checkbox" type="checkbox" name="login-checkbox" id="login-checkbox">
+						<label for="login-checkbox"><span></span>Запомните меня</label>
+					<!-- </div> -->
+					<a class="restore" href="#">Я забыл(а) пароль!</a>
+				</div>
+				<button class="works__button login__btn" type="submit">Представиться</button>
 			</form>
 		<button class="modal-close">Закрыть</button>
 	</section>
