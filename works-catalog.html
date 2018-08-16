@@ -52,9 +52,9 @@
 					<h2 class="visually-hidden">Фильтр книг</h2>
 					<form class="filter" action="#" method="get">
 					<div class="flex-fieldset">
-							<fieldset>
+							<fieldset class="filter__fieldset">
 							<legend>Сортировка:</legend>
-							<ul>
+							<ul class="filter-list">
 								<li>
 									<input class="filter-checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
 									<label for="popular-checkbox"><span></span>По популярности</label>
@@ -76,10 +76,10 @@
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset>
+						<fieldset class="filter__fieldset">
 							<legend>Формат:</legend>
-							<ul>
-								<li>
+							<ul class="filter-list">
+								<li class="filter-list">
 									<input class="filter-checkbox" type="checkbox" name="fiction" id="fiction-checkbox">
 									<label for="fiction-checkbox"><span></span>Художественная литература</label>
 								</li>
@@ -97,9 +97,9 @@
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset>
+						<fieldset class="filter__fieldset">
 							<legend>Размер:</legend>
-							<ul>
+							<ul class="filter-list">
 								<li>
 									<input class="filter-checkbox" type="checkbox" name="little" id="little-checkbox" checked>
 									<label for="little-checkbox"><span></span>Рассказы</label>
@@ -114,9 +114,9 @@
 								</li>
 							</ul>
 						</fieldset>
-						<fieldset>
+						<fieldset class="filter__fieldset">
 							<legend>Жанры:</legend>
-							<ul>
+							<ul class="filter-list">
 								<li>
 									<input class="filter-checkbox" type="checkbox" name="tale" id="tale-checkbox" checked>
 									<label for="tale-checkbox"><span></span>Сказка</label>
