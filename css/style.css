@@ -494,6 +494,11 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 20px;
 }
 
+.news__header {
+	display: flex;
+	justify-content: space-between;
+}
+
 .item-header__link {
 	font-family: "Times New Roman", serif;
 	font-size: 20px;
@@ -519,6 +524,7 @@ input[type="checkbox"].visually-hidden {
 
 .news-item time {
 	display: block;
+	margin: 20px 0;
 	font-style: italic;
 	font-size: 14px;
 	color: #000000ab;
