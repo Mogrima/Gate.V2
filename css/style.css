@@ -345,7 +345,8 @@ input[type="checkbox"].visually-hidden {
 	list-style: none;
 }
 
-.work-item {
+.work-item,
+.arts-item {
 	width: 264px;
 	margin-right: 20px;
 	text-align: center;
@@ -416,20 +417,22 @@ input[type="checkbox"].visually-hidden {
 	        transition-delay: .4s;
 }
 
-.works-item-image {
+.works-item-image,
+.arts-item-image {
 	margin: 0;
 }
 
-.works-item-image img {
+.works-item-image img,
+.arts-item-image img {
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 	border: 3px solid #f7f1f1;
 	border-radius: 4px;
 }
 
 .works-item-image img:hover,
-.works-item-image img:focus {
-	/* box-shadow: -2px 3px 15px 10px rgba(0,0,0,0.3); */
-
+.works-item-image img:focus,
+.arts-item-image img:hover,
+.arts-item-image img:focus {
 	animation-name: hoverWorks;
 	animation-duration: 0.6s;
 	animation-fill-mode: forwards;
@@ -459,27 +462,6 @@ input[type="checkbox"].visually-hidden {
 
 .arts-item:nth-child(3n) {
 	margin-right: 0;
-}
-
-.arts-item a {
-	color: #000000;
-}
-
-.arts-item a:hover,
-.arts-item a:focus {
-
-	text-decoration: underline;
-}
-
-.arts-item-image img {
-	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
-	border: 3px solid #f7f1f1;
-	border-radius: 4px;
-}
-
-.arts-item-image img:hover,
-.arts-item-image img:focus {
-	box-shadow: 3px 10px 44px 8px rgba(0,0,0,0.8);
 }
 
 /*------------------------------------------ Новости -------------------------------------------- */
@@ -769,7 +751,7 @@ input[type="checkbox"].visually-hidden {
 	justify-content: space-between;
 }
 
-.filter fieldset {
+.filter__fieldset {
 	width: auto;
 	margin: 0;
 	padding: 0;
@@ -784,7 +766,7 @@ input[type="checkbox"].visually-hidden {
 	font-size: 20px;
 }
 
-.filter ul {
+.filter-list {
 	margin: 0;
 	padding: 0;
 
@@ -866,6 +848,9 @@ input[type="checkbox"].visually-hidden {
 .filter__button {
 	position: relative;
 	z-index: 10;
+	display: block;
+	box-sizing: border-box;
+	width: 142px;
 	padding: 10px 20px;	
 
 	font-family: 'Cormorant Infant Rg', serif;
@@ -922,6 +907,40 @@ input[type="checkbox"].visually-hidden {
 
 .inner-page .catalog-item-header {
 	margin-top: 50px;
+}
+
+/* --------------------------------------- Стилизация gallery.html ----------------------------------- */
+.gallery__filter {
+	width: 830px;
+	margin: 0 auto;
+}
+
+.gallery-page .filters-name {
+ text-align: center;
+}
+
+.gallery-page .filter__fieldset {
+	margin-bottom: 50px;
+}
+
+.gallery__filter-wrapp {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -30px;
+}
+
+.gallery__filter-item {
+	margin-left: 30px;
+
+}
+
+.gallery-page .filter__button {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.works-catalog {
+	margin-bottom: 50px;
 }
 
 /*--------------------------------------- Модальные окна --------------------------------------------*/
