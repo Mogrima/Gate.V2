@@ -34,7 +34,6 @@ a {
 	text-decoration: none;
 }
 
-<<<<<<< HEAD
 a:focus, button:focus {
 	outline-color: #fdf30d;
 	outline-width: 2px;
@@ -97,6 +96,7 @@ input[type="checkbox"].visually-hidden {
 	font-family: "Times New Roman", serif;
 	font-size: 20px;
 	font-weight: bold;
+	color: #000000;
 }
 
 /* <!-- Подложка --> */
@@ -494,14 +494,16 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 20px;
 }
 
-.item-header a { /* <<<<<<<<<<<<<< Нужно добавить класс, так как этот класс может использоваться не только в новостях */
+.item-header__link {
 	font-family: "Times New Roman", serif;
 	font-size: 20px;
 	font-weight: bold;
+	color: #1a172a;
 }
 
-.news-item a {
-	color: #ffffff;
+.news__text {
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 .news-list__img {
@@ -511,13 +513,15 @@ input[type="checkbox"].visually-hidden {
 	border-radius: 4px;
 }
 
-.news-item time {
-	font-size: 14px;
-	color: #d4d2d6;
+.news-item {
+	margin-bottom: 20px;
 }
 
-.news-link:hover {
-	text-decoration: underline;
+.news-item time {
+	display: block;
+	font-style: italic;
+	font-size: 14px;
+	color: #000000ab;
 }
 
 .clearfix { 
