@@ -340,7 +340,7 @@ input[type="checkbox"].visually-hidden {
 
 	width: 835px;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 
 	list-style: none;
 }
@@ -451,6 +451,7 @@ input[type="checkbox"].visually-hidden {
 
 	width: 835px;
 	margin: 0 auto;
+	margin-bottom: 70px;
 
 	list-style: none;
 }
@@ -468,6 +469,7 @@ input[type="checkbox"].visually-hidden {
 .news-list {
 	width: 835px;
 	margin: 0 auto;
+	margin-bottom: 70px;
 
 	list-style: none;
 }
