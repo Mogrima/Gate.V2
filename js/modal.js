@@ -7,6 +7,7 @@
 	var login = popup.querySelector("[name=login]");
 	var password = popup.querySelector("[name=password]");
 	var storage = localStorage.getItem("login");
+	var overlay = document.querySelector(".overlay");
 
 	var regLink = document.querySelector(".registration-link");
 	var regPopup = document.querySelector(".modal-registration");
@@ -28,6 +29,7 @@
 	enterLink.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		popup.classList.add("modal-show");
+		overlay.classList.add("modal-show");
 		if (storage) {
 			login.value = storage;
 			password.focus();
@@ -39,6 +41,7 @@
 	enterClose.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		popup.classList.remove("modal-show");
+		overlay.classList.remove("modal-show");
 		popup.classList.remove("modal-error");
 	});
 
@@ -61,6 +64,7 @@
 
 			if (popup.classList.contains("modal-show")) {
 				popup.classList.remove("modal-show");
+				overlay.classList.remove("modal-show");
 				popup.classList.remove("modal-error");
 			}
 		}
@@ -69,12 +73,14 @@
 	regLink.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		regPopup.classList.add("modal-show");
+		overlay.classList.add("modal-show");
 		reglogin.focus();
 	});
 
 	regClose.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		regPopup.classList.remove("modal-show");
+		overlay.classList.remove("modal-show");
 		regPopup.classList.remove("modal-error");
 	});
 
@@ -84,6 +90,7 @@
 
 			if (regPopup.classList.contains("modal-show")) {
 				regPopup.classList.remove("modal-show");
+				overlay.classList.remove("modal-show");
 				regPopup.classList.remove("modal-error");
 			}
 		}
