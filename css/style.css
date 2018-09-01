@@ -1440,9 +1440,11 @@ input[type="checkbox"].visually-hidden {
 /* ---------------------------------------- Стилизация about.html --------------------------------------- */
 
 .about__text {
+	margin: 0;
+	margin: 15px auto;
 	padding: 0 57px;
 	text-align: justify;
-	 text-indent: 44px;
+	text-indent: 44px;
 }
 
 .about__photo {
@@ -1463,6 +1465,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .about__text--PS {
+	margin-bottom: 70px;
 	text-indent: 0px;
 }
 
