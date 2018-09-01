@@ -989,7 +989,10 @@ input[type="checkbox"].visually-hidden {
 }
 
 .form-login input[type="text"],
-.form-login input[type="password"] {
+.form-login input[type="password"],
+.feedback__name,
+.feedback__email,
+.feedback__massage {
 	display: block;
 	box-sizing: border-box;
 	width: 300px;
@@ -1407,4 +1410,132 @@ input[type="checkbox"].visually-hidden {
   color: white;
   opacity: 0.5;
   font-weight: bolder;
+}
+
+/* ---------------------------------------- Стилизация about.html --------------------------------------- */
+
+html {
+	height: 100%;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;
+}
+
+.about .header { flex: 0 0 auto; }
+.about .main { flex: 1 0 auto; 
+justify-content: center;
+align-self: center;}
+.about .main-footer { flex: 0 0 auto; }
+
+.about .substrate {
+	box-sizing: border-box;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.about .description,
+.about__content p {
+	padding: 0 20px;
+	text-align: justify;
+}
+
+.about__text {
+	padding: 0 57px;
+	text-align: justify;
+	 text-indent: 44px;
+}
+
+.about__text--right {
+	margin: 30px 0;
+	font-weight: bold;
+	color: #ac657e;
+	text-align: right;
+}
+
+.about__text--PS {
+	text-indent: 0px;
+}
+
+.about__link {
+	font-weight: bold;
+	color: #ac657e;
+	letter-spacing: 2px;
+}
+
+.about__link:hover {
+	color: #d04173;
+	text-decoration: underline;
+}
+
+.about__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0 57px;
+}
+
+.about__item {
+	width: 320px;
+	margin-bottom: 20px;
+}
+
+.about__item:nth-child(even) {
+	margin-left: auto;
+}
+
+.about__item:nth-child(odd) {
+	margin-left: 20px;
+}
+
+.about__features {
+	padding-left: 100px;
+}
+
+.index-columns {
+	display: flex;
+	justify-content: space-around;
+}
+
+.feedback, .about-social {
+	width: 370px;
+}
+
+.feedback__description {
+	margin-bottom: 25px;
+	text-align: justify;
+}
+
+.feedback__sign {
+	 display: block;
+	 width: 370px;
+	 margin: 0 auto;
+	 font-family: 'Benguiat Rus';
+	 font-size: 18px;
+}
+
+.feedback__name,
+.feedback__email,
+.feedback__massage {
+	width: 370px;
+	padding-right: 15px;
+}
+
+.feedback__massage {
+	height: 230px;
+}
+
+.feedback__button {
+	display: block;
+	box-sizing: border-box;
+	width: 180px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	border: none;
+	font-family: 'Benguiat Rus';
+	background: transparent;
+	cursor: pointer; 
 }
