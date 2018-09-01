@@ -126,9 +126,11 @@ input[type="checkbox"].visually-hidden {
 
 .substrate {
 	position: relative;
+
+	box-sizing: border-box;
 	width: 100%;
-	padding-top: 35px;
-	padding-bottom: 50px;
+	padding: 35px 30px 50px 30px;
+
 	background-color: #ffffff;
 	/* background-color: rgba(255, 255, 255, 0.6); */
 }
@@ -340,8 +342,8 @@ input[type="checkbox"].visually-hidden {
 .description {
 	order: 4;
 	margin: 24px 0;
-	padding: 0 50px;
-	text-align: center;
+	padding: 0 20px;
+	text-align: justify;
 }
 
 .main-header {
@@ -1436,18 +1438,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 /* ---------------------------------------- Стилизация about.html --------------------------------------- */
-
-.about .substrate {
-	box-sizing: border-box;
-	padding-right: 30px;
-	padding-left: 30px;
-}
-
-.about .description,
-.about__content p {
-	padding: 0 20px;
-	text-align: justify;
-}
 
 .about__text {
 	padding: 0 57px;
