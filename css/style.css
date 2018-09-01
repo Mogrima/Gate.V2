@@ -1445,6 +1445,16 @@ input[type="checkbox"].visually-hidden {
 	 text-indent: 44px;
 }
 
+.about__photo {
+	float: left;
+	margin: 10px;
+	margin-left: 59px;
+	margin-right: 30px;
+
+	border: 3px solid #1a172a;
+	border-radius: 5px;
+}
+
 .about__text--right {
 	margin: 30px 0;
 	font-weight: bold;
@@ -1467,14 +1477,14 @@ input[type="checkbox"].visually-hidden {
 	text-decoration: underline;
 }
 
-.about__list {
+/* .about__list {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0 57px;
-}
+} */
 
-.about__item {
+/* .about__item {
 	width: 320px;
 	margin-bottom: 20px;
 }
@@ -1489,15 +1499,24 @@ input[type="checkbox"].visually-hidden {
 
 .about__features {
 	padding-left: 100px;
-}
+} */
 
 .index-columns {
 	display: flex;
 	justify-content: space-around;
 }
 
+.index-columns--border {
+	border: 3px solid rgba(172, 101, 126, 0.4);
+	border-radius: 10px;
+}
+
 .feedback, .about-social {
 	width: 370px;
+}
+
+.feedback {
+	padding-bottom: 20px;
 }
 
 .feedback__description {
