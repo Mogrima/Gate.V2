@@ -1153,6 +1153,15 @@ input[type="checkbox"].visually-hidden {
 	width: 200px;
 }
 
+.popup__photo-1 {
+	display: none;
+	position: fixed;
+	z-index: 6;
+	top: 10%;
+	left: 50%;
+	margin-left: -250px;
+}
+
 .overlay {
 	display: none;
 	position: fixed;
@@ -1165,10 +1174,22 @@ input[type="checkbox"].visually-hidden {
 
 }
 
+.overlay--dark {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .modal-show {
 	display: block;
 	animation-name: fadeInDown;
 	animation-duration: 1s;
+}
+
+.modal-show--fadeIn {
+	display: block;
+	-webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 /* ------------------------------------------  Анимация ---------------------------------------- */
@@ -1284,6 +1305,34 @@ input[type="checkbox"].visually-hidden {
   animation-fill-mode: forwards;
 
 }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 
 @media (max-width: 1199px) {
 	.container {

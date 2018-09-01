@@ -8,6 +8,7 @@
 	var password = popup.querySelector("[name=password]");
 	var storage = localStorage.getItem("login");
 	var overlay = document.querySelector(".overlay");
+	var overlayDark = document.querySelector(".overlay--dark");
 
 	var regLink = document.querySelector(".registration-link");
 	var regPopup = document.querySelector(".modal-registration");
@@ -94,4 +95,38 @@
 				regPopup.classList.remove("modal-error");
 			}
 		}
+	});
+
+	var openLink = document.querySelector(".about__open-photo-1");
+	var photoPopup = document.querySelector(".popup__photo-1");
+	var photoClose = document.querySelector(".photo-close");
+
+
+	openLink.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		photoPopup.classList.add("modal-show--fadeIn");
+		overlayDark.classList.add("modal-show--fadeIn");
+	});
+
+	photoClose.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		photoPopup.classList.remove("modal-show--fadeIn");
+		overlayDark.classList.remove("modal-show--fadeIn");
+	});
+
+	window.addEventListener("keydown", function(evt) {
+		if (evt.keyCode === 27) {
+			evt.preventDefault();
+
+			if (photoPopup.classList.contains("modal-show--fadeIn")) {
+				photoPopup.classList.remove("modal-show--fadeIn");
+				overlayDark.classList.remove("modal-show--fadeIn");
+			}
+		}
+	});
+
+	overlayDark.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		photoPopup.classList.remove("modal-show--fadeIn");
+		overlayDark.classList.remove("modal-show--fadeIn");
 	});
