@@ -1645,7 +1645,7 @@ input[type="checkbox"].visually-hidden {
 .reviews__name::placeholder,
 .reviews__email::placeholder,
 .reviews__massage::placeholder {
-	color: #fdf30d;
+	color: rgba(253, 243, 13, 0.5);
 }
 
 .reviews__massage {
@@ -1663,7 +1663,7 @@ input[type="checkbox"].visually-hidden {
 	margin: 0;
 	margin-bottom: 10px;
 	background: #68E5F7;
-	background-color: rgba(26, 23, 42, 0.9);
+	background-color: rgba(26, 23, 42, 0.5);
 	color: #ffffff;
 	padding: 30px 30px 30px 90px;
 	position: relative;
