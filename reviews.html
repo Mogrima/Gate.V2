@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page">
+<body class="page reviews-page">
 	<div class="background-header"></div>
 		<header class="header">
 			<div class="container">
@@ -34,7 +34,7 @@
 <main class="main">
 	<div class="container">
 		<div class="substrate">
-			<div class="head">
+			<div class="head reviews-page__head">
 			<h1 class="section-header main-header">Отзывы</h1>
 			<ul class="breadcrumb">
 				<li class="breadcrumb__item"><a href="index.html.html">Новости</a></li>
@@ -48,6 +48,27 @@
 		</div>
 		<section class="reviews">
 			<h2 class="visually-hidden">Отзывы о нас</h2>
+			<form class="feedback-form reviews-form reviews__form" action="#" method="post">
+<div class="reviews-form__wrapper">
+					
+							<p class="form__input-wrapper">
+								<label for="feedback-name" class="feedback__sign reviews__sign">Назовитесь:</label>
+								<input class="feedback__name reviews__name" type="text" name="name" id="feedback-name" placeholder="имя..." required>
+							</p>
+				
+						
+							<p class="form__input-wrapper">
+								<label for="feedback-email" class="feedback__sign reviews__sign">Ваша почта:</label>
+								<input class="feedback__email reviews__email" type="email" name="email" id="feedback-email" placeholder="почтовый ящик..." required>
+							</p>
+						
+		</div>
+					<p class="form__input-wrapper">
+						<label for="reviews-massage" class="feedback__sign reviews__sign">Здесь вы можете оставить свой отзыв:</label>
+						<textarea class="feedback__massage reviews__massage" name="reviews" id="reviews-massage" placeholder="ваш отзыв..." required></textarea>
+					</p>
+					<button class="works__button feedback__button">Написать</button>
+				</form>
 			   <div class="reviews__list">
             <blockquote class="reviews__item">
               <div class="news__header">
