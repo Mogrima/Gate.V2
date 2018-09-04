@@ -1615,6 +1615,10 @@ input[type="checkbox"].visually-hidden {
 .reviews-form {
 	width: 760px;
 	margin: 0 auto;
+	padding: 60px;
+	padding-bottom: 35px;
+	border: 3px solid rgba(26, 23, 42, 0.4);
+	border-radius: 10px;
 }
 
 .reviews__form {
@@ -1639,19 +1643,20 @@ input[type="checkbox"].visually-hidden {
 .reviews__name,
 .reviews__email {
 	width: 365px;
-	background-color: rgba(26, 23, 42, 0.9);	
+	/* background-color: rgba(26, 23, 42, 0.9); */	
 }
 
 .reviews__name::placeholder,
 .reviews__email::placeholder,
 .reviews__massage::placeholder {
-	color: rgba(253, 243, 13, 0.5);
+	/* color: rgba(253, 243, 13, 0.5); */
 }
 
 .reviews__massage {
 	width: 760px;
 	height: 160px;
-	background-color: rgba(26, 23, 42, 0.9);
+	margin-bottom: 30px;
+	/* background-color: rgba(26, 23, 42, 0.9); */
 }
 
 .reviews__list {
@@ -1663,10 +1668,12 @@ input[type="checkbox"].visually-hidden {
 	margin: 0;
 	margin-bottom: 10px;
 	background: #68E5F7;
-	background-color: rgba(26, 23, 42, 0.9);
-	color: #ffffff;
+	background-color: rgba(253, 243, 13, .2);
+	color: #1a172a;
 	padding: 30px 30px 30px 90px;
 	position: relative;
+	border: 2px solid rgba(26, 23, 42, 0.7);
+	border-radius: 10px;
 }
 
 .reviews__item:before {
