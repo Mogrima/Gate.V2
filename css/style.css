@@ -727,6 +727,7 @@ input[type="checkbox"].visually-hidden {
 .breadcrumb {
 	order: 3;
 	display: flex;
+	position: relative;
 	margin: 0;
 	padding: 0;
 
@@ -737,15 +738,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .breadcrumb__item {
-	position: relative;
+	/* position: relative; */
+	/* box-sizing: border-box;
+	width: 80px; */
 	margin-left: 25px;
 }
 
 .breadcrumb__item::before {
 	content: "";
 	position: absolute;
-	top: 30%;
-	left: -35%;
+	top: 7px;
+	left: 100px;
 	width: 8px;
 	height: 8px;
 	background-color: #1a172a;
