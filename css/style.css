@@ -1496,6 +1496,14 @@ input[type="checkbox"].visually-hidden {
 	text-indent: 44px;
 }
 
+/* .about__text--first {
+	margin-top: 24px;
+} */
+
+.about__text:nth-child(2) {
+	margin-top: 24px;
+}
+
 .about__photo {
 	float: left;
 	margin: 10px;
