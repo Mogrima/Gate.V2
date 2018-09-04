@@ -24,6 +24,7 @@ body {
 	line-height: 24px;
 	color: #000000;
 
+
 	background-color: #1a172a;
 }
 
@@ -133,6 +134,15 @@ input[type="checkbox"].visually-hidden {
 
 	background-color: #ffffff;
 	/* background-color: rgba(255, 255, 255, 0.6); */
+}
+
+.link {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.link:hover {
+	text-decoration: underline;
 }
 
 /* -------------------------------------- Header ----------------------------------------- */
@@ -344,6 +354,7 @@ input[type="checkbox"].visually-hidden {
 	margin: 24px 0;
 	padding: 0 20px;
 	text-align: justify;
+	text-indent: 44px;
 }
 
 .main-header {
@@ -1529,15 +1540,12 @@ input[type="checkbox"].visually-hidden {
 	text-indent: 0px;
 }
 
-.about__link {
-	font-weight: bold;
+.link--about {
 	color: #ac657e;
-	letter-spacing: 2px;
 }
 
-.about__link:hover {
+.link--about:hover {
 	color: #d04173;
-	text-decoration: underline;
 }
 
 /* .about__list {
@@ -1625,6 +1633,18 @@ input[type="checkbox"].visually-hidden {
 
 .reviews-page__head {
 	margin-bottom: 70px;	
+}
+
+.attention {
+	margin: 0;
+	padding: 10px;
+	background-color: rgba(255, 0, 0, 0.2);
+	border: 1px solid #dc656a;
+	border-radius: 20px;
+}
+
+.reviews-page__attention {
+	order: 4;
 }
 
 .reviews-form {
@@ -1753,3 +1773,10 @@ bottom: 20px;
 	font-weight: 300;
 }
 
+.link--reviews {
+	color: #b26cc8;
+}
+
+.link--reviews:hover {
+	color: #c24ee6;
+}
