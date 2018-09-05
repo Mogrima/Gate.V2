@@ -1892,22 +1892,18 @@ bottom: 20px;
   user-select: none;
 }
 
-.tab__title, .tab__subtitle {
-  color: #ff6873;
-}
-
 .tab__title {
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 42px;
   letter-spacing: 3px;
-  font-weight: 100;
+  font-weight: normal;
+  color: #1a172a;
 }
 
 .tab__subtitle {
-  font-size: 26px;
+  font-family: 'Cormorant Infant Rg', serif;
+  font-size: 24px;
   line-height: 34px;
   font-weight: 300;
+  color: rgba(26, 23, 42, 0.8);
   letter-spacing: 1px;
   display: block;
   background-color: #fefffa;
@@ -1941,7 +1937,7 @@ bottom: 20px;
   margin: 0;
   padding-bottom: 4px;
   padding-top: 18px;
-  border-top: 1px dotted #dce7eb;
+  border-top: 1px solid rgba(162, 143, 189, 0.5);
 }
 .tab__item:nth-of-type(1) {
   animation-delay: 0.5s;
@@ -1964,7 +1960,7 @@ bottom: 20px;
 .tab__arrow:before, .tab__arrow:after {
   content: "";
   position: absolute;
-  background-color: #ff6873;
+  background-color: #1a172a;
   width: 3px;
   height: 9px;
 }
