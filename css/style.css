@@ -370,6 +370,131 @@ input[type="checkbox"].visually-hidden {
 }
 /* -------------------------------- Раздел произведения --------------------------------------------- */
 
+/* details {
+	order: 4;
+	transition: min-height .15s linear;
+  -webkit-transition: min-height .15s linear;
+}
+
+summary {
+	width: 630px;
+	 padding-left: 1.5em;
+	 transition: color .12s;
+    -webkit-transition: color .12s;
+	outline: none;
+}
+
+summary::-webkit-details-marker { 
+	display: none;
+}
+
+summary::-moz-list-bullet { 
+	list-style-type: none;
+} */
+
+details {
+	order: 4;
+  position: relative;
+  margin-left: 35px;
+  text-align: justify;
+
+}
+
+summary {
+	color: #95b97b;
+	outline: none;
+	cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+
+summary:hover {
+  color: #b3e668;
+}
+
+summary span:hover {
+	border-bottom: 1px solid #b3e668;
+}
+
+
+details::before {
+  content: "";
+  top: 4px;
+  left: -20px;
+  position: absolute;
+  background: url("../img/works-catalog/arrowx.svg") no-repeat 50% 50% / 1em 1em;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+}
+details ~ * {
+/*   transform: scaleY(0);
+-webkit-transform: scaleY(0);
+-moz-transform: scaleY(0);
+transition: transform 0.15s linear;
+-webkit-transition: transform 0.15s linear;
+transform-origin: top;
+-webkit-transform-origin: top;
+-moz-transform-origin: top;
+overflow: hidden;
+padding-left: 1.5em; */
+}
+/* details[open] {
+  min-height: 2em;
+} */
+/* details[open] summary {
+  color: #d06c6c;
+} */
+/* details[open] summary ~ * {
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+} */
+details[open]::before {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+.spoiler__wrapper {
+	margin-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 2px solid #95b97b;
+	border-radius: 10px;
+}
+
+.spoiler__text {
+	margin: 15px 0;
+}
+
+.spoiler__text:first-child {
+	margin-top: 10px;
+}
+
+.description__welcome {
+	order: 5;
+	text-indent: 0;
+}
+
+
+.link--works-catalog {
+	color: #95b97b;
+}
+
+.link--works-catalog:hover {
+	color: #b3e668;
+	cursor: pointer;
+}
+
 .works-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -784,6 +909,9 @@ input[type="checkbox"].visually-hidden {
 }
 
 /* --------------------------------- Стилизация фильтра ---------------------------------------- */
+.filters__note {
+	color: #000000ab;
+}
 
 .filter {
 	width: 900px;
