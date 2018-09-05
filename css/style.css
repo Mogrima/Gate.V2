@@ -357,6 +357,14 @@ input[type="checkbox"].visually-hidden {
 	text-indent: 44px;
 }
 
+.description__text {
+	margin: 15px 0px;
+}
+
+.description__text:first-child {
+	margin-top: 0;
+}
+
 .main-header {
 	margin-top: 25px;
 }
