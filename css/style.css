@@ -1615,9 +1615,16 @@ input[type="checkbox"].visually-hidden {
 	margin: 10px;
 	margin-left: 59px;
 	margin-right: 30px;
+}
 
+.about__photo-image {
 	border: 3px solid #1a172a;
 	border-radius: 5px;
+}
+
+.about__caption {
+	font-style: italic;
+	color: #000000ab;
 }
 
 .about__text--right {
