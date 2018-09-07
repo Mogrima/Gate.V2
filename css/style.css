@@ -80,7 +80,7 @@ input[type="checkbox"].visually-hidden {
 	flex: 0 0 auto;
 }
 
-.page .main { 
+.page .page-main { 
 	flex: 1 0 auto; 
 	justify-content: center;
 	align-self: center;
@@ -365,16 +365,8 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 0;
 }
 
-.main-header {
-	margin-top: 25px;
-}
-
-.section-header span {
+.page-main__label {
 	color: #4b2f69;
-}
-
-.main-title {
- 	font-size: 30px;
 }
 /* -------------------------------- Раздел произведения --------------------------------------------- */
 
@@ -820,10 +812,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 /*------------------------------- Стили для страницы works-catalog.html и не только ----------------------*/
-
-.main-header {
-	font-size: 35px;
-}
 
 .breadcrumb {
 	order: 3;
@@ -1985,4 +1973,13 @@ bottom: 20px;
     transform-origin: top center;
     transform: rotateX(0deg);
   }
+}
+
+.page-main__title {
+	order: 2;
+	margin: 25px 0;
+	font-family: 'Cormorant Infant Rg', serif;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
 }
