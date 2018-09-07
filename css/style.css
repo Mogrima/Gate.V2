@@ -349,7 +349,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .page-description {
-	order: 4;
 	padding: 0 20px;
 }
 
@@ -365,7 +364,6 @@ input[type="checkbox"].visually-hidden {
 /* -------------------------------- Раздел произведения --------------------------------------------- */
 
 .spoiler {
-	order: 6;
   position: relative;
   margin-left: 35px;
   margin-bottom: 20px;
@@ -432,7 +430,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .description__welcome {
-	order: 5;
 	text-indent: 0;
 }
 
@@ -808,7 +805,6 @@ input[type="checkbox"].visually-hidden {
 /*------------------------------- Стили для страницы works-catalog.html и не только ----------------------*/
 
 .breadcrumb {
-	order: 3;
 	display: flex;
 	position: relative;
 	margin: 0;
@@ -1429,7 +1425,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-block {
-  order: 1;
   margin-left: auto;
   position: relative;
 
@@ -1689,7 +1684,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .reviews-page__attention {
-	order: 4;
 }
 
 .reviews-form {
@@ -1970,7 +1964,6 @@ bottom: 20px;
 }
 
 .page-main__title {
-	order: 2;
 	margin: 25px 0;
 	font-family: 'Cormorant Infant Rg', serif;
 	font-size: 32px;
