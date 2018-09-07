@@ -1446,49 +1446,6 @@ input[type="checkbox"].visually-hidden {
   animation-fill-mode: forwards;
 }
 
-
-@media (max-width: 1199px) {
-	.container {
-		width: 940px;
-		padding: 0 20px;
-	}
-}
-
-@media (max-width: 960px) {
-	.container {
-		width: 740px;
-		padding: 0 20px;
-	}
-	.user-navigation {
-		width: 340px;
-	}
-	.user-navigation a {
-	padding: 5px 8px; 
-	font-size: 16px;
-	}
-	.login-link {
-	margin-top: 15px;
-	}
-}
-
-@media (max-width: 767px) {
-	.container {
-		width: auto;
-	}
-	.header {
-	padding-top: 20px;
-	margin-bottom: 40px;
-	}
-	.header .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	}
-	.user-navigation {
-	align-items: center;
-	}
-}
-
 .search-wrapper {
   order: 1;
   margin-left: auto;
