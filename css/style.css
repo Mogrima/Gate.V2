@@ -268,13 +268,13 @@ input[type="checkbox"].visually-hidden {
 	margin-right: 0;
 }
 
-.page-navigation__list a {
+.page-navigation__link {
 	display: block;
 	padding: 10px 15px;
 	color: #000000;
 }
 
-.page-navigation__item-current a {
+.page-navigation__link--current {
 	color: #ffffff;
 }
 
