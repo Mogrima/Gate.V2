@@ -379,9 +379,10 @@ input[type="checkbox"].visually-hidden {
 /* -------------------------------- Раздел произведения --------------------------------------------- */
 
 .spoiler {
-	order: 4;
+	order: 6;
   position: relative;
   margin-left: 35px;
+  margin-bottom: 20px;
   text-align: justify;
 
 }
@@ -873,6 +874,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 /* --------------------------------- Стилизация фильтра ---------------------------------------- */
+
+.filters__title {
+	font-size: 20px;
+}
+
+
 .filters__note {
 	color: #000000ab;
 }
@@ -1901,7 +1908,6 @@ bottom: 20px;
 
 .tab__title {
   letter-spacing: 3px;
-  font-weight: normal;
   color: #1a172a;
 }
 
