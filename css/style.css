@@ -97,7 +97,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .user-navigation__list, 
-.main-navigation-list {
+.page-navigation__list {
 	list-style: none;
 }
 
@@ -236,7 +236,7 @@ input[type="checkbox"].visually-hidden {
 
 /* ------------------------------------------ Главная навигация --------------------------------------- */
 
-.main-navigation {
+.page-navigation {
 	width: 980px;
 	margin: 0 auto;
 	font-family: 'Benguiat Rus', Garamond, serif;
@@ -246,7 +246,7 @@ input[type="checkbox"].visually-hidden {
 	color: #ffffff;
 }
 
-.main-navigation-list {
+.page-navigation__list {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -256,7 +256,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 0;
 }
 
-.main-navigation-item {
+.page-navigation__item {
 	width: 120px;
 	margin-bottom: 0px;
 	margin-right: 50px;
@@ -264,81 +264,81 @@ input[type="checkbox"].visually-hidden {
 	
 }
 
-.main-navigation-item:last-child {
+.page-navigation__item:last-child {
 	margin-right: 0;
 }
 
-.main-navigation-list a {
+.page-navigation__list a {
 	display: block;
 	padding: 10px 15px;
 	color: #000000;
 }
 
-.main-navigation-item-current a {
+.page-navigation__item-current a {
 	color: #ffffff;
 }
 
 /* Градиент меню */
 
-.main-navigation-item {
+.page-navigation__item {
 	background: linear-gradient(45deg, #c2edb0, #97d1b3, #77bab4);
 }
 
-.main-navigation-item:nth-child(2) {
+.page-navigation__item:nth-child(2) {
 	background: linear-gradient(45deg, #daec92, #aecc82, #95b97b);
 }
 
-.main-navigation-item:nth-child(3) {
+.page-navigation__item:nth-child(3) {
 	background: linear-gradient(45deg, #eada8b, #c9b383, #b49a7b);
 }
 
-.main-navigation-item:nth-child(4) {
+.page-navigation__item:nth-child(4) {
 	background: linear-gradient(45deg, #e6b68e, #c08184, #ac657e);
 }
 
-.main-navigation-item:nth-child(5) {
+.page-navigation__item:nth-child(5) {
 	background: linear-gradient(45deg, #f8c6c5, #cb8cc7, #b26cc8);
 }
 
-.main-navigation-item:nth-child(6) {
+.page-navigation__item:nth-child(6) {
 	background: linear-gradient(45deg, #d4c1c2, #a28fbd, #7964b9);
 }
 
 /* Градиент меню активное состояние*/
 
-.main-navigation-item:hover,
-.main-navigation-item:focus,
-.main-navigation-item:active {
+.page-navigation__item:hover,
+.page-navigation__item:focus,
+.page-navigation__item:active {
 	background: linear-gradient(45deg, #bcfca1, #81e7b2, #58d9cd);
 }
 
-.main-navigation-item:nth-child(2):hover,
-.main-navigation-item:nth-child(2):focus,
-.main-navigation-item:nth-child(2):active {
+.page-navigation__item:nth-child(2):hover,
+.page-navigation__item:nth-child(2):focus,
+.page-navigation__item:nth-child(2):active {
 	background: linear-gradient(45deg, #e5ff7f, #b3e668, #b3e668);
 }
 
-.main-navigation-item:nth-child(3):hover,
-.main-navigation-item:nth-child(3):focus,
-.main-navigation-item:nth-child(3):active {
+.page-navigation__item:nth-child(3):hover,
+.page-navigation__item:nth-child(3):focus,
+.page-navigation__item:nth-child(3):active {
 	background: linear-gradient(45deg, #ffe876, #e4bd68, #d39d5c);
 }
 
-.main-navigation-item:nth-child(4):hover,
-.main-navigation-item:nth-child(4):focus,
-.main-navigation-item:nth-child(4):active {
+.page-navigation__item:nth-child(4):hover,
+.page-navigation__item:nth-child(4):focus,
+.page-navigation__item:nth-child(4):active {
 	background: linear-gradient(45deg, #fbb479, #dc656a, #d04173);
 }
 
-.main-navigation-item:nth-child(5):hover,
-.main-navigation-item:nth-child(5):focus,
-.main-navigation-item:nth-child(5):active {
+.page-navigation__item:nth-child(5):hover,
+.page-navigation__item:nth-child(5):focus,
+.page-navigation__item:nth-child(5):active {
 	background: linear-gradient(45deg, #ffbfbe, #e473dd, #c24ee6);
 }
 
-.main-navigation-item:nth-child(6):hover,
-.main-navigation-item:nth-child(6):focus,
-.main-navigation-item:nth-child(6):active {
+.page-navigation__item:nth-child(6):hover,
+.page-navigation__item:nth-child(6):focus,
+.page-navigation__item:nth-child(6):active {
 	background: linear-gradient(45deg, #e4b1b4, #9d74d8, #6842db);
 }
 
