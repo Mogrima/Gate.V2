@@ -348,20 +348,15 @@ input[type="checkbox"].visually-hidden {
 	width: 100%;
 }
 
-.description {
+.page-description {
 	order: 4;
-	margin: 24px 0;
 	padding: 0 20px;
+}
+
+.page-description__text {
+	margin: 15px 0px;
 	text-align: justify;
 	text-indent: 44px;
-}
-
-.description__text {
-	margin: 15px 0px;
-}
-
-.description__text:first-child {
-	margin-top: 0;
 }
 
 .page-main__label {
