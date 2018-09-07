@@ -349,11 +349,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .page-description {
-	padding: 0 20px;
-}
-
-.page-description__text {
 	margin: 15px 0px;
+	padding: 0 20px;
 	text-align: justify;
 	text-indent: 44px;
 }
