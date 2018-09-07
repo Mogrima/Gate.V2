@@ -17,17 +17,21 @@
 </head>
 <body class="page inner-page gallery-page">
 	<div class="background-header"></div>
-	<header class="header">
-		<div class="container">
-			<div class="logo">
-				<a href="index.html.html"><img src="img/Logo.png" width="164" height="54" alt="Логотип Врата"></a>
+	<header class="page-header">
+			<div class="page-header__wrapper container">
+				<a class="page-header__logo logo"><img src="img/Logo.png" width="164" height="54" alt="Логотип Врата"></a>
+				<nav class="page-header__user-block">
+					<ul class="user-navigation__list">
+						<li class="user-navigation__item">
+							<a class="user-navigation__link registration-link" href="registration.html">Оформить читательский билет</a>
+						</li>
+						<li class="user-navigation__item--bottom">
+							<a class="user-navigation__link enter-link" href="#">Представиться</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<ul class="user-navigation">
-				<li class="registration-link"><a class="user-navigation__link registration-link" href="registration.html">Оформить читательский билет</a></li>
-				<li class="login-link"><a class="user-navigation__link enter-link" href="#">Представиться</a></li>
-			</ul>
-		</div>
-	</header>
+		</header>
 	<nav class="main-navigation">
 		<ul class="main-navigation-list">
 			<li class="main-navigation-item"><a href="index.html.html">Новости</a></li>
