@@ -107,7 +107,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .section-header {
-	order: 2;
 	margin: 0;
 	margin-top: 50px;
 	margin-bottom: 25px;
@@ -1434,13 +1433,13 @@ input[type="checkbox"].visually-hidden {
   animation-fill-mode: forwards;
 }
 
-.search-wrapper {
+.search-block {
   order: 1;
   margin-left: auto;
   position: relative;
 
 }
-.search-wrapper .search {
+.search-block__icon {
   position: absolute;
   margin: auto;
   top: 0;
@@ -1455,10 +1454,10 @@ input[type="checkbox"].visually-hidden {
   z-index: 4;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
 }
-.search-wrapper .search:hover {
+.search-block__icon:hover {
   cursor: pointer;
 }
-.search-wrapper .search::before {
+.search-block__icon::before {
   content: "";
   position: absolute;
   margin: auto;
@@ -1472,7 +1471,7 @@ input[type="checkbox"].visually-hidden {
   transform: rotate(45deg);
   transition: all .5s;
 }
-.search-wrapper .search::after {
+.search-block__icon::after {
   content: "";
   position: absolute;
   margin: auto;
@@ -1486,7 +1485,7 @@ input[type="checkbox"].visually-hidden {
   border: 2px solid white;
   transition: all .5s;
 }
-.search-input {
+.search-block__input {
   font-family: 'Benguiat Rus';
   position: relative;
   margin: auto;
@@ -1510,25 +1509,25 @@ input[type="checkbox"].visually-hidden {
   font-weight: bolder;
   letter-spacing: 0.1em;
 }
-.search-input:hover {
+.search-block__input:hover {
   cursor: pointer;
 }
-.search-input:focus {
+.search-block__input:focus {
   width: 200px;
   opacity: 1;
   cursor: text;
 }
-.search-input:focus ~ .search {
+.search-block__input:focus ~ .search-block__icon {
   right: -250px;
   background: #fdf30d;
   z-index: 6;
 }
-.search-input:focus ~ .search::before {
+.search-block__input:focus ~ .search-block__icon::before {
   top: 0;
   left: 0;
   width: 25px;
 }
-.search-input:focus ~ .search::after {
+.search-block__input:focus ~ .search-block__icon::after {
   top: 0;
   left: 0;
   width: 25px;
@@ -1538,7 +1537,7 @@ input[type="checkbox"].visually-hidden {
   border-radius: 0%;
   transform: rotate(-45deg);
 }
-.search-input::placeholder {
+.search-block__input::placeholder {
   color: white;
   opacity: 0.5;
   font-weight: bolder;
