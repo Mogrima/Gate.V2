@@ -76,7 +76,7 @@ input[type="checkbox"].visually-hidden {
 	height: 100%;
 }
 
-.page .header { 
+.page .page-header { 
 	flex: 0 0 auto;
 }
 
@@ -96,7 +96,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 0 50px;
 }
 
-.user-navigation, 
+.user-navigation__list, 
 .main-navigation-list {
 	list-style: none;
 }
@@ -157,7 +157,7 @@ input[type="checkbox"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.header {
+.page-header {
 	width: 100%;
 	margin-bottom: 130px;
 	padding-top: 30px;
@@ -165,7 +165,7 @@ input[type="checkbox"].visually-hidden {
 	background-size: cover;
 }
 
-.header .container {
+.page-header .container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -175,7 +175,7 @@ input[type="checkbox"].visually-hidden {
 	width: 164px;
 }
 
-.user-navigation {
+.user-navigation__list {
 	display: flex;
 	flex-direction: column;
 	
@@ -185,7 +185,7 @@ input[type="checkbox"].visually-hidden {
 	text-align: right;
 }
 
-.user-navigation a {
+.user-navigation__list a {
 	padding: 10px 15px;
 
 	font-size: 20px;
@@ -196,7 +196,7 @@ input[type="checkbox"].visually-hidden {
 	border-radius: 6px;
 }
 
-.login-link {
+.user-navigation__item--bottom {
 	margin-top: 30px;
 }
 
