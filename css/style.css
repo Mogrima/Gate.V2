@@ -439,7 +439,7 @@ input[type="checkbox"].visually-hidden {
 	cursor: pointer;
 }
 
-.works-list {
+.works__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 
@@ -450,7 +450,7 @@ input[type="checkbox"].visually-hidden {
 	list-style: none;
 }
 
-.work-item,
+.works__item,
 .arts-item {
 	width: 264px;
 	margin: 0;
@@ -458,11 +458,11 @@ input[type="checkbox"].visually-hidden {
 	text-align: center;
 }
 
-.work-item:nth-child(3n) {
+.works__item:nth-child(3n) {
 	margin-right: 0;
 }
 
-.works__button {
+.button {
 	position: relative;
 	box-sizing: border-box;
 	padding: 10px 20px;
@@ -475,14 +475,14 @@ input[type="checkbox"].visually-hidden {
 	        user-select: none;
 }
 
-.works__button:hover {
+.button:hover {
 	color: #fdf30d;
 	-webkit-transition-delay: .6s;
 	        transition-delay: .6s;
 	        z-index: 20;
 }
 
-.works__button:before, .works__button:after {
+.button:before, .button:after {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;	
 	content: '';
@@ -495,48 +495,43 @@ input[type="checkbox"].visually-hidden {
 	transition: inherit;	
 }
 
-.works__button:before {
+.button:before {
 	top: 0;	
 	border: 1px solid #1a172a;
 	border-top: 0;
 	border-bottom: 0;
 }
 
-.works__button:after {
+.button:after {
 	bottom: 0;
 	height: 0;
 }
 
-.works__button:hover:before,
-.works__button:hover:after {
+.button:hover:before,
+.button:hover:after {
 	height: 100%;
 }
 
-.works__button:hover::before {
+.button:hover::before {
 	-webkit-transition-delay: 0s;
 	        transition-delay: 0s;
 }
 
-.works__button:hover::after {
+.button:hover::after {
 	background: #1a172a;
 	-webkit-transition-delay: .4s;
 	        transition-delay: .4s;
 }
 
-.works-item-image,
-.arts-item-image {
-	/* margin: 0; */
-}
-
-.works-item-image img,
+.works__image,
 .arts-item-image img {
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 	border: 3px solid #f7f1f1;
 	border-radius: 4px;
 }
 
-.works-item-image img:hover,
-.works-item-image img:focus,
+.works__image:hover,
+.works__image:focus,
 .arts-item-image img:hover,
 .arts-item-image img:focus {
 	animation-name: hoverWorks;
@@ -544,7 +539,7 @@ input[type="checkbox"].visually-hidden {
 	animation-fill-mode: forwards;
 }
 
-.work__description {
+.works__description {
 	margin: 24px 0;
 	text-align: justify;
 }
@@ -1016,7 +1011,7 @@ input[type="checkbox"].visually-hidden {
 	height: 100%;
 }
 
-.catalog-item-header {
+.works__title {
 	margin: 0;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -1026,7 +1021,7 @@ input[type="checkbox"].visually-hidden {
 	font-size: 24px;
 }
 
-.inner-page .catalog-item-header {
+.inner-page .works__title {
 	margin-top: 50px;
 }
 
@@ -1960,6 +1955,7 @@ bottom: 20px;
   }
 }
 
+/* Для самого главного заголовка страницы, для h1 */
 .page-main__title {
 	margin: 25px 0;
 	font-family: 'Cormorant Infant Rg', serif;
