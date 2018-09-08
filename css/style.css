@@ -360,10 +360,9 @@ input[type="checkbox"].visually-hidden {
 }
 /* -------------------------------- Раздел произведения --------------------------------------------- */
 
-.spoiler {
+.page-description__spoiler {
   position: relative;
   margin-left: 35px;
-  margin-bottom: 20px;
   text-align: justify;
 
 }
@@ -426,7 +425,7 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 10px;
 }
 
-.description__welcome {
+.page-description__welcome {
 	text-indent: 0;
 }
 
