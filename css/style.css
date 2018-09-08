@@ -425,7 +425,7 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 10px;
 }
 
-.page-description__welcome {
+.page-description--welcome {
 	text-indent: 0;
 }
 
