@@ -1417,6 +1417,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-block {
+  order: -1;
   margin-left: auto;
   position: relative;
 
