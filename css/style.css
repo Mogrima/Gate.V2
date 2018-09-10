@@ -86,7 +86,7 @@ input[type="checkbox"].visually-hidden {
 	align-self: center;
 }
 
-.page .main-footer {
+.page .page-footer {
 	flex: 0 0 auto;
 }
 
@@ -696,7 +696,7 @@ input[type="checkbox"].visually-hidden {
 
 /*----------------------------------------------- Footer ---------------------------------------- */
 
-.main-footer {
+.page-footer {
 	display: flex;
 	justify-content: space-between;
 
@@ -705,7 +705,7 @@ input[type="checkbox"].visually-hidden {
 	padding-top: 50px;
 	color: #fdf30d;
 }
-.main-footer a {
+.page-footer__link {
 	color: #fdf30d;
 }
 
@@ -717,41 +717,44 @@ input[type="checkbox"].visually-hidden {
 	line-height: 27px;
 }
 
-.footer-navigation-list {
+.footer-navigation__list {
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 }
 
-.footer-navigation-list a {
+.footer-navigation__link {
 	color: rgba(253, 243, 13, .4);
 }
 
-.footer-navigation-list a:hover,
-.footer-navigation-list a:focus
+.footer-navigation__link:hover,
+.footer-navigation__link:focus
  {
 	color: rgb(253, 243, 13);
 }
 
-.footer-navigation-current a, 
-.footer-navigation-list a:active {
+
+
+.footer-navigation__link--current,
+.footer-navigation__link--current:hover, 
+.footer-navigation__link:active {
 	color: #ffffff;
 }
 
-.footer-copyright {
+.copyright {
 	width: 260px;	
 	margin: 0;	
 	text-align: center;
 }
 
-.footer-copyright b,
-.footer-social b {
+.copyright__developers,
+.footer-social__title {
 	color: rgba(255, 255, 255, .4);
 	letter-spacing: 2px;
 }
 
-.footer-copyright span {
+.copyright__reserved {
 	letter-spacing: 2px;
 }
 
@@ -765,7 +768,7 @@ input[type="checkbox"].visually-hidden {
 	margin-bottom: 24px;
 }
 
-.social-list {
+.footer-social__list {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -776,19 +779,19 @@ input[type="checkbox"].visually-hidden {
 	list-style: none;
 }
 
-.social-list path {
+.footer-social__icon-color {
 	fill: rgba(253, 243, 13, .4);
 }
 
-.social-list path:hover {
+.footer-social__icon-color:hover {
 	fill: rgb(253, 243, 13);
 }
 
-.social-list__item {
+.footer-social__item {
 	margin-right: 20px;
 }
 
-.social-list__item:last-child {
+.footer-social__item:last-child {
 	margin-right: 0px;
 }
 
