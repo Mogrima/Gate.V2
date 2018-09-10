@@ -1529,7 +1529,7 @@ input[type="checkbox"].visually-hidden {
 
 /* ---------------------------------------- Стилизация about.html --------------------------------------- */
 
-.about__text {
+.about-content__text {
 	margin: 0;
 	margin: 15px auto;
 	padding: 0 57px;
@@ -1541,35 +1541,35 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 24px;
 } */
 
-.about__text:nth-child(2) {
+.about-content:nth-child(2) {
 	margin-top: 24px;
 }
 
-.about__photo {
+.about-content__photo {
 	float: left;
 	margin: 10px;
 	margin-left: 59px;
 	margin-right: 30px;
 }
 
-.about__photo-image {
+.about-content__photo-image {
 	border: 3px solid #1a172a;
 	border-radius: 5px;
 }
 
-.about__caption {
+.about-content__caption {
 	font-style: italic;
 	color: #000000ab;
 }
 
-.about__text--right {
+.about-content__text--right {
 	margin: 30px 0;
 	font-weight: bold;
 	color: #ac657e;
 	text-align: right;
 }
 
-.about__text--PS {
+.about-content__text--PS {
 	margin-bottom: 70px;
 	text-indent: 0px;
 }
