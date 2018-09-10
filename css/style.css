@@ -633,14 +633,14 @@ input[type="checkbox"].visually-hidden {
 }
 
 /*------------------------------------ Пагинация ------------------------------------------*/
-.pagination-wrapper {
+.pagination__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 
 	margin-right: -20px;
 }
 
-.pagination-list {
+.pagination {
 	display: flex;
 	flex-wrap: wrap;
 	
@@ -654,7 +654,7 @@ input[type="checkbox"].visually-hidden {
 	list-style: none;
 }
 
-.pagination-item {
+.pagination__item {
 	box-sizing: border-box;
 	margin-left: 20px;
 	margin-bottom: 14px;
@@ -662,7 +662,7 @@ input[type="checkbox"].visually-hidden {
 	border-radius: 50%;
 }
 
-.pagination-list a {
+.pagination a {
 	padding: 5px 10px;
 	color: #ffffff;
 	border-radius: 4px;
@@ -670,25 +670,25 @@ input[type="checkbox"].visually-hidden {
 
 }
 
-.pagination-list a:hover,
-.pagination-list a:focus,
-.pagination-list a:active {
+.pagination a:hover,
+.pagination a:focus,
+.pagination a:active {
 	background-color: #8d84bc;
 }
 
-.pagination-item-current {
+.pagination__item--current {
 	box-sizing: border-box;
 }
 
-.pagination-item-current a {
+.pagination__item--current a {
 	color: #1a172a;
 	background-color: #fdf30d;
 	border: 1px solid #1a172a;
 }
 
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination__item--current a:hover,
+.pagination__item--current a:focus,
+.pagination__item--current a:active {
 	color:#1a172a;
 
 	background-color: #d5cc02;
