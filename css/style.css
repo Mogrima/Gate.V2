@@ -662,7 +662,7 @@ input[type="checkbox"].visually-hidden {
 	border-radius: 50%;
 }
 
-.pagination a {
+.pagination__link {
 	padding: 5px 10px;
 	color: #ffffff;
 	border-radius: 4px;
@@ -670,25 +670,25 @@ input[type="checkbox"].visually-hidden {
 
 }
 
-.pagination a:hover,
-.pagination a:focus,
-.pagination a:active {
+.pagination__link:hover,
+.pagination__link:focus,
+.pagination__link:active {
 	background-color: #8d84bc;
 }
 
-.pagination__item--current {
+.pagination__link--current {
 	box-sizing: border-box;
 }
 
-.pagination__item--current a {
+.pagination__link--current {
 	color: #1a172a;
 	background-color: #fdf30d;
 	border: 1px solid #1a172a;
 }
 
-.pagination__item--current a:hover,
-.pagination__item--current a:focus,
-.pagination__item--current a:active {
+.pagination__link--current:hover,
+.pagination__link--current:focus,
+.pagination__link--current:active {
 	color:#1a172a;
 
 	background-color: #d5cc02;
