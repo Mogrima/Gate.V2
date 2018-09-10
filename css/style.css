@@ -115,11 +115,9 @@ input[type="checkbox"].visually-hidden {
 	text-align: center;
 }
 
-.item-header {
-	font-family: "Times New Roman", serif;
+.header-title__title {
 	font-size: 20px;
 	font-weight: bold;
-	color: #000000;
 }
 
 /* <!-- Подложка --> */
@@ -567,7 +565,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 /*------------------------------------------ Новости -------------------------------------------- */
-.news-list {
+.news__list {
 	width: 835px;
 	margin: 0 auto;
 	margin-bottom: 70px;
@@ -579,21 +577,21 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 20px;
 }
 
-.news__header {
+.header-title {
 	display: flex;
 	justify-content: space-between;
 }
 
-.item-header__link {
+.header-title__link {
 	font-family: "Times New Roman", serif;
 	font-size: 20px;
 	font-weight: bold;
 	color: #1a172a;
 }
 
-.item-header__link:hover,
-.item-header__link:focus,
-.item-header__link:active {
+.header-title__link:hover,
+.header-title__link:focus,
+.header-title__link:active {
 	color: #8d84bc;
 }
 
@@ -602,18 +600,18 @@ input[type="checkbox"].visually-hidden {
 	margin-bottom: 20px;
 }
 
-.news-list__img {
+.news__picture {
 	float: left;
 	margin-right: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 4px;
 }
 
-.news-item {
+.news__item {
 	margin-bottom: 20px;
 }
 
-.news-item time {
+.header-title__date {
 	display: block;
 	margin: 20px 0;
 	font-style: italic;
