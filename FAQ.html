@@ -125,7 +125,7 @@
 	</footer>
 
 	<!-- Модальные окна -->
-		<section class="modal modal-login">
+	<section class="modal modal-login">
 		<h2 class="visually-hidden">Здесь можно представиться</h2>
 		<p class="modal__title">Здравствуйте</p>
 			<form class="form-login" action="#" method="get">
@@ -139,8 +139,8 @@
 				</p>
 				<div class="login-password-info">
 					<!-- <div class="login__checobox-wrapper"> -->
-						<input class="filter-checkbox modal__checkbox" type="checkbox" name="login-checkbox" id="login-checkbox">
-						<label for="login-checkbox"><span></span>Запомните меня</label>
+						<input class="checkbox modal__checkbox" type="checkbox" name="login-checkbox" id="login-checkbox">
+						<label for="login-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>Запомните меня</label>
 					<!-- </div> -->
 					<a class="restore" href="#">Я забыл(а) пароль!</a>
 				</div>
@@ -167,8 +167,8 @@
 					</p>
 					<div class="login-password-info">
 						<!-- <div class="login__checobox-wrapper"> -->
-							<input class="filter-checkbox modal__checkbox" type="checkbox" name="remember-checkbox" id="remember-checkbox">
-							<label for="remember-checkbox"><span></span>Запомните меня</label>
+							<input class="checkbox modal__checkbox" type="checkbox" name="remember-checkbox" id="remember-checkbox">
+							<label for="remember-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>Запомните меня</label>
 						<!-- </div> -->
 					</div>
 					<button class="button login__btn" type="submit">Зарегистрироваться</button>

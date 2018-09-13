@@ -71,27 +71,27 @@
 							<ul class="filter-list gallery__filter">
 								<div class="gallery__filter-wrapp">
 									<li class="gallery__filter-item">
-										<input class="filter-checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
+										<input class="checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
 										<label for="popular-checkbox"><span></span>
 										По популярности</label>
 									</li>
 									<li class="gallery__filter-item">
-										<input class="filter-checkbox" type="checkbox" name="old" id="old-checkbox">
+										<input class="checkbox" type="checkbox" name="old" id="old-checkbox">
 										<label for="old-checkbox"><span></span>
 										Иллюстрации из книг</label>
 									</li>
 									<li class="gallery__filter-item">
-										<input class="filter-checkbox" type="checkbox" name="free" id="free-checkbox">
+										<input class="checkbox" type="checkbox" name="free" id="free-checkbox">
 										<label for="free-checkbox"><span></span>
 											Цветные</label>
 									</li>
 									<li class="gallery__filter-item">
-										<input class="filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
+										<input class="checkbox" type="checkbox" name="pay" id="pay-checkbox">
 										<label for="pay-checkbox"><span></span>
 										Черно-белые</label>
 									</li>
 									<li class="gallery__filter-item">
-										<input class="filter-checkbox" type="checkbox" name="pay" id="pay-checkbox">
+										<input class="checkbox" type="checkbox" name="pay" id="pay-checkbox">
 										<label for="pay-checkbox"><span></span>
 										Истории</label>
 									</li>
@@ -205,8 +205,7 @@
 		</div>
 	</footer>
 
-	<!-- Модальные окна -->
-		<section class="modal modal-login">
+			<section class="modal modal-login">
 		<h2 class="visually-hidden">Здесь можно представиться</h2>
 		<p class="modal__title">Здравствуйте</p>
 			<form class="form-login" action="#" method="get">
@@ -220,8 +219,8 @@
 				</p>
 				<div class="login-password-info">
 					<!-- <div class="login__checobox-wrapper"> -->
-						<input class="filter-checkbox modal__checkbox" type="checkbox" name="login-checkbox" id="login-checkbox">
-						<label for="login-checkbox"><span></span>Запомните меня</label>
+						<input class="checkbox modal__checkbox" type="checkbox" name="login-checkbox" id="login-checkbox">
+						<label for="login-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>Запомните меня</label>
 					<!-- </div> -->
 					<a class="restore" href="#">Я забыл(а) пароль!</a>
 				</div>
@@ -248,8 +247,8 @@
 					</p>
 					<div class="login-password-info">
 						<!-- <div class="login__checobox-wrapper"> -->
-							<input class="filter-checkbox modal__checkbox" type="checkbox" name="remember-checkbox" id="remember-checkbox">
-							<label for="remember-checkbox"><span></span>Запомните меня</label>
+							<input class="checkbox modal__checkbox" type="checkbox" name="remember-checkbox" id="remember-checkbox">
+							<label for="remember-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>Запомните меня</label>
 						<!-- </div> -->
 					</div>
 					<button class="button login__btn" type="submit">Зарегистрироваться</button>
