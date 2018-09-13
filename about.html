@@ -159,55 +159,31 @@
 			<button class="modal-close photo-close">Закрыть</button>
 		</div>
 	<section class="modal modal-login">
-		<h2 class="visually-hidden">Здесь можно представиться</h2>
-		<p class="modal__title">Здравствуйте</p>
-			<form class="form-login" action="#" method="get">
-				<p>
-					<label for="modal-form-login-name" class="visually-hidden">Ваше имя...</label>
-					<input class="modal-form-login__name" id="modal-form-login-name" type="text" name="login" placeholder="Ваше имя...">
-				</p>
-				<p>
-					<label for="modal-form-login-pass" class="visually-hidden">Ваш пароль</label>
-					<input class="modal-form-login-input" id="modal-form-login-pass" type="password" name="password" placeholder="Ваш ключ...">
-				</p>
-				<div class="login-password-info">
-					<!-- <div class="login__checobox-wrapper"> -->
-						<input class="checkbox modal__checkbox" type="checkbox" name="login-checkbox" id="login-checkbox">
-						<label for="login-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>Запомните меня</label>
-					<!-- </div> -->
-					<a class="restore" href="#">Я забыл(а) пароль!</a>
-				</div>
-				<button class="button login__btn" type="submit">Представиться</button>
-			</form>
-		<button class="modal-close enter-close">Закрыть</button>
-	</section>
-
-	<section class="modal modal-registration">
-			<h2 class="visually-hidden">Здесь можно зарегистрироваться</h2>
-			<p class="modal__title">Добро пожаловать</p>
-				<form class="form-login" action="#" method="get">
-					<p>
-						<label for="modal-form-login-name" class="visually-hidden">Ваше имя...</label>
-						<input class="modal-form-login__name" id="modal-form-login-name" type="text" name="name" placeholder="Ваше имя...">
-					</p>
-					<p>
-						<label for="modal-form-login-name" class="visually-hidden">Ваш почтовый ящик...</label>
-						<input class="modal-form-login__name" id="modal-form-login-name" type="text" name="email" placeholder="Ваш почтовый ящик...">
-					</p>
-					<p>
-						<label for="modal-form-login-pass" class="visually-hidden">Придумайте пароль</label>
-						<input class="modal-form-login-input" id="modal-form-login-pass" type="password" name="password" placeholder="Придумайте пароль">
-					</p>
-					<div class="login-password-info">
-						<!-- <div class="login__checobox-wrapper"> -->
-							<input class="checkbox modal__checkbox" type="checkbox" name="remember-checkbox" id="remember-checkbox">
-							<label for="remember-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>Запомните меня</label>
-						<!-- </div> -->
-					</div>
-					<button class="button login__btn" type="submit">Зарегистрироваться</button>
-				</form>
-			<button class="modal-close reg-close">Закрыть</button>
-		</section>
+    <h2 class="visually-hidden">Здесь можно представиться</h2>
+    <p class="modal__title">Здравствуйте</p>
+    <form action="#" class="form-login" method="get">
+      <p><label class="visually-hidden" for="modal-form-login-name">Ваше имя...</label> <input class="input" id="modal-form-login-name" name="login" placeholder="Ваше имя..." type="text"></p>
+      <p><label class="visually-hidden" for="modal-form-login-pass">Ваш пароль</label> <input class="input" id="modal-form-login-pass" name="password" placeholder="Ваш ключ..." type="password"></p>
+      <div class="login-password-info">
+        <!-- <div class="login__checobox-wrapper"> -->
+        <input class="checkbox modal__checkbox" id="login-checkbox" name="login-checkbox" type="checkbox"> <label class="checkbox__name" for="login-checkbox"><span class="checkbox__indicator"></span>Запомните меня</label> <!-- </div> -->
+         <a class="restore" href="#">Я забыл(а) пароль!</a>
+      </div><button class="button login__btn" type="submit">Представиться</button>
+    </form><button class="modal-close enter-close">Закрыть</button>
+  </section>
+  <section class="modal modal-registration">
+    <h2 class="visually-hidden">Здесь можно зарегистрироваться</h2>
+    <p class="modal__title">Добро пожаловать</p>
+    <form action="#" class="form-login" method="get">
+      <p><label class="visually-hidden" for="modal-form-login-name">Ваше имя...</label> <input class="input" id="modal-form-login-name" name="name" placeholder="Ваше имя..." type="text"></p>
+      <p><label class="visually-hidden" for="modal-form-login-name">Ваш почтовый ящик...</label> <input class="input" id="modal-form-login-name" name="email" placeholder="Ваш почтовый ящик..." type="text"></p>
+      <p><label class="visually-hidden" for="modal-form-login-pass">Придумайте пароль</label> <input class="input" id="modal-form-login-pass" name="password" placeholder="Придумайте пароль" type="password"></p>
+      <div class="login-password-info">
+        <!-- <div class="login__checobox-wrapper"> -->
+        <input class="checkbox modal__checkbox" id="remember-checkbox" name="remember-checkbox" type="checkbox"> <label class="checkbox__name" for="remember-checkbox"><span class="checkbox__indicator"></span>Запомните меня</label> <!-- </div> -->
+      </div><button class="button login__btn" type="submit">Зарегистрироваться</button>
+    </form><button class="modal-close reg-close">Закрыть</button>
+  </section>
 <div class="overlay"></div>
 <div class="overlay overlay--dark"></div>
 <script src="js/modal.js"></script>
