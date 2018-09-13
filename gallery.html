@@ -47,15 +47,15 @@
 		<div class="container">
 			<div class="substrate"><!--  Подложка -->
 				<div class="head">
-					<div class="search-block">
-					  <input class="search-block__input" type="text" placeholder="Поиск...">
-					  <span class="search-block__icon"></span>
-					</div>
 					<h1 class="page-main__title">Галерея</h1>
 					<ul class="breadcrumb">
 						<li class="breadcrumb__item"><a href="index.html.html">Новости</a></li>
 						<li class="breadcrumb__item breadcrumb__item--current">Галерея</li>
 					</ul>
+					<div class="search-block">
+					  <input class="search-block__input" type="text" placeholder="Поиск...">
+					  <span class="search-block__icon"></span>
+					</div>
 						<p class="page-description">Рисование будоражило меня с незапамятных лет, часто открывая моей памяти дорогу к истокам. При помощи графического планшета и вдохновенного настроя светлой грусти порой возможно совершить чудо  - воссоздать живых и мертвых, пробудить историю, да и просто дать полную волю вымыслу.
 						Этот раздел разбит на альбомы, в каждом из которых – иллюстрации к разным книгам, а так же просто рисунки, ссылающиеся на разных упомянутых во Вратах персонажей. </p>
 						<p class="page-description">Здесь же располагается альбом с историей в картинках: <i>«Бесконечная история»</i> - затяжным сквозным проектом, связанным с серией книг из соседствующего раздела. <br>
@@ -67,38 +67,38 @@
 					<h2 class="visually-hidden">Фильтр рисунков</h2>
 					<form class="filter" action="#" method="get">
 						<fieldset class="filter__fieldset">
-							<legend class="filters-name">Сортировка:</legend>
-							<ul class="filter-list gallery__filter">
-								<div class="gallery__filter-wrapp">
-									<li class="gallery__filter-item">
+							<legend class="filter__title">Сортировка:</legend>
+							<ul class="filter__list filter__list--center">
+								<div class="filter__wrapper-gallery">
+									<li class="filter__item-gallery">
 										<input class="checkbox" type="checkbox" name="popular" id="popular-checkbox" checked>
-										<label for="popular-checkbox"><span></span>
+										<label for="popular-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>
 										По популярности</label>
 									</li>
-									<li class="gallery__filter-item">
+									<li class="filter__item-gallery">
 										<input class="checkbox" type="checkbox" name="old" id="old-checkbox">
-										<label for="old-checkbox"><span></span>
+										<label for="old-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>
 										Иллюстрации из книг</label>
 									</li>
-									<li class="gallery__filter-item">
+									<li class="filter__item-gallery">
 										<input class="checkbox" type="checkbox" name="free" id="free-checkbox">
-										<label for="free-checkbox"><span></span>
+										<label for="free-checkbox" class="checkbox__name"><span class="checkbox__indicator"></span>
 											Цветные</label>
 									</li>
-									<li class="gallery__filter-item">
-										<input class="checkbox" type="checkbox" name="pay" id="pay-checkbox">
-										<label for="pay-checkbox"><span></span>
+									<li class="filter__item-gallery">
+										<input class="checkbox" type="checkbox" name="pay" id="colorless">
+										<label for="colorless" class="checkbox__name"><span class="checkbox__indicator"></span>
 										Черно-белые</label>
 									</li>
-									<li class="gallery__filter-item">
-										<input class="checkbox" type="checkbox" name="pay" id="pay-checkbox">
-										<label for="pay-checkbox"><span></span>
+									<li class="filter__item-gallery">
+										<input class="checkbox" type="checkbox" name="pay" id="history">
+										<label for="history" class="checkbox__name"><span class="checkbox__indicator"></span>
 										Истории</label>
 									</li>
 								</div>
 							</ul>
 						</fieldset>
-						<button class="filter__button button">Применить</button>
+						<button class="filter__button">Применить</button>
 					</form>
 				</section>
 				<section class="works">

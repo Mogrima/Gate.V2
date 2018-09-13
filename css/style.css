@@ -1025,7 +1025,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 /* --------------------------------------- Стилизация gallery.html ----------------------------------- */
-.gallery__filter {
+.filter__list--center {
 	width: 830px;
 	margin: 0 auto;
 }
@@ -1038,13 +1038,13 @@ input[type="checkbox"].visually-hidden {
 	margin-bottom: 50px;
 }
 
-.gallery__filter-wrapp {
+.filter__wrapper-gallery {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -30px;
 }
 
-.gallery__filter-item {
+.filter__item-gallery {
 	margin-left: 30px;
 
 }
