@@ -862,7 +862,7 @@ input[type="checkbox"].visually-hidden {
 	margin-top: 50px;
 }
 
-.flex-fieldset {
+.filter__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -877,13 +877,13 @@ input[type="checkbox"].visually-hidden {
 	border: none;
 }
 
-.filter legend {
+.filter__title {
 	font-family: 'Cormorant Infant Bold', serif;
 	font-weight: bold;
 	font-size: 20px;
 }
 
-.filter-list {
+.filter__list {
 	margin: 0;
 	padding: 0;
 
@@ -891,7 +891,7 @@ input[type="checkbox"].visually-hidden {
 	line-height: 18px;
 }
 
-.filter-checkbox:disabled + label {
+.checkbox:disabled + label {
 	color: #000000;
 
 	opacity: 0.5;
@@ -899,7 +899,7 @@ input[type="checkbox"].visually-hidden {
 
 /*  ----------------------------- Стилизация чекбоксов ----------------------------------- */
 
-.filter-checkbox { 
+.checkbox { 
 	height: 0; width: 0; 
 /* Чтобы не было видно родного чекбокса в FF */
   -ms-transform: scale(0); /* IE */
@@ -909,7 +909,7 @@ input[type="checkbox"].visually-hidden {
   padding: 10px;
 }
 
-.filter-checkbox + label{
+.checkbox + .checkbox__name {
   position: relative;
   display: flex;
   margin: 0;	
@@ -919,7 +919,7 @@ input[type="checkbox"].visually-hidden {
   cursor: pointer;
 }
 
-.filter-checkbox + label > span{
+.checkbox + .checkbox__name > .checkbox__indicator {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -933,21 +933,19 @@ input[type="checkbox"].visually-hidden {
   transition: all 250ms cubic-bezier(.4,.0,.23,1);
 }
 
-.filter-checkbox + label:hover, .filter-checkbox:focus + label,
-.filter-checkbox:checked + label {
+.checkbox + .checkbox__name:hover, .checkbox:focus + .checkbox__name,
+.checkbox:checked + .checkbox__name {
   color: #000000;
 }
-.filter-checkbox + label:hover > span {
+.checkbox + .checkbox__name:hover > .checkbox__indicator {
 	background: rgba(0, 0, 0, .1);
 } 
 
-
-
-.filter-checkbox:checked + label > span{
+.checkbox:checked + .checkbox__name > .checkbox__indicator {
   border: 2px solid #FFEB3B;
   animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
 }
-.filter-checkbox:checked + label > span:before{
+.checkbox:checked + .checkbox__name > .checkbox__indicator:before{
   content: "";
   position: absolute;
   top: 8px;
@@ -1126,21 +1124,21 @@ input[type="checkbox"].visually-hidden {
 	margin-bottom: 40px;
 }
 
-.modal__checkbox + label {
+.modal__checkbox + .checkbox__name {
 	color: #fdf30d;
 }
 
-.modal__checkbox + label > span {
+.modal__checkbox + .checkbox__name > .checkbox__indicator {
 	/* background-color: #fff; */
 	border-color: #fdf30d;
 }
  
-.modal__checkbox:checked + label > span {
+.modal__checkbox:checked + .checkbox__name > .checkbox__indicator {
   background: #ffffff;
 }
 
-.modal__checkbox + label:hover, .modal__checkbox:focus + label,
-.modal__checkbox:checked + label {
+.modal__checkbox + .checkbox__name:hover, .modal__checkbox:focus + .checkbox__name,
+.modal__checkbox:checked + .checkbox__name {
   color: #ffffff;
 }
 
