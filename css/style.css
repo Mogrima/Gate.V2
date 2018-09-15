@@ -115,11 +115,6 @@ input[type="checkbox"].visually-hidden {
 	text-align: center;
 }
 
-.header-title__title {
-	font-size: 20px;
-	font-weight: bold;
-}
-
 /* <!-- Подложка --> */
 
 .substrate {
@@ -579,7 +574,13 @@ input[type="checkbox"].visually-hidden {
 
 .header-title {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.header-title__title {
+	flex-grow: 1;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .header-title__link {
@@ -593,6 +594,14 @@ input[type="checkbox"].visually-hidden {
 .header-title__link:focus,
 .header-title__link:active {
 	color: #8d84bc;
+}
+
+.header-title__date {
+	display: block;
+	margin: 20px 0;
+	font-style: italic;
+	font-size: 14px;
+	color: #000000ab;
 }
 
 .news__text {
@@ -609,14 +618,6 @@ input[type="checkbox"].visually-hidden {
 
 .news__item {
 	margin-bottom: 20px;
-}
-
-.header-title__date {
-	display: block;
-	margin: 20px 0;
-	font-style: italic;
-	font-size: 14px;
-	color: #000000ab;
 }
 
 .clearfix { 
@@ -1770,6 +1771,7 @@ bottom: 20px;
 	font-family: 'Benguiat Rus';
 	font-style: normal;
 	font-weight: bold;
+	font-size: 16px;
 }
 
 .reviews__time {
