@@ -299,39 +299,39 @@ input[type="checkbox"].visually-hidden {
 
 /* Градиент меню активное состояние*/
 
-.page-navigation__item:hover,
-.page-navigation__item:focus,
-.page-navigation__item:active {
+.page-navigation__link:hover,
+.page-navigation__link:focus,
+.page-navigation__link:active {
 	background: linear-gradient(45deg, #bcfca1, #81e7b2, #58d9cd);
 }
 
-.page-navigation__item:nth-child(2):hover,
-.page-navigation__item:nth-child(2):focus,
-.page-navigation__item:nth-child(2):active {
+.page-navigation__link--green:hover,
+.page-navigation__link--green:focus,
+.page-navigation__link--green:active {
 	background: linear-gradient(45deg, #e5ff7f, #b3e668, #b3e668);
 }
 
-.page-navigation__item:nth-child(3):hover,
-.page-navigation__item:nth-child(3):focus,
-.page-navigation__item:nth-child(3):active {
+.page-navigation__link--yellow:hover,
+.page-navigation__link--yellow:focus,
+.page-navigation__link--yellow:active {
 	background: linear-gradient(45deg, #ffe876, #e4bd68, #d39d5c);
 }
 
-.page-navigation__item:nth-child(4):hover,
-.page-navigation__item:nth-child(4):focus,
-.page-navigation__item:nth-child(4):active {
+.page-navigation__link--peach:hover,
+.page-navigation__link--peach:focus,
+.page-navigation__link--peach:active {
 	background: linear-gradient(45deg, #fbb479, #dc656a, #d04173);
 }
 
-.page-navigation__item:nth-child(5):hover,
-.page-navigation__item:nth-child(5):focus,
-.page-navigation__item:nth-child(5):active {
+.page-navigation__link--lilac:hover,
+.page-navigation__link--lilac:focus,
+.page-navigation__link--lilac:active {
 	background: linear-gradient(45deg, #ffbfbe, #e473dd, #c24ee6);
 }
 
-.page-navigation__item:nth-child(6):hover,
-.page-navigation__item:nth-child(6):focus,
-.page-navigation__item:nth-child(6):active {
+.page-navigation__link--purple:hover,
+.page-navigation__link--purple:focus,
+.page-navigation__link--purple:active {
 	background: linear-gradient(45deg, #e4b1b4, #9d74d8, #6842db);
 }
 
