@@ -1,0 +1,30 @@
+.header-title {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-title__title {
+	flex-grow: 1;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header-title__link {
+	font-family: @ff-text, serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: @main-color;
+	&:hover,
+	&:focus,
+	&:active {
+		color: lighten(@main-color, 40%) /* #8d84bc */;
+	}
+}
+
+.header-title__date {
+	display: block;
+	margin: 20px 0;
+	font-style: italic;
+	font-size: 14px;
+	color: @text;
+}

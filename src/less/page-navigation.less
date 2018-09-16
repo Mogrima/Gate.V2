@@ -1,0 +1,102 @@
+.page-navigation {
+	width: 980px;
+	margin: 0 auto;
+	font-family: 'Benguiat Rus', Garamond, serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 30px;
+	color: @bg;
+}
+
+.page-navigation__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.page-navigation__item {
+	flex-grow: 1;
+	min-width: 120px;
+	margin-bottom: 0px;
+	padding-right: 29px;
+	/* margin-right: 30px; */
+	text-align: center;
+	
+}
+
+.page-navigation__link {
+	display: block;
+	padding: 10px 15px;
+	color: @text;
+}
+
+.page-navigation__link--current {
+	color: @bg;
+}
+
+/* Градиент меню */
+
+.page-navigation__link {
+	background: linear-gradient(45deg, #c2edb0, #97d1b3, #77bab4);
+}
+
+.page-navigation__link--green {
+	background: linear-gradient(45deg, #daec92, #aecc82, #95b97b);
+}
+
+.page-navigation__link--yellow {
+	background: linear-gradient(45deg, #eada8b, #c9b383, #b49a7b);
+}
+
+.page-navigation__link--peach {
+	background: linear-gradient(45deg, #e6b68e, #c08184, #ac657e);
+}
+
+.page-navigation__link--lilac {
+	background: linear-gradient(45deg, #f8c6c5, #cb8cc7, #b26cc8);
+}
+
+.page-navigation__link--purple {
+	background: linear-gradient(45deg, #d4c1c2, #a28fbd, #7964b9);
+}
+
+/* Градиент меню активное состояние*/
+
+.page-navigation__link:hover,
+.page-navigation__link:focus,
+.page-navigation__link:active {
+	background: linear-gradient(45deg, #bcfca1, #81e7b2, #58d9cd);
+}
+
+.page-navigation__link--green:hover,
+.page-navigation__link--green:focus,
+.page-navigation__link--green:active {
+	background: linear-gradient(45deg, #e5ff7f, #b3e668, #b3e668);
+}
+
+.page-navigation__link--yellow:hover,
+.page-navigation__link--yellow:focus,
+.page-navigation__link--yellow:active {
+	background: linear-gradient(45deg, #ffe876, #e4bd68, #d39d5c);
+}
+
+.page-navigation__link--peach:hover,
+.page-navigation__link--peach:focus,
+.page-navigation__link--peach:active {
+	background: linear-gradient(45deg, #fbb479, #dc656a, #d04173);
+}
+
+.page-navigation__link--lilac:hover,
+.page-navigation__link--lilac:focus,
+.page-navigation__link--lilac:active {
+	background: linear-gradient(45deg, #ffbfbe, #e473dd, #c24ee6);
+}
+
+.page-navigation__link--purple:hover,
+.page-navigation__link--purple:focus,
+.page-navigation__link--purple:active {
+	background: linear-gradient(45deg, #e4b1b4, #9d74d8, #6842db);
+}
