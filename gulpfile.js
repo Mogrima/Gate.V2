@@ -56,7 +56,7 @@ gulp.task("html", function () {
   });
    gulp.watch("src/less/**/*.less", ["style"]);
   gulp.watch("dist/*.html").on("change", server.reload);
-  gulp.watch(["src/*.html"], function(event, cb) {
+  gulp.watch(["src/**/*.html"], function(event, cb) {
         gulp.start("html");
     });
   gulp.watch(["src/js/*.js"], function(event, cb) {
