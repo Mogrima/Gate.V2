@@ -4,15 +4,17 @@
 }
 
 .header-title__title {
+	margin: @subheading-mr 0;
 	flex-grow: 1;
-	font-size: 20px;
+	font-size: @subheading;
 	font-weight: bold;
 }
 
 .header-title__link {
 	font-family: @ff-text, serif;
-	font-size: 20px;
+	font-size: @subheading;
 	font-weight: bold;
+	line-height: 1.5;
 	color: @main-color;
 	&:hover,
 	&:focus,
@@ -23,7 +25,7 @@
 
 .header-title__date {
 	display: block;
-	margin: 20px 0;
+	margin: @subheading-mr 0;
 	font-style: italic;
 	font-size: 14px;
 	color: @text;
