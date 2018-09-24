@@ -1,31 +1,9 @@
+@import "fonts.less";
 @import "variables.less";
-
-
-@font-face {
-    font-family: @ff-subtitle;
-    src: url('../fonts/Benguiat.eot');
-    src: url('../fonts/Benguiat.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Benguiat.woff2') format('woff2'),
-        url('../fonts/Benguiat.woff') format('woff'),
-        url('../fonts/Benguiat.ttf') format('truetype'),
-        url('../fonts/Benguiat.svg#Benguiat') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @import "mixins.less";
 @import "visually-hidden.less";
 @import "button.less";
 @import "checkbox.less";
-
-.section-header {
-	margin: 0;
-	margin-top: 50px;
-	margin-bottom: 25px;
-	font-family: 'Cormorant Infant Rg', serif;
-	font-size: 25px;
-	text-align: center;
-}
 
 /*--------------------------------------- Модальные окна --------------------------------------------*/
 
@@ -223,20 +201,12 @@
     animation-fill-mode: forwards;
 }
 
-/* Для самого главного заголовка страницы, для h1 */
-.title {
-	margin: 25px 0;
-	font-family: 'Cormorant Infant Rg', serif;
-	font-size: 32px;
-	line-height: 48px;
-	text-align: center;
-}
-
-
 @import "global.less";
 @import "link.less";
 @import "input.less";
 @import "attention.less";
+@import "title.less";
+@import "section-header.less";
 
 @import "page.less";
 @import "container.less";
