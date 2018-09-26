@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<style type="text/css">
+    .login {
+      width: 460px;
+      margin: 0 auto;
+      color: #fdf30d;
+      background-color: #1a172a;
+      border: 1px solid #000000;
+    }
+
+    .login__input {
+      margin: 0 auto;
+    }
+
+    .login__info {
+      display: flex;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 48px;
+    }
+
+    .login__info-checkbox + .login__checkbox-name {
+      color: #fdf30d;
+    }
+    .login__info-checkbox + .login__checkbox-name > .login__checkbox-indicator {
+      /* background-color: #fff; */
+      border-color: #fdf30d;
+    }
+    .login__info-checkbox:checked + .login__checkbox-name > .login__checkbox-indicator {
+      background: #ffffff;
+    }
+    .login__info-checkbox + .login__checkbox-name:hover,
+    .login__info-checkbox:focus + .login__checkbox-name,
+    .login__info-checkbox:checked + .login__checkbox-name {
+      color: #ffffff;
+    }
+    .login__button {
+      display: block;
+      box-sizing: border-box;
+      width: 180px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      padding: 10px 10px;
+      border: none;
+      font-family: 'Benguiat Rus';
+      color: #fdf30d;
+      background: transparent;
+      cursor: pointer;
+    }
+    .login__button:hover {
+      color: #1a172a;
+    }
+    .login__button:before {
+      border-color: #fdf30d;
+    }
+    .login__button:hover::after {
+      background: #fdf30d;
+    }
+  </style>
+	<section class="login">
+		<h2 class="visually-hidden">Здесь можно зарегистрироваться</h2>
+		<p class="section-header login__title">Добро пожаловать</p>
+		<form action="#" method="post">
+			<p class="input__wrapper">
+				<label for="user-name" class="visually-hidden">Ваше имя...</label>
+				<input id="user-name" class="input login__input" type="text" name="user-name" placeholder="Ваше имя...">
+			</p>
+			<p class="input__wrapper">
+				<label for="user-email" class="visually-hidden">Ваш почтовый ящик...</label>
+				<input id="user-email" class="input login__input" type="email" name="user-email" placeholder="Ваш почтовый ящик...">
+			</p>
+			<p class="input__wrapper">
+				<label for="user-pass" class="visually-hidden">Придумайте пароль</label>
+				<input id="user-pass" class="input login__input" type="password" name="user-pass" placeholder="Придумайте пароль">
+			</p>
+			<div class="login__info">
+				<input id="remember" class="checkbox login__info-checkbox" type="checkbox" name="remember"> <label for="remember" class="checkbox__name login__checkbox-name"><span class="checkbox__indicator login__checkbox-indicator"></span>Запомните меня</label>
+			</div>
+			<button class="button login__button" type="submit">Зарегистрироваться</button>
+		</form>
+		<!-- <button>Закрыть</button> -->
+	</section>
+	 <p>Уже регистрировались? Тогда вам <a href="">сюда</a></p>
+
+	<!-- <section>
+		<h2>Здесь можно зарегистрироваться</h2>
+		<p>Добро пожаловать</p>
+		<form action="#" method="post">
+			<p>
+				<label for="user-name">Ваше имя...</label>
+				<input id="user-name" type="text" name="user-name" placeholder="Ваше имя...">
+			</p>
+			<p>
+				<label for="user-email">Ваш почтовый ящик...</label>
+				<input id="user-email" type="email" name="user-email" placeholder="Ваш почтовый ящик...">
+			</p>
+			<p>
+				<label for="user-pass">Придумайте пароль</label>
+				<input id="user-pass" type="password" name="user-pass" placeholder="Придумайте пароль">
+			</p>
+			<div>
+				<input id="remember" type="checkbox" name="remember-me" value="remember">
+				<label for="remember"><span></span>Запомните меня</label>
+			</div>
+			<button type="submit">Зарегистрироваться</button>
+		</form>
+		<button>Закрыть</button>
+	</section> -->
+</body>
+</html>
