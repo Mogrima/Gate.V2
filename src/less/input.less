@@ -2,8 +2,6 @@
 	display: block;
 	box-sizing: border-box;
 	width: 300px;
-	margin: 0 auto;
-	margin-bottom: 20px;
 	padding: 10px 15px;
 	padding-right: 40px;
 	font: inherit;
@@ -12,6 +10,13 @@
 	/* background-color: @hover; */
 	border: 2px solid @text;
 	border-radius: 4px;
+}
+
+.input__wrapper {
+	margin: @base-mr 0;
+	&--flex {
+		margin-top: 0;
+	}
 }
 
 .input__sign {
