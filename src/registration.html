@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Регистрация на сайте</title>
+  //= template/favicon.html
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="page">
+  //= template/header.html
+  //= template/page-navigation.html
+  <main class="page-main">
+    <div class="container">
+      <div class="substrate">
+        <!--  Подложка -->
+        <div class="page-main__head">
+          <h1 class="title">Регистрация</h1>
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="index.html.html">На главную</a>
+            </li>
+          </ul>
+          //= template/search-block.html
+          <section class="registration">
+              <h2 class="visually-hidden">Здесь можно зарегистрироваться</h2>
+              <p class="modal__title">Добро пожаловать</p>
+              <form action="#" class="form-login" method="get">
+                <p class="input__wrapper"><label class="visually-hidden" for="modal-form-login-name">Ваше имя...</label> <input class="input modal__input" id="modal-form-login-name" name="name" placeholder="Ваше имя..." type="text"></p>
+                <p class="input__wrapper"><label class="visually-hidden" for="modal-form-login-name">Ваш почтовый ящик...</label> <input class="input modal__input" id="modal-form-login-name" name="email" placeholder="Ваш почтовый ящик..." type="text"></p>
+                <p class="input__wrapper"><label class="visually-hidden" for="modal-form-login-pass">Придумайте пароль</label> <input class="input modal__input" id="modal-form-login-pass" name="password" placeholder="Придумайте пароль" type="password"></p>
+                <div class="login-password-info">
+                  <!-- <div class="login__checobox-wrapper"> -->
+                  <input class="checkbox modal__checkbox" id="remember-checkbox" name="remember-checkbox" type="checkbox"> <label class="checkbox__name" for="remember-checkbox"><span class="checkbox__indicator"></span>Запомните меня</label> <!-- </div> -->
+                </div><button class="button login__btn" type="submit">Зарегистрироваться</button>
+              </form><button class="modal-close reg-close">Закрыть</button>
+          </section>
+          </div><!-- Подложка -->
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <nav class="footer-navigation">
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="index.html"><img alt="Врата" height="30" src="img/Logo.png" width="100"></a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="works-catalog.html">Книги</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link footer-navigation__link--current">Галерея</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="about.html">О нас</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="feedback.html">Отзывы</a>
+        </li>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="FAQ.html">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    //= template/copyright.html
+   //= template/footer-social.html
+  </footer>
