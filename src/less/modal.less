@@ -3,8 +3,11 @@
 }
 
 .login {
+  position: fixed;
+  top: 120px;
+  left: 50%;
   width: 460px;
-  margin: 0 auto;
+  margin-left: -210px;
   color: #fdf30d;
   background-color: #1a172a;
   border: 1px solid #000000;
@@ -57,6 +60,50 @@
 }
 .login__button:hover::after {
   background: #fdf30d;
+}
+
+.login__close { 
+position: absolute; 
+top: 0; 
+right: -34px; 
+width: 22px; 
+height: 22px; 
+
+font-size: 0; 
+
+background-color: transparent; 
+border: 0; 
+
+cursor: pointer; 
+} 
+
+.login__close::before, 
+.login__close::after { 
+content: ""; 
+
+position: absolute; 
+top: 20px; 
+left: -45px; 
+
+width: 19px; 
+height: 3px; 
+
+background-color: @link; 
+} 
+
+.login__close:hover::before, 
+.login__close:hover::after, 
+.login__close:focus::before, 
+.login__close:focus::after { 
+background-color: @hover; 
+} 
+
+.login__close::before { 
+transform: rotate(45deg); 
+} 
+
+.login__close::after { 
+transform: rotate(-45deg); 
 }
 
 .modal-show {
