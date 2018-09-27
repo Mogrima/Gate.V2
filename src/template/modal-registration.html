@@ -1,13 +1,23 @@
-<section class="modal modal-registration">
-    <h2 class="visually-hidden">Здесь можно зарегистрироваться</h2>
-    <p class="modal__title">Добро пожаловать</p>
-    <form action="#" class="form-login" method="get">
-      <p class="input__wrapper"><label class="visually-hidden" for="modal-form-login-name">Ваше имя...</label> <input class="input modal__input" id="modal-form-login-name" name="name" placeholder="Ваше имя..." type="text"></p>
-      <p class="input__wrapper"><label class="visually-hidden" for="modal-form-login-name">Ваш почтовый ящик...</label> <input class="input modal__input" id="modal-form-login-name" name="email" placeholder="Ваш почтовый ящик..." type="text"></p>
-      <p class="input__wrapper"><label class="visually-hidden" for="modal-form-login-pass">Придумайте пароль</label> <input class="input modal__input" id="modal-form-login-pass" name="password" placeholder="Придумайте пароль" type="password"></p>
-      <div class="login-password-info">
-        <!-- <div class="login__checobox-wrapper"> -->
-        <input class="checkbox modal__checkbox" id="remember-checkbox" name="remember-checkbox" type="checkbox"> <label class="checkbox__name" for="remember-checkbox"><span class="checkbox__indicator"></span>Запомните меня</label> <!-- </div> -->
-      </div><button class="button login__btn" type="submit">Зарегистрироваться</button>
-    </form><button class="modal-close reg-close">Закрыть</button>
+ <section class="login login__reg">
+  <h2 class="visually-hidden">Здесь можно зарегистрироваться</h2>
+  <p class="section-header login__title">Добро пожаловать</p>
+  <form action="#" method="post">
+    <p class="input__wrapper">
+      <label for="user-name" class="visually-hidden">Ваше имя...</label>
+      <input id="user-name" class="input login__input" type="text" name="user-name" placeholder="Ваше имя...">
+    </p>
+    <p class="input__wrapper">
+      <label for="user-email" class="visually-hidden">Ваш почтовый ящик...</label>
+      <input id="user-email" class="input login__input" type="email" name="user-email" placeholder="Ваш почтовый ящик...">
+    </p>
+    <p class="input__wrapper">
+      <label for="user-pass" class="visually-hidden">Придумайте пароль</label>
+      <input id="user-pass" class="input login__input" type="password" name="user-pass" placeholder="Придумайте пароль">
+    </p>
+    <div class="login__info">
+      <input id="remember" class="checkbox login__info-checkbox" type="checkbox" name="remember"> <label for="remember" class="checkbox__name login__checkbox-name"><span class="checkbox__indicator login__checkbox-indicator"></span>Запомните меня</label>
+    </div>
+    <button class="button login__button" type="submit">Зарегистрироваться</button>
+  </form>
+  <button class="login__close-reg">Закрыть</button>
 </section>

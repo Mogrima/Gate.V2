@@ -1,189 +1,64 @@
-.modal {
-	color: @link;
-	background-color: @main-color;
+.login__reg {
+  display: none;
 }
 
-.modal__title {
-	margin: 0;	
-	margin-bottom: 20px;
-	font-family: 'Cormorant Infant SB', serif;
-	font-size: 25px;
-
-	text-align: center;
+.login {
+  width: 460px;
+  margin: 0 auto;
+  color: #fdf30d;
+  background-color: #1a172a;
+  border: 1px solid #000000;
 }
 
-.modal-login,
-.modal-registration {
-	display: none;
-	position: fixed;
-	z-index: 6;
-	top: 120px;
-	left: 50%;
-
-	box-sizing: border-box;
-	width: 460px;
-	margin-left: -210px;
-	padding: 50px 30px 50px 30px;
-
-	border: 2px solid @text;
-	border-radius: 3px;
+.login__input {
+  margin: 0 auto;
 }
 
-.modal__input {
-	margin: 0 auto;
+.login__info {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
-.login-password-info {
-	display: flex;
-	justify-content: space-between;
-
-	width: 340px;
-	margin: 0 auto;	
-	margin-bottom: 40px;
+.login__info-checkbox + .login__checkbox-name {
+  color: #fdf30d;
 }
-
-.modal__checkbox + .checkbox__name {
-	color: @link;
+.login__info-checkbox + .login__checkbox-name > .login__checkbox-indicator {
+  /* background-color: #fff; */
+  border-color: #fdf30d;
 }
-
-.modal__checkbox + .checkbox__name > .checkbox__indicator {
-	/* background-color: #fff; */
-	border-color: @link;
+.login__info-checkbox:checked + .login__checkbox-name > .login__checkbox-indicator {
+  background: #ffffff;
 }
- 
-.modal__checkbox:checked + .checkbox__name > .checkbox__indicator {
-  background: @bg;
+.login__info-checkbox + .login__checkbox-name:hover,
+.login__info-checkbox:focus + .login__checkbox-name,
+.login__info-checkbox:checked + .login__checkbox-name {
+  color: #ffffff;
 }
-
-.modal__checkbox + .checkbox__name:hover, .modal__checkbox:focus + .checkbox__name,
-.modal__checkbox:checked + .checkbox__name {
-  color: @bg;
+.login__button {
+  display: block;
+  box-sizing: border-box;
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 10px 10px;
+  border: none;
+  font-family: 'Benguiat Rus';
+  color: #fdf30d;
+  background: transparent;
+  cursor: pointer;
 }
-
-.restore {
-	color: @link;
-	text-decoration: underline;
+.login__button:hover {
+  color: #1a172a;
 }
-
-.restore:hover,
-.restore:focus {
-	color: @bg;
-	text-decoration: none;
+.login__button:before {
+  border-color: #fdf30d;
 }
-
-.login__btn {
-	display: block;
-	box-sizing: border-box;
-	width: 180px;
-	margin: 0 auto;
-	padding: 10px 10px;
-	border: none;
-	font-family: @ff-subtitle;
-	color: @link;
-	background: transparent;
-	cursor: pointer;
-}
-
-.login__btn:hover {
-	color: @main-color;
-}
-
-.login__btn:before {
-	border-color: @link;
-}
-
-.login__btn:hover::after {
-	background: @link;
-}
-
-.modal-close {
-	position: absolute;
-	top: 0;
-	right: -34px;
-	width: 22px;
-	height: 22px;
-
-	font-size: 0;
-
-	background-color: transparent;
-	border: 0;
-
-	cursor: pointer;
-}
-
-.modal-close::before,
-.modal-close::after {
-	content: "";
-
-	position: absolute;
-	top: 20px;
-	left: -45px;
-
-	width: 19px;
-	height: 3px;
-
-	background-color: @link;
-}
-
-.modal-close:hover::before,
-.modal-close:hover::after,
-.modal-close:focus::before,
-.modal-close:focus::after {
-	background-color: @hover;
-}
-
-.modal-close::before {
-	transform: rotate(45deg);
-}
-
-.modal-close::after {
-	transform: rotate(-45deg);
-}
-
-.modal-registration .login-password-info {
-	justify-content: flex-start;
-	width: 300px;
-}
-
-.modal-registration .login__btn {
-	width: 200px;
-}
-
-.popup__photo-1 {
-	display: none;
-	position: fixed;
-	z-index: 6;
-	top: 10%;
-	left: 50%;
-	margin-left: -250px;
-}
-
-.overlay {
-	display: none;
-	position: fixed;
-  	top: 0;
-  	left: 0;
-  	z-index: 5;
-
-  	height: 100%;
-  	width: 100%;	
-
-}
-
-.overlay--dark {
-	background-color: rgba(0, 0, 0, 0.5);
+.login__button:hover::after {
+  background: #fdf30d;
 }
 
 .modal-show {
-	display: block;
-	animation-name: fadeInDown;
-	animation-duration: 1s;
-}
-
-.modal-show--fadeIn {
-	display: block;
-	-webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+  display: block;
 }
