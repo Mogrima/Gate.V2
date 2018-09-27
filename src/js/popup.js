@@ -21,3 +21,27 @@ window.addEventListener("keydown", function(evt) {
 			}
 		}
 	});
+
+var loginLink = document.querySelector(".login-link");
+var loginForm = document.querySelector(".login__log");
+var loginClose = document.querySelector(".login__close-log");
+
+loginLink.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		loginForm.classList.add("modal-show");
+	});
+
+loginClose.addEventListener("click", function(evt) {
+		evt.preventDefault();
+		loginForm.classList.remove("modal-show");
+	});
+
+window.addEventListener("keydown", function(evt) {
+		if (evt.keyCode === 27) {
+			evt.preventDefault();
+
+			if (loginForm.classList.contains("modal-show")) {
+				loginForm.classList.remove("modal-show");
+			}
+		}
+	});

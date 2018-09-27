@@ -6,7 +6,8 @@
   border: 1px solid #000000;
 }
 
-.login__reg {
+.login__reg,
+.login__log {
   display: none;
   position: fixed;
   top: 120px;
@@ -20,9 +21,15 @@
 
 .login__info {
   display: flex;
-  width: 300px;
+  justify-content: space-between;
+  width: 340px;
   margin: 0 auto;
   margin-bottom: 48px;
+
+  &--start {
+    justify-content: flex-start;
+    width: 300px;
+  }
 }
 
 .login__info-checkbox + .login__checkbox-name {
@@ -40,6 +47,18 @@
 .login__info-checkbox:checked + .login__checkbox-name {
   color: #ffffff;
 }
+
+.login__restore { 
+color: @link; 
+text-decoration: underline; 
+} 
+
+.login__restore:hover, 
+.login__restore:focus { 
+color: @bg; 
+text-decoration: none; 
+}
+
 .login__button {
   display: block;
   box-sizing: border-box;
