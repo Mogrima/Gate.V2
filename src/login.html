@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>Регистрация на сайте</title>
+  <title>Авторизация на сайте</title>
   //= template/favicon.html
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -22,7 +22,7 @@
       <div class="substrate">
         <!--  Подложка -->
         <div class="page-main__head">
-          <h1 class="title">Регистрация</h1>
+          <h1 class="title">Авторизация</h1>
           <ul class="breadcrumb">
             <li class="breadcrumb__item">
               <a class="breadcrumb__link" href="index.html.html">На главную</a>
@@ -30,29 +30,25 @@
           </ul>
           //= template/search-block.html
           <section class="login">
-            <h2 class="visually-hidden">Здесь можно зарегистрироваться</h2>
-            <p class="section-header login__title">Добро пожаловать</p>
+            <h2 class="visually-hidden">Здесь можно представиться</h2>
+            <p class="section-header login__title">Здравствуйте</p>
             <form action="#" method="post">
               <p class="input__wrapper">
-                <label for="user-name" class="visually-hidden">Ваше имя...</label>
+                <label for="user-name" class="visually-hidden">Ваше имя</label>
                 <input id="user-name" class="input login__input" type="text" name="user-name" placeholder="Ваше имя...">
               </p>
               <p class="input__wrapper">
-                <label for="user-email" class="visually-hidden">Ваш почтовый ящик...</label>
-                <input id="user-email" class="input login__input" type="email" name="user-email" placeholder="Ваш почтовый ящик...">
-              </p>
-              <p class="input__wrapper">
-                <label for="user-pass" class="visually-hidden">Придумайте пароль</label>
-                <input id="user-pass" class="input login__input" type="password" name="user-pass" placeholder="Придумайте пароль">
+                <label for="user-pass" class="visually-hidden">Ваш пароль</label>
+                <input id="user-pass" class="input login__input" type="password" name="user-pass" placeholder="Ваш ключ...">
               </p>
               <div class="login__info">
                 <input id="remember" class="checkbox login__info-checkbox" type="checkbox" name="remember"> <label for="remember" class="checkbox__name login__checkbox-name"><span class="checkbox__indicator login__checkbox-indicator"></span>Запомните меня</label>
+                <a class="login__restore" href="#">Я забыл(а) пароль!</a> 
               </div>
-              <button class="button login__button" type="submit">Зарегистрироваться</button>
+              <button class="button login__button" type="submit">Представиться</button>
             </form>
-            <!-- <button>Закрыть</button> -->
           </section>
-          <p>Уже регистрировались? Тогда вам <a href="">сюда</a></p>
+          <p>Я еще не зарегистрирован(а). <a href="">Тогда вам сюда</a></p>
           </div><!-- Подложка -->
       </div>
     </div>
