@@ -4,7 +4,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var rigger = require("gulp-rigger");
-var uglify = require('gulp-uglify');
+var uglify = require("gulp-uglify");
 var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
 gulp.task("html", function () {
