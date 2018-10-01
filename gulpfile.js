@@ -8,7 +8,7 @@ var uglify = require("gulp-uglify");
 var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
 gulp.task("html", function () {
-    gulp.src("src/*.html")
+    gulp.src("src/**/*.html")
         .pipe(rigger())
         .pipe(gulp.dest("dist/"))
         .pipe(server.stream());
@@ -55,7 +55,7 @@ gulp.task("html", function () {
     ui: false
   });
    gulp.watch("src/less/**/*.less", ["style"]);
-  gulp.watch("dist/*.html").on("change", server.reload);
+  gulp.watch("dist/**/*.html").on("change", server.reload);
   gulp.watch(["src/**/*.html"], function(event, cb) {
         gulp.start("html");
     });
