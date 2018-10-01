@@ -30,10 +30,9 @@ window.addEventListener("keydown", function(evt) {
 var loginLink = document.querySelector(".login-link");
 var loginForm = document.querySelector(".login__log");
 var loginClose = document.querySelector(".login__close-log");
-
-var login = popup.querySelector("[name=user-name]");
-var password = popup.querySelector("[name=user-pass]");
-var storage = localStorage.getItem("login");
+var login = loginForm.querySelector("[name=user-name]");
+var password = loginForm.querySelector("[name=user-pass]");
+var storage = localStorage.getItem("user-name");
 
 loginLink.addEventListener("click", function(evt) {
 		evt.preventDefault();
