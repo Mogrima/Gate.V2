@@ -83,54 +83,18 @@ text-decoration: none;
   background: #fdf30d;
 }
 
-.login__close { 
-position: absolute; 
-top: 0; 
-right: -34px; 
-width: 22px; 
-height: 22px; 
-
-font-size: 0; 
-
-background-color: transparent; 
-border: 0; 
-
-cursor: pointer; 
-} 
-
-.login__close::before, 
-.login__close::after { 
-content: ""; 
-
-position: absolute; 
-top: 20px; 
-left: -45px; 
-
-width: 19px; 
-height: 3px; 
-
-background-color: @link; 
-} 
-
-.login__close:hover::before, 
-.login__close:hover::after, 
-.login__close:focus::before, 
-.login__close:focus::after { 
-background-color: @hover; 
-} 
-
-.login__close::before { 
-transform: rotate(45deg); 
-} 
-
-.login__close::after { 
-transform: rotate(-45deg); 
-}
-
 .modal-show {
   display: block;
   animation-name: fadeInDown; 
   animation-duration: 1s; 
+}
+
+.modal-show--fadeIn {
+  display: block;
+  -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 .login__text {
