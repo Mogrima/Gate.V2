@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Альбом</title>
   //= template/favicon.html
+  <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
   <link href="../css/normalize.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
 </head>
@@ -25,6 +27,14 @@
           </ul>
           //= template/search-block.html
           <p class="page-description">Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия.</p>
+          </div>
+          <div class="slick-slider" width="100%">
+              <div><img src="../img/portraits/Азазель.jpg" alt=""></div>
+              <div><img src="../img/portraits/Аид.jpg" alt=""></div>
+              <div><img src="../img/portraits/Астарот.jpg" alt=""></div>
+              <div><img src="../img/portraits/Басманов.jpg" alt=""></div>
+              <div><img src="../img/portraits/Вельзевул.jpg" alt=""></div>
+              <div><img src="../img/portraits/Винеа.jpg" alt=""></div>
           </div>
         </div>
       </div>
@@ -58,6 +68,19 @@
       //= template/modal-login.html
       //= template/modal-registration.html
       <div class="overlay"></div>
+      <script type="text/javascript" src="../js/jQuery v1.11.0.js"></script>
+      <script type="text/javascript" src="../js/jQuery Migrate v1.2.1.js"></script>
+      <script type="text/javascript" src="../slick/slick.min.js"></script>
       //= template/include__js-modal-inner.html
+      
+      
+      <script type="text/javascript">
+          $('.slick-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1
+          });
+        </script>
     </body>
     </html>
