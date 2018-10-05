@@ -28,14 +28,21 @@
           //= template/search-block.html
           <p class="page-description">Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия.</p>
           </div>
-          <div class="slick-slider" width="100%">
-              <div><img src="../img/portraits/Азазель.jpg" alt=""></div>
-              <div><img src="../img/portraits/Аид.jpg" alt=""></div>
-              <div><img src="../img/portraits/Астарот.jpg" alt=""></div>
-              <div><img src="../img/portraits/Басманов.jpg" alt=""></div>
-              <div><img src="../img/portraits/Вельзевул.jpg" alt=""></div>
-              <div><img src="../img/portraits/Винеа.jpg" alt=""></div>
-          </div>
+          <div class="album-slider">
+              <div><img src="../img/portraits/1.jpg" alt=""></div>
+              <div><img src="../img/portraits/2.jpg" alt=""></div>
+              <div><img src="../img/portraits/3.jpg" alt=""></div>
+              <div><img src="../img/portraits/4.jpg" alt=""></div>
+              <div><img src="../img/portraits/5.jpg" alt=""></div>
+              <div><img src="../img/portraits/6.jpg" alt=""></div>
+        </div>
+        <div class="album-nav">
+          <img src="../img/portraits/1.jpg" width="100" alt="">
+          <img src="../img/portraits/2.jpg" width="100" alt="">
+          <img src="../img/portraits/3.jpg" width="100" alt="">
+          <img src="../img/portraits/4.jpg" width="100" alt="">
+          <img src="../img/portraits/5.jpg" width="100" alt="">
+          <img src="../img/portraits/6.jpg" width="100" alt="">
         </div>
       </div>
     </main>
@@ -75,11 +82,22 @@
       
       
       <script type="text/javascript">
-          $('.slick-slider').slick({
+          $('.album-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.album-nav'
+          });
+          $('.album-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.album-slider',
             dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1
+            centerMode: true,
+             prevArrow: '<button class="arrow arrow__prev">prev</button>',
+            nextArrow: '<button class="arrow arrow__next">next</button>',
+            focusOnSelect: true
           });
         </script>
     </body>
