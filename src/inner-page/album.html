@@ -28,22 +28,36 @@
           //= template/search-block.html
           <p class="page-description">Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия. Таким образом реализация намеченных плановых заданий позволяет оценить значение систем массового участия.</p>
           </div>
-          <div class="album-slider">
-              <div><img src="../img/portraits/1.jpg" alt=""></div>
-              <div><img src="../img/portraits/2.jpg" alt=""></div>
-              <div><img src="../img/portraits/3.jpg" alt=""></div>
-              <div><img src="../img/portraits/4.jpg" alt=""></div>
-              <div><img src="../img/portraits/5.jpg" alt=""></div>
-              <div><img src="../img/portraits/6.jpg" alt=""></div>
-        </div>
-        <div class="album-nav">
-          <img src="../img/portraits/1.jpg" width="100" alt="">
-          <img src="../img/portraits/2.jpg" width="100" alt="">
-          <img src="../img/portraits/3.jpg" width="100" alt="">
-          <img src="../img/portraits/4.jpg" width="100" alt="">
-          <img src="../img/portraits/5.jpg" width="100" alt="">
-          <img src="../img/portraits/6.jpg" width="100" alt="">
-        </div>
+          <div class="slider__container">
+    <div class="slider__content">
+      <div><img class="slider__content-img" src="../img/Азазель.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Аид.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Астарот.jpg" alt=""></div>
+       <div><img class="slider__content-img" src="../img/Басманов.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Вельзевул.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Винеа.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Гефест.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Кошмар.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Леший.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Лилит.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Маммон.jpg" alt=""></div>
+      <div><img class="slider__content-img" src="../img/Сатана.jpg" alt=""></div>
+    </div>
+    <div class="slider__nav">
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Азазель.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Аид.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Астарот.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Басманов.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Вельзевул.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Винеа.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Гефест.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Кошмар.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Леший.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Лилит.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Маммон.jpg" alt=""></div>
+      <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Сатана.jpg" alt=""></div>
+    </div>
+  </div>
       </div>
     </main>
       <footer class="page-footer">
@@ -82,23 +96,21 @@
       
       
       <script type="text/javascript">
-          $('.album-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.album-nav'
-          });
-          $('.album-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.album-slider',
-            dots: true,
-            centerMode: true,
-             prevArrow: '<button class="arrow arrow__prev">prev</button>',
-            nextArrow: '<button class="arrow arrow__next">next</button>',
-            focusOnSelect: true
-          });
+         $(document).ready(function(){
+      $('.slider__content').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+    $('.slider__nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider__content',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
         </script>
     </body>
     </html>
