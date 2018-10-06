@@ -22,9 +22,11 @@
 .slick-track {
 }
 
+.slider__nav {}
+
 .slider__nav-img {
 	width: 150px;
-	height: 150px;	
+	height: 150px;
 }
 
 .slider__nav-item {
@@ -34,6 +36,12 @@
 	margin: 0 auto;
 	background-size: cover;
 	outline: none;
+}
+
+.slick-arrow {
+	&::before {
+		color: @main-color;
+	}
 }
 
 /* 
