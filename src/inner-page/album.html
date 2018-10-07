@@ -14,7 +14,7 @@
   //= template/page-navigation-inner.html
   <main class="page-main">
     <div class="container">
-      <div class="substrate">
+      <div class="substrate substrate__album">
         <!--  Подложка -->
         <div class="page-main__head">
           <h1 class="title">Альбом</h1>
@@ -31,49 +31,54 @@
           <div class="slider__container">
     <div class="slider__content">
       <div>
-        <h3 class="works__title">Азазель</h3>
+        <h3 class="works__title slider__title">Азазель</h3>
         <img class="slider__content-img" src="../img/Азазель.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Аид</h3>
+        <h3 class="works__title slider__title">Аид</h3>
         <img class="slider__content-img" src="../img/Аид.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Астарот</h3>
+        <h3 class="works__title slider__title">Астарот</h3>
         <img class="slider__content-img" src="../img/Астарот.jpg" alt=""></div>
        <div>
-        <h3 class="works__title">Басманов</h3>
+        <h3 class="works__title slider__title">Басманов</h3>
         <img class="slider__content-img" src="../img/Басманов.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Вельзевул</h3>
+        <h3 class="works__title slider__title">Вельзевул</h3>
         <img class="slider__content-img" src="../img/Вельзевул.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Винеа</h3>
+        <h3 class="works__title slider__title">Винеа</h3>
         <img class="slider__content-img" src="../img/Винеа.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Гефест</h3>
+        <h3 class="works__title slider__title">Гефест</h3>
         <img class="slider__content-img" src="../img/Гефест.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Кошмар</h3>
+        <h3 class="works__title slider__title">Кошмар</h3>
         <img class="slider__content-img" src="../img/Кошмар.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Леший</h3>
+        <h3 class="works__title slider__title">Леший</h3>
         <img class="slider__content-img" src="../img/Леший.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Лилит</h3>
+        <h3 class="works__title slider__title">Лилит</h3>
         <img class="slider__content-img" src="../img/Лилит.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Маммон</h3>
+        <h3 class="works__title slider__title">Маммон</h3>
         <img class="slider__content-img" src="../img/Маммон.jpg" alt=""></div>
       <div>
-        <h3 class="works__title">Сатана</h3>
+        <h3 class="works__title slider__title">Сатана</h3>
         <img class="slider__content-img" src="../img/Сатана.jpg" alt=""></div>
         <div>
-        <h3 class="works__title">Страж</h3>
+        <h3 class="works__title slider__title">Страж</h3>
         <img class="slider__content-img" src="../img/Страж.jpg" alt=""></div>
         <div>
-        <h3 class="works__title">Сыновья Моря</h3>
+        <h3 class="works__title slider__title">Сыновья Моря</h3>
         <img class="slider__content-img" src="../img/Сыновья Моря.jpg" alt=""></div>
     </div>
-    <div class="slider__nav">
+    
+  </div>
+
+    </div> <!--  Подложка -->
+    <div class="slider__container">
+      <div class="slider__nav">
       <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Азазель-preview.jpg" alt=""></div>
       <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Аид-preview.jpg" alt=""></div>
       <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Астарот-preview.jpg" alt=""></div>
@@ -88,9 +93,8 @@
       <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Сатана-preview.jpg" alt=""></div>
        <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Страж-preview.jpg" alt=""></div>
         <div class="slider__nav-item"><img class="slider__nav-img" src="../img/Сыновья Моря-preview.jpg" alt=""></div>
+        </div>
     </div>
-  </div>
-      </div>
     </div>
     </main>
       <footer class="page-footer">
@@ -133,7 +137,9 @@
       $('.slider__content').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: '<button class="slider__prev"></button>',
+        nextArrow: '<button class="slider__next"></button>'
       });
     });
     $('.slider__nav').slick({
