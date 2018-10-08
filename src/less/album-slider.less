@@ -1,10 +1,10 @@
-.slider__container {
+.album-slider__container {
 	position: relative;
 	width: 800px;
 	margin: 0 auto;
 }
 
-.slider__content {
+.album-slider__content {
 	position: relative;
 	width: 800px;
 	height: 600px;
@@ -12,52 +12,46 @@
 	margin-bottom: 170px;
 }
 
-.slider__title {
+.album-slider__title {
 	color: #d39d5c;
 }
 
-.slider__content-img {
-	/* width: 600px;
-	 */
+.album-slider__content-img {
 	display: block;
 	margin: 0 auto;
 	background-size: cover;
 	max-height: 650px;
 }
 
-.slider__content .slick-track {
+/* Чтобы высота подложки рисунков была больше самих рисунков */
+
+.album-slider__content .slick-track {
 	height: 800px;
 }
+
+/* Чтобы подложки рисунков были синими */
 
 .slick-track {
 	background-color: lighten(@main-color, 10%);
 }
 
-.slider__nav {
-	background-color: lighten(@main-color, 10%);
-}
+/* Стилизация маленьких картинок превью */
 
-.slider__nav-img {
+.album-slider__nav-img {
 	background-size: cover;
 }
 
-.slider__nav-item {
+.album-slider__nav-item {
+	display: block;
 	width: 150px;
 	height: 150px;
-	display: block;
 	margin: 0 auto;
-	background-size: cover;
 	outline: none;
 }
 
-.slick-arrow {
-	&::before {
-		color: lighten(@main-color, 10%);;
-	}
-}
-
-.slider__prev,
-.slider__next {
+/* Кнопки назад и вперед у большого слайдера */
+.album-slider__prev,
+.album-slider__next {
 	position: absolute;
 	top: 60%;
 	z-index: 100;
@@ -84,7 +78,7 @@
 	}
 }
 
-.slider__next {
+.album-slider__next {
 	right: -63px;
 	border-top-right-radius: 50%;
 	border-bottom-right-radius: 50%;
@@ -95,7 +89,7 @@
 	}
 }
 
-.slider__prev {
+.album-slider__prev {
 	left: -63px;
 	border-top-left-radius: 50%;
 	border-bottom-left-radius: 50%;
@@ -106,17 +100,29 @@
 	}
 }
 
+/* Кнопки-стрелки навигации панели превью (не кастомизированные) */
+
 .slick-prev:before,
 .slick-next:before {
 	color: #d39d5c;
 }
+
+/* Цвета состоания покоя, ховера и активного для точек дотс под слайдером */
 
 .slick-dots li button::before {
 	color: #d39d5c;
 
 }
 
-.slider__count {
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: #d39d5c;
+}
+
+/* Стилизация количества слайдов */
+
+.album-slider__count {
 	position: absolute;
 	bottom: 43px;
 	left: 50%;
@@ -127,14 +133,4 @@
 	color: #b49a7b;
 }
 
-/* 
-
-.slider-nav {
-	width: 300px;
-	height: 300px;
-	margin: 0 auto;
-	margin-top: 220px;	
-}
-
-*/
 
