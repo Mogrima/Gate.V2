@@ -30,52 +30,51 @@
           </div>
           <div class="slider__container">
     <div class="slider__content">
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Азазель</h3>
         <img class="slider__content-img" src="../img/Азазель.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Аид</h3>
         <img class="slider__content-img" src="../img/Аид.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Астарот</h3>
         <img class="slider__content-img" src="../img/Астарот.jpg" alt=""></div>
-       <div>
+       <div class="slider__content-item">
         <h3 class="works__title slider__title">Басманов</h3>
         <img class="slider__content-img" src="../img/Басманов.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Вельзевул</h3>
         <img class="slider__content-img" src="../img/Вельзевул.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Винеа</h3>
         <img class="slider__content-img" src="../img/Винеа.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Гефест</h3>
         <img class="slider__content-img" src="../img/Гефест.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Кошмар</h3>
         <img class="slider__content-img" src="../img/Кошмар.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Леший</h3>
         <img class="slider__content-img" src="../img/Леший.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Лилит</h3>
         <img class="slider__content-img" src="../img/Лилит.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Маммон</h3>
         <img class="slider__content-img" src="../img/Маммон.jpg" alt=""></div>
-      <div>
+      <div class="slider__content-item">
         <h3 class="works__title slider__title">Сатана</h3>
         <img class="slider__content-img" src="../img/Сатана.jpg" alt=""></div>
-        <div>
+        <div class="slider__content-item">
         <h3 class="works__title slider__title">Страж</h3>
         <img class="slider__content-img" src="../img/Страж.jpg" alt=""></div>
-        <div>
+        <div class="slider__content-item">
         <h3 class="works__title slider__title">Сыновья Моря</h3>
         <img class="slider__content-img" src="../img/Сыновья Моря.jpg" alt=""></div>
     </div>
-    
   </div>
-
+  <div class="slider__count"><span class="slider__number">1</span> из <span class="slider__count-total"></span></div>
     </div> <!--  Подложка -->
     <div class="slider__container">
       <div class="slider__nav">
@@ -141,6 +140,11 @@
         prevArrow: '<button class="slider__prev"></button>',
         nextArrow: '<button class="slider__next"></button>'
       });
+       var slider = $('.slider__content');
+            $('.slider__count-total').text( slider.slick("getSlick").slideCount);
+            $(".slider__content").on('afterChange', function(event, slick, currentSlide){
+                 $(".slider__number").text(currentSlide + 1);
+            });
     });
     $('.slider__nav').slick({
       slidesToShow: 3,
