@@ -13,7 +13,7 @@
 }
 
 .album-slider__title {
-	color: #d39d5c;
+	color: @album;
 }
 
 .album-slider__content-img {
@@ -69,12 +69,12 @@
 		width: 30px;
 		height: 30px;
 		
-		border-right: 3px solid #b49a7b;
-		border-bottom: 3px solid #b49a7b;
+		border-right: 3px solid @album-light;
+		border-bottom: 3px solid @album-light;
 	}
 	&:hover::before {
-		border-right-color: #d39d5c;
-		border-bottom-color: #d39d5c;
+		border-right-color: @album;
+		border-bottom-color: @album;
 	}
 }
 
@@ -104,20 +104,20 @@
 
 .slick-prev:before,
 .slick-next:before {
-	color: #d39d5c;
+	color: @album;
 }
 
 /* Цвета состоания покоя, ховера и активного для точек дотс под слайдером */
 
 .slick-dots li button::before {
-	color: #d39d5c;
+	color: @album;
 
 }
 
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: #d39d5c;
+    color: @album;
 }
 
 /* Стилизация количества слайдов */
@@ -130,7 +130,7 @@
 	z-index: 100;
 	font-family: @ff-title;
 	font-size: @subtitle-fz;
-	color: #b49a7b;
+	color: @album-light;
 }
 
 
