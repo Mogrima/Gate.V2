@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>История Мефистофеля</title>
+  <title>История Фокалора</title>
   <link href="img/favicon.png" rel="apple-touch-icon" sizes="180x180">
   <link href="img/favicon.png" rel="icon" sizes="32x32" type="image/png">
   <link href="img/favicon.png" rel="icon" sizes="16x16" type="image/png">
@@ -59,7 +59,7 @@
     <div class="container">
       <div class="substrate substrate__album"> <!--  Подложка -->
         <div class="page-main__head">
-          <h1 class="title">История Мефистофеля</h1>
+          <h1 class="title">История Фокалора</h1>
           <ul class="breadcrumb">
             <li class="breadcrumb__item">
               <a class="breadcrumb__link" href="../index.html">Новости</a>
@@ -70,7 +70,7 @@
             <li class="breadcrumb__item">
               <a class="breadcrumb__link" href="legend.html">Легенды</a>
             </li>
-            <li class="breadcrumb__item breadcrumb__item--current">История Мефистофеля</li>
+            <li class="breadcrumb__item breadcrumb__item--current">История Фокалора</li>
           </ul>
           <div class="search-block">
             <input class="search-block__input" placeholder="Поиск..." type="text"> <span class="search-block__icon"></span>
@@ -80,12 +80,20 @@
           <div class="album-slider__container">
             <div class="album-slider__content">
               <div class="album-slider__content-item">
-                <h3 class="works__title album-slider__title">Мефистофель</h3>
-                <img class="album-slider__content-img" src="../img/legend/mef__cover.jpg" alt="Мефистофель">
+                <h3 class="works__title album-slider__title">Фокалор</h3>
+                <img class="album-slider__content-img" src="../img/legend/focalor__cover.jpg" alt="Фокалор">
               </div>
               <div class="album-slider__content-item">
-                <h3 class="works__title album-slider__title">(Без названия)</h3>
-                <img class="album-slider__content-img" src="../img/legend/mef__ghost.jpg" alt="(Без названия)">
+                <h3 class="works__title album-slider__title">Гнев</h3>
+                <img class="album-slider__content-img" src="../img/legend/focalor__anger.jpg" alt="Гнев">
+              </div>
+              <div class="album-slider__content-item">
+                <h3 class="works__title album-slider__title">В последний раз</h3>
+                <img class="album-slider__content-img" src="../img/legend/focalor__last time.jpg" alt="В последний раз">
+              </div>
+              <div class="album-slider__content-item">
+                <h3 class="works__title album-slider__title">Боль</h3>
+                <img class="album-slider__content-img" src="../img/legend/focalor__pain.jpg" alt="Боль">
               </div>
             </div>
           </div>
@@ -98,10 +106,16 @@
       <div class="album-slider__container">
         <div class="album-slider__nav">
           <div class="album-slider__nav-item">
-            <img class="album-slider__nav-img" src="../img/legend/mef__cover-preview.jpg" width="150" alt="Мефистофель">
+            <img class="album-slider__nav-img" src="../img/legend/focalor__cover-preview.jpg" width="150" alt="Фокалор">
           </div>
           <div class="album-slider__nav-item">
-            <img class="album-slider__nav-img" src="../img/legend/mef__ghost-preview.jpg" width="150" alt="(Без названия)">
+            <img class="album-slider__nav-img" src="../img/legend/focalor__anger-preview.jpg" width="150" alt="Гнев">
+          </div>
+          <div class="album-slider__nav-item">
+            <img class="album-slider__nav-img" src="../img/legend/focalor__last time-preview.jpg" width="150" alt="В последний раз">
+          </div>
+          <div class="album-slider__nav-item">
+            <img class="album-slider__nav-img" src="../img/legend/focalor__pain-preview.jpg" width="150" alt="Боль">
           </div>
         </div>
       </div>
@@ -264,7 +278,7 @@
             });
     });
     $('.album-slider__nav').slick({
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 1,
       asNavFor: ".album-slider__content",
       dots: true,
