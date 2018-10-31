@@ -35,14 +35,14 @@ a:hover {
 	color: #000;
 }
 
-.container,
-.bb-custom-wrapper,
-.bb-bookblock {
+.rider-container,
+.rider__wrapper,
+.rider__content {
 	width: 100%;
 	height: 100%;
 }
 
-.container {
+.rider-container {
 	position: relative;
 	left: 0px;
 	-webkit-transition: left 0.3s ease-in-out;
@@ -54,11 +54,11 @@ a:hover {
 	left: 240px;
 }
 
-.no-js .container {
+.no-js .rider-container {
 	padding-left: 240px;
 }
 
-.menu-panel {
+.rider__nav {
 	background: #f1103a;
 	width: 240px;
 	height: 100%;
@@ -69,12 +69,12 @@ a:hover {
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.js .menu-panel {
+.js .rider__nav {
 	position: absolute;
 	left: -240px;
 }
 
-.menu-panel h3 {
+.rider__nav h3 {
 	font-size: 1.8em;
 	padding: 20px;
 	font-weight: 300;
@@ -98,15 +98,15 @@ a:hover {
 }
 
 .menu-toc li a:hover,
-.menu-toc li.menu-toc-current a{
+.menu-toc li.menu-toc-current a {
 	background: #dd1338;
 }
 
-.menu-panel div {
+.rider__nav div {
 	margin-top: 20px;
 }
 
-.menu-panel div a {
+.rider__nav div a {
 	text-transform: uppercase;
 	font-size: 0.7em;
 	line-height: 1;
@@ -119,42 +119,46 @@ a:hover {
 	text-shadow: 0 1px rgba(255,255,255,0.2);
 } 
 
-.menu-panel div a:hover {
+.rider__nav div a:hover {
 	background: inherit;
 	color: #fff;
 	text-shadow: none;
 }
 
-.bb-custom-wrapper nav {
+.rider__wrapper nav {
 	top: 20px;
 	left: 60px;
 	position: absolute;
 	z-index: 1000;
 }
 
-.bb-custom-wrapper nav span,
+.rider__toggle,
 .menu-button {
 	position: absolute;
 	width: 32px;
 	height: 32px;
 	top: 0;
 	left: 0;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 100%;
+	font-weight: 700;
+	line-height: 30px;
 	background: #f1103a;
 	border-radius: 50%;
+	border: none;
 	color: #fff;
-	line-height: 30px;
 	text-align: center;
 	speak: none;
 	font-weight: bold;
 	cursor: pointer;
 }
 
-.bb-custom-wrapper nav span:hover,
+.rider__toggle:hover,
 .menu-button:hover {
 	background: #000;
 }
 
-.bb-custom-wrapper nav span:last-child {
+.rider__toggle--right {
 	left: 40px;
 }
 
@@ -177,7 +181,7 @@ a:hover {
 	box-shadow: 0 -4px #fff, 0 4px #fff;
 }
 
-.no-js .bb-custom-wrapper nav span,
+.no-js .rider__toggle,
 .no-js .menu-button {
 	display: none;
 }
@@ -221,7 +225,7 @@ a:hover {
 	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }
 
-.content h2 {
+.content h3 {
 	font-weight: 300;
 	font-size: 4em;
 	padding: 0 0 10px;
@@ -232,7 +236,7 @@ a:hover {
 	text-shadow: 0 0 2px #fff;
 }
 
-.no-js .content h2 {
+.no-js .content h3 {
 	padding: 40px 1% 20px;
 }
 
@@ -245,17 +249,17 @@ a:hover {
 }
 
 @media screen and (max-width: 800px){
-	.no-js .menu-panel {
+	.no-js .rider__nav {
 		display: none;
 	}
 
-	.no-js .container {
+	.no-js .rider-container {
 		padding: 0;
 	}
 }
 
 @media screen and (max-width: 400px){
-	.menu-panel,
+	.rider__nav,
 	.content {
 		font-size: 75%;
 	}
