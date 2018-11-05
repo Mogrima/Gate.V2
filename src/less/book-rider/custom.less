@@ -78,10 +78,10 @@ a:hover {
 
 .rider__nav-subheading {
 	display: block;
-	padding: 0 20px;
+	padding: 20px 20px;
 	font-family: @ff-subtitle;
 	font-size: @subheading;
-	line-height: 3.5;
+	line-height: @base-lh;
 	color: @bg;
 	cursor: pointer;
 	background: @main-color; /* #f1103a */
@@ -136,13 +136,30 @@ a:hover {
 	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05);
 }
 
-.rider__toggle,
 .menu-button {
 	position: absolute;
 	width: 32px;
 	height: 32px;
 	top: 0;
 	left: 0;
+	font-family: 'Vollkorn Bold', sans-serif;
+	font-size: 100%;
+	font-weight: 700;
+	color: @bg;
+	line-height: 30px;
+	background: @main-color;
+	border-radius: 50%;
+	border: none;
+	text-align: center;
+	speak: none;
+	cursor: pointer;
+}
+.rider__toggle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
 	font-family: 'Vollkorn Bold', sans-serif;
 	font-size: 100%;
 	font-weight: 700;
