@@ -34,6 +34,16 @@ gulp.task("html", function () {
     .pipe(gulp.dest("dist/css"))
     .pipe(server.stream());
 });
+ gulp.task("book", function() {
+  gulp.src("src/less/book.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(server.stream());
+});
  gulp.task("js", function () {
     gulp.src("src/js/*.js")
         .pipe(uglify())
@@ -82,6 +92,9 @@ gulp.task("html", function () {
     });
   gulp.watch(["src/less/book-rider/*.less"], function(event, cb) {
         gulp.start("book-css");
+    });
+  gulp.watch(["src/less/book.less"], function(event, cb) {
+        gulp.start("book");
     });
   gulp.watch(["src/img/**/*.*"], function(event, cb) {
         gulp.start("image");
