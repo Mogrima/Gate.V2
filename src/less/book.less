@@ -372,7 +372,7 @@ body {
 
 /*плавное появление заголовка оглавления при раскрытии панели */
 
-[id='content-nav__toggle']:checked ~ .content-nav h2 {
+[id='content-nav__toggle']:checked ~ .content-nav .content-nav__title {
     opacity: 1;
     transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -380,19 +380,19 @@ body {
     -webkit-transform: scale(1, 1);
 }
 
-.content-nav > ul {
+.content-nav__list {
     display: block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.content-nav > ul > li {
+.content-nav__item {
     line-height: 2.5;
     opacity: 0;
 }
 
-[id='content-nav__toggle']:checked ~ .content-nav > ul > li {
+[id='content-nav__toggle']:checked ~ .content-nav .content-nav__item {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -404,8 +404,8 @@ body {
  * состояние ссылок меню при наведении
  */
 
-.content-nav > ul > li > a:hover,
-.content-nav > ul > li > a:focus {
+.content-nav__link:hover,
+.content-nav__link:focus {
     color: white;
     padding-left: 15px;
 }
@@ -415,7 +415,7 @@ body {
  * линия подчеркивания ссылок меню
  */
 
-.content-nav > ul > li > a:before {
+.content-nav__link:before {
     content: '';
     display: block;
     position: absolute;
@@ -427,7 +427,7 @@ body {
     transition: width 0s ease;
 }
 
-.content-nav > ul > li > a:after {
+.content-nav__link:after {
     content: '';
     display: block;
     position: absolute;
@@ -446,14 +446,14 @@ body {
  * ссылок при наведении
  */
 
-.content-nav > ul > li > a:hover:before {
+.content-nav__link:hover:before {
     width: 0%;
     background: @bg;
     -webkit-transition: width .5s ease;
     transition: width .5s ease;
 }
 
-.content-nav > ul > li > a:hover:after {
+.content-nav__link:hover:after {
     width: 0%;
     background: transparent;
     -webkit-transition: width 0s ease;
