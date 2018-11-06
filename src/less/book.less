@@ -14,14 +14,14 @@ body {
 	line-height: 1.6;
 }
 
-.header {
+.book-header {
 	display: relative;
 	-webkit-transition: -webkit-transform .3s;
 	-moz-transition: -moz-transform .3s;
 	transition: transform .3s;
 }
 
-.book-title {
+.book-header__title {
 	display: block;
 	position: relative;
 	width: 340px;
@@ -55,7 +55,7 @@ body {
 	text-shadow: 0 0 2px #fff;
 }
 
-.content-title {
+.content-nav__title {
 	margin: 10px 0;
 	padding: 0;
 
@@ -82,7 +82,7 @@ body {
 	-webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
 }
 
-.link-page {
+.content-nav__link {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -116,37 +116,6 @@ body {
 	&:hover {
 		text-decoration: underline;
 	}
-	&__leaf {
-		position: relative;
-		width: 100px;
-		&--prev {
-			svg {
-				transform: rotate(180deg);
-			}
-		}
-		&:hover,
-		&:focus {
-			path {
-				fill: lighten(@main-color, 30%);
-			}
-		}
-		&--disabled {
-			cursor: default;
-			svg {
-				path {
-					fill: @disabled;
-				}
-			}
-			&:hover,
-			&:focus {
-				svg {
-					path {
-						fill: @disabled;
-					}
-				}
-			}
-		}
-	}
 	&--to-back {
 		position: absolute;
 		right: 0;
@@ -157,12 +126,44 @@ body {
 	}
 }
 
-.columns {
+.page-navigation__link {
+	position: relative;
+	width: 100px;
+	&--prev {
+		svg {
+			transform: rotate(180deg);
+		}
+	}
+	&:hover,
+	&:focus {
+		path {
+			fill: lighten(@main-color, 30%);
+		}
+	}
+	&--disabled {
+		cursor: default;
+		svg {
+			path {
+				fill: @disabled;
+			}
+		}
+		&:hover,
+		&:focus {
+			svg {
+				path {
+					fill: @disabled;
+				}
+			}
+		}
+	}
+}
+
+.book-columns {
 	display: flex;
 	justify-content: space-between;
 }
 
-.column {
+.book-columns__column {
 	display: flex;
 	flex-direction: column;
 	width: 48%;
@@ -204,19 +205,19 @@ body {
 	}
 }
 
-main {
+.book-main {
     max-width: 90%;
     margin: 0 auto
 }
 
-article {
+.section-book {
 	margin-bottom: 48px;
     -webkit-transition: -webkit-transform .3s;
     -moz-transition: -moz-transform .3s;
     transition: transform .3s;
 }
 
-.nav {
+.content-nav {
 	position: fixed;
 	top: 0;
     bottom: 0;
@@ -236,7 +237,7 @@ article {
     transition: left 0.3s;   
 }
 
-.nav-toggle {
+.content-nav__toggle {
     position: absolute;
     left: 325px;
     /* отступ от верхнего края панели */
@@ -265,12 +266,12 @@ article {
  * символ Unicode (TRIGRAM FOR HEAVEN)
 */
 
-.nav-toggle::after {
+.content-nav__toggle::after {
     content: '\2630';
     text-decoration: none;
 }
 
-.nav-toggle:hover {
+.content-nav__toggle:hover {
     color: lighten(@link, 20%);
 }
 
@@ -280,7 +281,7 @@ article {
  * имя селектора атрибут флажка
  */
 
-[id='nav-toggle'] {
+[id='content-nav__toggle'] {
     position: absolute;
     display: none;
 }
@@ -291,7 +292,7 @@ article {
  * когда навигация раскрыта, распологаем внутри панели
 */
 
-[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+[id='content-nav__toggle']:checked ~ .content-nav > .content-nav__toggle {
     left: auto;
     right: 2px;
     top: 1em;
@@ -302,7 +303,7 @@ article {
  * используем псевдокласс:checked
  */
 
-[id='nav-toggle']:checked ~ .nav {
+[id='content-nav__toggle']:checked ~ .content-nav {
     left: 0;
     box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
     -moz-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
@@ -316,8 +317,8 @@ article {
  * на размер ширины панели
 */
 
-[id='nav-toggle']:checked ~ .header,
-[id='nav-toggle']:checked ~ main > article {
+[id='content-nav__toggle']:checked ~ .book-header,
+[id='content-nav__toggle']:checked ~ .book-main > .section-book {
     -webkit-transform: translateX(320px);
     -moz-transform: translateX(320px);
     transform: translateX(320px);
@@ -329,7 +330,7 @@ article {
  * привычный крестик (MULTIPLICATION X)
 */
 
-[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+[id='content-nav__toggle']:checked ~ .content-nav > .content-nav__toggle:after {
     content: '\2715';
 }
 
@@ -362,7 +363,7 @@ body {
       margin: 0;
       overflow-x: hidden;
     }
-    .nav {
+    .content-nav {
       width: 100%;
       box-shadow: none
     }
@@ -371,7 +372,7 @@ body {
 
 /*плавное появление заголовка оглавления при раскрытии панели */
 
-[id='nav-toggle']:checked ~ .nav h2 {
+[id='content-nav__toggle']:checked ~ .content-nav h2 {
     opacity: 1;
     transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -379,19 +380,19 @@ body {
     -webkit-transform: scale(1, 1);
 }
 
-.nav > ul {
+.content-nav > ul {
     display: block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.nav > ul > li {
+.content-nav > ul > li {
     line-height: 2.5;
     opacity: 0;
 }
 
-[id='nav-toggle']:checked ~ .nav > ul > li {
+[id='content-nav__toggle']:checked ~ .content-nav > ul > li {
     opacity: 1;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -403,8 +404,8 @@ body {
  * состояние ссылок меню при наведении
  */
 
-.nav > ul > li > a:hover,
-.nav > ul > li > a:focus {
+.content-nav > ul > li > a:hover,
+.content-nav > ul > li > a:focus {
     color: white;
     padding-left: 15px;
 }
@@ -414,7 +415,7 @@ body {
  * линия подчеркивания ссылок меню
  */
 
-.nav > ul > li > a:before {
+.content-nav > ul > li > a:before {
     content: '';
     display: block;
     position: absolute;
@@ -426,7 +427,7 @@ body {
     transition: width 0s ease;
 }
 
-.nav > ul > li > a:after {
+.content-nav > ul > li > a:after {
     content: '';
     display: block;
     position: absolute;
@@ -445,14 +446,14 @@ body {
  * ссылок при наведении
  */
 
-.nav > ul > li > a:hover:before {
+.content-nav > ul > li > a:hover:before {
     width: 0%;
     background: @bg;
     -webkit-transition: width .5s ease;
     transition: width .5s ease;
 }
 
-.nav > ul > li > a:hover:after {
+.content-nav > ul > li > a:hover:after {
     width: 0%;
     background: transparent;
     -webkit-transition: width 0s ease;
@@ -479,7 +480,7 @@ body {
     opacity: 0;
 }
 
-[id='nav-toggle']:checked ~ .mask-content {
+[id='content-nav__toggle']:checked ~ .mask-content {
     visibility: visible;
     opacity: 1;
     -webkit-transition: opacity .5s, visibility .5s;

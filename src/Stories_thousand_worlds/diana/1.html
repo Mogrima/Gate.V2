@@ -7,32 +7,32 @@
   <link rel="stylesheet" href="../../css/book.css">
 </head>
 <body>
-	<input type="checkbox" id="nav-toggle" hidden>
-	<header class="header">
-		<h1 class="title book-title">Истории тысячи миров</h1>
+	<input type="checkbox" id="content-nav__toggle" hidden>
+	<header class="book-header">
+		<h1 class="title book-header__title">Истории тысячи миров</h1>
 		<a class="link-book link-book--to-back" href="../../works-catalog.html">К другим книгам</a>
 	</header>
-		<nav class="nav">
-			<label for="nav-toggle" class="nav-toggle" onclick></label>
-			<h2 class="content-title">Оглавление</h2>
+		<nav class="content-nav">
+			<label for="content-nav__toggle" class="content-nav__toggle" onclick></label>
+			<h2 class="content-nav__title">Оглавление</h2>
 			<ul>
-	            <li><a class="link-page" href="#1">* * *</a>
-	            <li><a class="link-page" href="#2">Певчий чердак</a>
-	            <li><a class="link-page" href="#3">Привратник и овощи</a>
-	            <li><a class="link-page" href="#4">Особое отношение</a>
-	            <li><a class="link-page" href="#5">Неугосимый огонь</a>
-	            <li><a class="link-page" href="#6">Король двенадцати дней</a>
-	            <li><a class="link-page" href="#7">Секрет жизни</a>
-	            <li><a class="link-page" href="#7">Принц и скрипач</a> 
-	            <li><a class="link-page" href="#7">Оковы здравомыслия</a> 
+	            <li><a class="content-nav__link" href="#1">* * *</a>
+	            <li><a class="content-nav__link" href="#2">Певчий чердак</a>
+	            <li><a class="content-nav__link" href="#3">Привратник и овощи</a>
+	            <li><a class="content-nav__link" href="#4">Особое отношение</a>
+	            <li><a class="content-nav__link" href="#5">Неугосимый огонь</a>
+	            <li><a class="content-nav__link" href="#6">Король двенадцати дней</a>
+	            <li><a class="content-nav__link" href="#7">Секрет жизни</a>
+	            <li><a class="content-nav__link" href="#7">Принц и скрипач</a> 
+	            <li><a class="content-nav__link" href="#7">Оковы здравомыслия</a> 
 	        </ul>
 	    </nav>
 	    <div class="mask-content"></div>
-	<main>
-		<article>
+	<main class="book-main">
+		<article class="section-book">
 			<h2 class="section-book__title">* * *</h2>
-			<div class="columns">
-				<div class="column column--left">
+			<div class="book-columns">
+				<div class="book-columns__column book-columns__column--left">
 					<div class="paragraph-wrapper">
 						<p class="section-book__paragraph">Диана лежала в своей пастели и всматривалась в тени вокруг. В эти уродливые очертания невиданных, безликих чудовищ, притаившихся в темноте, безмолвно ждущих когда она закроет глаза… Иногда краем глаза она видела их перемещения, когда они думали будто их никто не видит. Они, бесспорно, ходили по дому совершенно свободно, как настоящие хозяева едва свет во всех комнатах затухал, а люди – их соседи засыпали. Эти тени не трогают ее пока она спит, но Диана уверена, что когда-нибудь их ледяные пальцы разбудят ее посреди ночи. Когда-нибудь… может даже сегодня. Они ждут заветной ночи, но какая именно эта самая ночь?</p>
 						<p class="section-book__paragraph">Сегодня ее день рождения. Но он уже прошел, за окном было чернильное небо, и свет уличного фонаря выхватывал из тьмы ветки серого тополя, иногда бьющиеся с жутким скрипом в старое окно. Вкусный торт, испеченный мамой, съеден, как и прочие менее привлекательные в сравнении с десертом блюда. Лора ушла к себе домой, забыв своего зайца в гостиной. В тайне Диана мечтала о том, чтобы глупая девочка и не вспомнила об игрушке и красивый, расшитый цветами зайчик остался у нее навсегда… Лора была действительно глупой, так как не дождалась торта и была так рада родителям, зашедшим за ней, что даже не попрощалась.</p>
@@ -41,7 +41,7 @@
 					</div>
 					<div class="number-page"><span>1</span></div>
 				</div>
-				<div class="column column--right">
+				<div class="book-columns__column book-columns__column--right">
 					
 					<div class="paragraph-wrapper">
 						<p class="section-book__paragraph">Сегодня так уснуть не удалось. Сначала покоя не давали всякие мысли о пустяках, о зайце, о подаренной Лорой книжке с цветными картинками. Да и, в конце концов, как сказала мама с утра: «Пять лет это важное событие!». А потом уже стемнело за окном. </p>
@@ -59,11 +59,11 @@
 				</div>
 			</div>
 			<div class="page-navigation">
-				<a class="link-book link-book__leaf link-book__leaf--prev link-book__leaf--disabled" href="#"><span class="visually-hidden">Предыдущая страница</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.5 17.79"><defs><style>.cls-1{fill:#1a172a;}</style></defs><title>Ресурс 3</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M106.1,8.17a.88.88,0,0,0-.5-.17A76.24,76.24,0,0,1,83.65,5.14a42.32,42.32,0,0,1-4.81-1.75,2.14,2.14,0,1,0-3.31.2l0,.05.06,0a.65.65,0,0,0,.17.16h0l.11.06s0,0,0,0A42.37,42.37,0,0,0,87.65,8H19.42a2.5,2.5,0,0,0-4.66,0h-1.3A3.56,3.56,0,0,0,6.57,8H4.83a2.51,2.51,0,1,0,0,1.79H6.57a3.55,3.55,0,0,0,6.89,0h1.3a2.49,2.49,0,0,0,4.66,0H87.65c-8,1.73-11.78,4.1-11.86,4.15a.9.9,0,0,0-.2.19h0l-.06.07a2.15,2.15,0,1,0,3.32.19c3.7-1.63,12.4-4.61,26.76-4.61a1,1,0,0,0,.35-.07.91.91,0,0,0,.55-.82A.89.89,0,0,0,106.1,8.17ZM10,10.68a1.79,1.79,0,1,1,1.75-2.15.91.91,0,0,0-.08.37.86.86,0,0,0,.08.36A1.79,1.79,0,0,1,10,10.68Z"/></g></g></svg>
+				<a class="link-book page-navigation__link page-navigation__link--prev page-navigation__link--disabled" href="#"><span class="visually-hidden">Предыдущая страница</span>
+				<svg xmlns="http://www.w3.org/2000/svg" with="100" viewBox="0 0 106.5 17.79"><defs><style>.cls-1{fill:#1a172a;}</style></defs><title>Ресурс 3</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M106.1,8.17a.88.88,0,0,0-.5-.17A76.24,76.24,0,0,1,83.65,5.14a42.32,42.32,0,0,1-4.81-1.75,2.14,2.14,0,1,0-3.31.2l0,.05.06,0a.65.65,0,0,0,.17.16h0l.11.06s0,0,0,0A42.37,42.37,0,0,0,87.65,8H19.42a2.5,2.5,0,0,0-4.66,0h-1.3A3.56,3.56,0,0,0,6.57,8H4.83a2.51,2.51,0,1,0,0,1.79H6.57a3.55,3.55,0,0,0,6.89,0h1.3a2.49,2.49,0,0,0,4.66,0H87.65c-8,1.73-11.78,4.1-11.86,4.15a.9.9,0,0,0-.2.19h0l-.06.07a2.15,2.15,0,1,0,3.32.19c3.7-1.63,12.4-4.61,26.76-4.61a1,1,0,0,0,.35-.07.91.91,0,0,0,.55-.82A.89.89,0,0,0,106.1,8.17ZM10,10.68a1.79,1.79,0,1,1,1.75-2.15.91.91,0,0,0-.08.37.86.86,0,0,0,.08.36A1.79,1.79,0,0,1,10,10.68Z"/></g></g></svg>
 				</a>
-			    <a class="link-book link-book__leaf" href="#"><span class="visually-hidden">Следующая страница</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.5 17.79"><defs><style>.cls-1{fill:#1a172a;}</style></defs><title>Ресурс 3</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M106.1,8.17a.88.88,0,0,0-.5-.17A76.24,76.24,0,0,1,83.65,5.14a42.32,42.32,0,0,1-4.81-1.75,2.14,2.14,0,1,0-3.31.2l0,.05.06,0a.65.65,0,0,0,.17.16h0l.11.06s0,0,0,0A42.37,42.37,0,0,0,87.65,8H19.42a2.5,2.5,0,0,0-4.66,0h-1.3A3.56,3.56,0,0,0,6.57,8H4.83a2.51,2.51,0,1,0,0,1.79H6.57a3.55,3.55,0,0,0,6.89,0h1.3a2.49,2.49,0,0,0,4.66,0H87.65c-8,1.73-11.78,4.1-11.86,4.15a.9.9,0,0,0-.2.19h0l-.06.07a2.15,2.15,0,1,0,3.32.19c3.7-1.63,12.4-4.61,26.76-4.61a1,1,0,0,0,.35-.07.91.91,0,0,0,.55-.82A.89.89,0,0,0,106.1,8.17ZM10,10.68a1.79,1.79,0,1,1,1.75-2.15.91.91,0,0,0-.08.37.86.86,0,0,0,.08.36A1.79,1.79,0,0,1,10,10.68Z"/></g></g></svg>
+			    <a class="link-book page-navigation__link" href="#"><span class="visually-hidden">Следующая страница</span>
+				<svg xmlns="http://www.w3.org/2000/svg" with="100" viewBox="0 0 106.5 17.79"><defs><style>.cls-1{fill:#1a172a;}</style></defs><title></title><g id="Слой_2" data-name="Слой 2"><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M106.1,8.17a.88.88,0,0,0-.5-.17A76.24,76.24,0,0,1,83.65,5.14a42.32,42.32,0,0,1-4.81-1.75,2.14,2.14,0,1,0-3.31.2l0,.05.06,0a.65.65,0,0,0,.17.16h0l.11.06s0,0,0,0A42.37,42.37,0,0,0,87.65,8H19.42a2.5,2.5,0,0,0-4.66,0h-1.3A3.56,3.56,0,0,0,6.57,8H4.83a2.51,2.51,0,1,0,0,1.79H6.57a3.55,3.55,0,0,0,6.89,0h1.3a2.49,2.49,0,0,0,4.66,0H87.65c-8,1.73-11.78,4.1-11.86,4.15a.9.9,0,0,0-.2.19h0l-.06.07a2.15,2.15,0,1,0,3.32.19c3.7-1.63,12.4-4.61,26.76-4.61a1,1,0,0,0,.35-.07.91.91,0,0,0,.55-.82A.89.89,0,0,0,106.1,8.17ZM10,10.68a1.79,1.79,0,1,1,1.75-2.15.91.91,0,0,0-.08.37.86.86,0,0,0,.08.36A1.79,1.79,0,0,1,10,10.68Z"/></g></g></svg>
 				</a>
 			</div>
 		</article>
