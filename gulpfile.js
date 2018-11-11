@@ -1,4 +1,5 @@
 var gulp = require("gulp");
+var watch = require('gulp-watch');
 var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
@@ -9,23 +10,13 @@ var imagemin = require("gulp-imagemin");
 var concat = require("gulp-concat");
 var server = require("browser-sync").create();
 gulp.task("html", function () {
-    gulp.src("src/**/*.html")
+  gulp.src("src/**/*.html")
         .pipe(rigger())
         .pipe(gulp.dest("dist/"))
         .pipe(server.stream());
 });
  gulp.task("style", function() {
   gulp.src("src/less/style.less")
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest("dist/css"))
-    .pipe(server.stream());
-});
- gulp.task("book-css", function() {
-  gulp.src("src/less/book-rider/book-rider.less")
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
@@ -71,9 +62,11 @@ gulp.task("html", function () {
     "html",
     "js",
     "style",
+    "book",
     "fonts",
     "image"
 ]);
+
  gulp.task("serve", ["build"], function() {
   server.init({
     server: "dist/",
@@ -87,14 +80,11 @@ gulp.task("html", function () {
   gulp.watch(["src/**/*.html"], function(event, cb) {
         gulp.start("html");
     });
-  gulp.watch(["src/js/*.js"], function(event, cb) {
-        gulp.start("js");
-    });
-  gulp.watch(["src/less/book-rider/*.less"], function(event, cb) {
-        gulp.start("book-css");
-    });
   gulp.watch(["src/less/book.less"], function(event, cb) {
         gulp.start("book");
+    });
+  gulp.watch(["src/js/*.js"], function(event, cb) {
+        gulp.start("js");
     });
   gulp.watch(["src/img/**/*.*"], function(event, cb) {
         gulp.start("image");
