@@ -30,3 +30,17 @@
 	font-size: 14px;
 	color: @text;
 }
+
+@media(max-width: @mobile-width) {
+	.header-title {
+		flex-direction: column;
+	}
+
+	.header-title__title {
+		flex-grow: 0;
+	}
+
+	.header-title__date {
+		margin-top: 0;
+	}
+}

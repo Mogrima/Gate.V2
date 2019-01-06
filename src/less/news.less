@@ -2,6 +2,7 @@
 	width: 835px;
 	margin: 0 auto;
 	margin-bottom: 70px;
+	padding: 0;
 
 	list-style: none;
 }
@@ -23,7 +24,21 @@
 }
 
 @media(max-width: @mobile-width) {
+	.news {
+	
+	}
 	.news__list {
-		width: 320px;
+		width: auto;
+	}
+
+	.news__picture {
+		float: none;
+		display: block;
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.news__text {
+		text-align: justify;
 	}
 }
