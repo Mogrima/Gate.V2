@@ -38,6 +38,15 @@
 	color: @bg;
 }
 
+@media(max-width: @mobile-width) {
+	.page-navigation {
+		width: 320px;
+	}
+	.page-navigation__list {
+		flex-direction: column;
+	}
+}
+
 /* Градиент меню */
 
 .page-navigation__link {
