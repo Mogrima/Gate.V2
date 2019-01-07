@@ -92,6 +92,21 @@
 	}
 
 	.works__item {
-		margin-right: 0;
+		margin: 0 auto;
+	}
+
+	.works__item:nth-child(3n) {
+		margin-right: auto;
+	}
+
+	.works__title {
+		&--mt {
+			margin-top: @title-works_mr;
+		}
+		font-size: @title-works-mob;
+	}
+
+	.works__image {
+		box-shadow: none;
 	}
 }
