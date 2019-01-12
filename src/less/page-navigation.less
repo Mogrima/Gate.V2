@@ -8,6 +8,10 @@
 	color: @bg;
 }
 
+.page-navigation__toggle {
+	display: none;
+}
+
 .page-navigation__list {
 	display: flex;
 	flex-wrap: wrap;
@@ -40,8 +44,64 @@
 
 @media(max-width: @mobile-width) {
 	.page-navigation {
+		position: relative;
 		width: 320px;
 	}
+
+	.page-navigation__toggle {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 2;
+
+		display: block;
+		width: 70px;
+		height: 50px;
+		background-color: transparent;
+		border: none;
+		color: @main-color;
+		/* &:hover,
+		&:focus {
+			background-color: #624530;
+		} */
+	}
+
+.page-navigation--opened .page-navigation__toggle {
+	top: 0;
+
+	&::before,
+	&::after {
+		content: "";
+
+		position: absolute;
+		top: 24px;
+		left: 18px;
+	
+		width: 36px;
+		height: 2px;
+	
+		background-color: @main-color;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+	&::after {
+		transform: rotate(-45deg);
+	}
+
+	&:active::before,
+	&:active::after {
+		background-color: @main-color;
+	}
+
+	}
+
+	.page-navigation--opened .page-navigation__item--active a {
+		color: fade(@main-color, 50%);
+	}
+
 	.page-navigation__list {
 		flex-direction: column;
 	}
@@ -49,6 +109,40 @@
 	.page-navigation__item {
 		padding-right: 0;
 	}
+	.page-navigation--closed .page-navigation__toggle::before {
+		content: "";
+
+		position: absolute;
+		top: 15px;
+		left: 17px;
+
+		width: 36px;
+		height: 2px;
+
+		background-color: @main-color;
+		box-shadow: 0 8px 00 @main-color, 0 16px 0 0 @main-color;
+	}
+
+	.page-navigation--closed .page-navigation__item {
+		display: none;
+
+		&--active {
+	    	display: block;
+	    }
+	}
+
+	.page-navigation--nojs .page-navigation__toggle {
+	  	display: none;
+	  }
+
+	.page-navigation--nojs .main-nav__wrapper {
+	  	position: static;
+	  	min-height: 0;
+	  }
+
+	.page-navigation--nojs .page-navigation__item {
+	  	display: block;
+	  }
 }
 
 /* Градиент меню */
