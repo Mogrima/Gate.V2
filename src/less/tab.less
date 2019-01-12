@@ -116,3 +116,13 @@
 .flipIn, .tab__title, .tab__item {
   animation: flipdown 1s ease both;
 }
+
+@media (max-width: @mobile-width) {
+  .tab__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .tab__item {
+    padding: 0;
+  }
+}
