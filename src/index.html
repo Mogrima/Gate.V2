@@ -128,22 +128,7 @@
   //= template/modal-registration.html
   <div class="overlay"></div>
   //= template/mobile-menu-js.html
+  //= template/user-menu-js.html
   //= template/include__js-modal.html
-  <script>
-    var navUser = document.querySelector('.user-navigation');
-    var UserToggle = document.querySelector('.user-navigation__toggle');
-
-    navUser.classList.remove('user-navigation--nojs');
-
-    UserToggle.addEventListener('click', function() {
-      if (navUser.classList.contains('user-navigation--closed')) {
-        navUser.classList.remove('user-navigation--closed');
-        navUser.classList.add('user-navigation--opened');
-      } else {
-        navUser.classList.add('user-navigation--closed');
-        navUser.classList.remove('user-navigation--opened');
-      }
-    });
-  </script>
 </body>
 </html>
