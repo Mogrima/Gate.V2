@@ -3,6 +3,7 @@ var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var uglify = require("gulp-uglify");
 var rigger = require("gulp-rigger");
 var imagemin = require("gulp-imagemin");
 var server = require("browser-sync").create();
@@ -21,6 +22,12 @@ gulp.task("html:build", function () {
     ]))
     .pipe(gulp.dest("dist/css"))
     .pipe(server.stream());
+});
+ gulp.task("js", function () {
+    gulp.src("src/js/*.js")
+        .pipe(uglify())
+        .pipe(gulp.dest("dist/js"))
+        .pipe(server.stream());
 });
  gulp.task("image:build", function () {
     gulp.src("src/img/**/*.*")
