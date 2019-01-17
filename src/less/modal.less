@@ -110,3 +110,26 @@ text-decoration: none;
     text-decoration: underline;
   }
 }
+
+@media (max-width: @mobile-width) {
+  .login {
+    box-sizing: border-box;
+    width: 320px;
+  }
+
+  .login__reg {
+    margin: 0;
+    margin-left: -236px;
+    background-color: #1a172a;
+    background-color: lighten(#1a172a, 15%);
+  }
+
+  .login__info {
+    margin-bottom: 24px;
+  }
+
+  .login__button {
+    color: #1a172a;
+    background: #fdf30d;
+  }
+}
