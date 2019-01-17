@@ -115,17 +115,30 @@ text-decoration: none;
   .login {
     box-sizing: border-box;
     width: 320px;
+
+    background-color: lighten(#1a172a, 15%);
   }
 
   .login__reg {
     margin: 0;
     margin-left: -236px;
-    background-color: #1a172a;
-    background-color: lighten(#1a172a, 15%);
   }
 
   .login__info {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     margin-bottom: 24px;
+    
+  }
+
+  .login__checkbox-name {
+    margin-right: 47px !important;
+  }
+
+  .login__restore {
+    align-self: center;
+    padding-top: 16px;
   }
 
   .login__button {
