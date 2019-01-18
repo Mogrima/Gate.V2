@@ -114,7 +114,8 @@ text-decoration: none;
 @media (max-width: @mobile-width) {
   .login {
     box-sizing: border-box;
-    width: 320px;
+    width: 100%;
+
 
     background-color: lighten(#1a172a, 15%);
   }
@@ -151,10 +152,16 @@ text-decoration: none;
   }
 
   .login--page {
-    width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 20px;
+    text-align: center;
   }
 
   .login__input--page {
-    width: auto;
+    width: 100%;
   }
 }
