@@ -133,4 +133,20 @@
 	color: @album-light;
 }
 
+@media(max-width: @mobile-width) {
+	.album-slider__container {
+		width: 100%;
+	}
 
+	.album-slider__content {
+		width: 100%;
+	}
+
+	.album-slider__nav {
+		display: none;
+	}
+
+	.album-slider__content .slick-track {
+		height: 600px;
+	}
+}
