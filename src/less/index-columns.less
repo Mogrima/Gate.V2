@@ -1,19 +1,16 @@
 .index-columns {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 }
 
-.index-columns--border {
-	border: 3px solid rgba(172, 101, 126, 0.4);
-	border-radius: 10px;
-}
-
-@media (max-width: @mobile-width) {
+@media(min-width: @tablet-width) {
 	.index-columns {
-		flex-direction: column;
+		justify-content: space-around;
+		flex-direction: row;
 	}
 
-	.index-columns--border  {
-		border: none;
+	.index-columns--border {
+		border: 3px solid rgba(172, 101, 126, 0.4);
+		border-radius: 10px;
 	}
-}
+} 
