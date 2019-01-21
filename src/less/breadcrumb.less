@@ -1,4 +1,9 @@
 .breadcrumb {
+	display: none;
+	}
+
+@media(min-width: @tablet-width) {
+	.breadcrumb {
 	display: flex;
 	position: relative;
 	margin: 0;
@@ -39,11 +44,6 @@
 	&:hover,
 	&:focus {
 		text-decoration: underline;
-	}
-}
-
-@media (max-width: @mobile-width) {
-	.breadcrumb {
-		display: none;
+		}
 	}
 }
