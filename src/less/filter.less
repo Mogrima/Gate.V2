@@ -108,7 +108,7 @@
 
 @media (max-width: @mobile-width) {
 	.filter {
-		width: auto;
+		width: 320px;
 	}
 
 	.filter__wrapper {
@@ -116,8 +116,13 @@
 		align-items: center;
 	}
 
+	.filters__note {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 	.filter__fieldset {
-		width: 100%;
+		width: 280px;
 	}
 
 	.filter__title {
@@ -136,14 +141,14 @@
 
 	.filter__button {
 		width: 120px;
-		/* margin: 0 auto; */
+		margin: 0 auto;
 		padding: 5px 10px;
 
 		font-size: 16px;
 	}
 }
 
-@media(max-width: @desktop-width) {
+@media(min-width: 768px) and (max-width: @desktop-width) {
 	.filter {
 		width: 767px;
 	}
@@ -151,6 +156,23 @@
 	.filter__wrapper {
 		width: 640px;
 		margin: 0 auto;
+	}
+
+	.filter__title--center {
+		text-align: center;
+	}
+
+	.filter__list--center {
+		width: 768px;
+	}
+
+	.filter__wrapper-gallery {
+		width: 640px;
+		margin: 0 auto;
+	}
+
+	.filter__item-gallery {
+		width: 180px;
 	}
 
 	.filters__note {
