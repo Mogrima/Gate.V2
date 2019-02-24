@@ -136,9 +136,33 @@
 
 	.filter__button {
 		width: 120px;
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		padding: 5px 10px;
 
 		font-size: 16px;
+	}
+}
+
+@media(max-width: @desktop-width) {
+	.filter {
+		width: 767px;
+	}
+
+	.filter__wrapper {
+		width: 640px;
+		margin: 0 auto;
+	}
+
+	.filters__note {
+		width: 640px;
+		margin: 0 auto;
+	}
+
+	.filter__fieldset {
+		width: 260px;
+	}
+
+	.filter__button {
+		margin: 0 auto;
 	}
 }
