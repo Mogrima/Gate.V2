@@ -3,9 +3,12 @@ var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var cssnano = require("gulp-cssnano");
 var uglify = require("gulp-uglify");
 var rigger = require("gulp-rigger");
 var imagemin = require("gulp-imagemin");
+var rename = require("gulp-rename");
+var concat = require("gulp-concat");
 var server = require("browser-sync").create();
 gulp.task("html:build", function () {
     gulp.src("src/**/*.html") //Выберем файлы по нужному пути
@@ -20,15 +23,24 @@ gulp.task("html:build", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(cssnano())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest("dist/css"))
     .pipe(server.stream());
 });
- gulp.task("js", function () {
+ gulp.task("scripts", function() {
+    return gulp.src("src/*.js") // директория откуда брать исходники
+        .pipe(concat('scripts.js')) // объеденим все js-файлы в один 
+        .pipe(uglify()) // вызов плагина uglify - сжатие кода
+        .pipe(rename({ suffix: '.min' })) // вызов плагина rename - переименование файла с приставкой .min
+        .pipe(gulp.dest("dist/js")); // директория продакшена, т.е. куда сложить готовый файл
+});
+ /*gulp.task("js", function () {
     gulp.src("src/js/*.js")
         .pipe(uglify())
         .pipe(gulp.dest("dist/js"))
         .pipe(server.stream());
-});
+});*/
  gulp.task("image:build", function () {
     gulp.src("src/img/**/*.*")
     .pipe(imagemin())
