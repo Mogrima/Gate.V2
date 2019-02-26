@@ -29,7 +29,7 @@ gulp.task("html:build", function () {
     .pipe(server.stream());
 });
  gulp.task("scripts", function() {
-    return gulp.src("src/*.js") // директория откуда брать исходники
+    return gulp.src("src/js/*.js") // директория откуда брать исходники
         .pipe(concat('scripts.js')) // объеденим все js-файлы в один 
         .pipe(uglify()) // вызов плагина uglify - сжатие кода
         .pipe(rename({ suffix: '.min' })) // вызов плагина rename - переименование файла с приставкой .min
