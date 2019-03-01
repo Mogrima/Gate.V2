@@ -3,6 +3,16 @@
 	flex-direction: column;
 }
 
+.index-columns__column {
+	padding: 0 20px;
+}
+
+@media(max-width: 767px) {
+	.index-columns__title {
+		font-size: 20px;
+	}
+}
+
 @media(min-width: 768px) {
 	.index-columns {
 		flex-direction: row;
@@ -14,6 +24,7 @@
 
 	.index-columns__column {
 		width: 350px;
+		padding: 0;
 	}
 }
 
