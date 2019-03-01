@@ -46,11 +46,29 @@
 	text-align: center;
 }
 
+@media(min-width: 768px) and (max-width: @desktop-width) {
+	.about-content {
+		width: 768px;
+	}
+
+	.about-content__authors {
+		display: flex;
+		justify-content: center;
+
+		.about-content__photo {
+			&--right {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
 @media (max-width: @mobile-width) {
 	.about-content__text {
 		margin-top: 16px;
 		margin-bottom: 16px;
-		padding: 0;
+		padding-left: 20px;
+		padding-right: 20px;
 
 		font-size: 20px;
 		line-height: 30px;
@@ -61,12 +79,15 @@
 	}
 
 	.about-content__photo-image {
-		width: 320px;
+		box-sizing: border-box;
+		width: 100%;
 	}
 
 	.about-content__photo {
 		float: none;
-		margin: 0;
+		display: block;
+		width: 320px;
+		margin: 0 auto;
 		margin-bottom: 16px;
 	}
 }
