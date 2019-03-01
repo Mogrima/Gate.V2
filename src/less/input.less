@@ -33,11 +33,14 @@
 	margin-right: auto;
 }
 
-@media (max-width: @mobile-width) {
-	.input__sign {
+@media (min-width: @mobile-width) and (max-width: @desktop-width) {
+	.input__sign--left {
 		width: 100%;
 	}
-	.input__sign--left {
+}
+
+@media (max-width: @mobile-width) {
+	.input__sign {
 		width: 100%;
 	}
 }
