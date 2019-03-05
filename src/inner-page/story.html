@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>Галерея: Сюжетные</title>
   //= template/favicon.html
+  //= template/main-css-inner.html
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,600,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
-  <link href="../css/normalize.css" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../slick/min.slick.css">
+  <link href="../css/style.min.css" rel="stylesheet">
 </head>
 <body class="page">
   //= template/header-inner.html
@@ -260,10 +261,8 @@
       //= template/modal-login.html
       //= template/modal-registration.html
       <div class="overlay"></div>
-      <script type="text/javascript" src="../js/jQuery v1.11.0.js"></script>
-      <script type="text/javascript" src="../js/jQuery Migrate v1.2.1.js"></script>
-      <script type="text/javascript" src="../slick/slick.min.js"></script>
-      //= template/include__js-modal-inner.html
+     //= template/main-js-inner.html
+    //= template/slider-galleryJS.html
       
       <script type="text/javascript">
          $(document).ready(function(){
