@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>Книга</title>
+  //= template/favicon.html
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+   <link rel="stylesheet" href="../slick/min.slick.css">
+  //= template/main-css-inner.html
+</head>
+<body class="page">
+  //= template/header-inner.html
+  //= template/page-navigation-inner.html
+  <main class="page-main">
+    <div class="container">
+      <div class="substrate"> <!--  Подложка -->
+        <div class="page-main__head">
+          <h1 class="title">Название книги</h1>
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="../index.html">Новости</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="../gallery.html">Книги</a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--current">Название книги</li>
+          </ul>
+          //= template/search-block.html
+          </div>
+          <section class="volume">
+            <div class="volume__wrapper">
+              <h2 class="visually-hidden">Описание книги</h2>
+              <img class="volume__cover" src="../img/works-catalog/01.jpg" alt="Обложка название книги">
+              <div class="volume__text-cont">
+                <div class="volume__warning">
+                <p class="volume__description volume__description--warning"><b>Предупреждения:</b> сцены жестокости и насилия, нетрадиционные отношения</p>
+                <span class="volume__reiting">+18</span>
+                </div>
+                  <p class="volume__description"><b>Жанры:</b> сказки для взрослых</p>
+                <p class="volume__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repellat ab, veritatis quasi reprehenderit odit aliquid sunt omnis, excepturi, tempora deleniti dolore. Quasi, expedita, impedit. Fuga facilis voluptas totam saepe.
+                Voluptate, fugit unde, quaerat modi porro, corporis non doloribus eos repellat itaque natus inventore maiores numquam possimus. Impedit doloremque nemo nesciunt, consequatur consectetur quas, nihil ab eius voluptates incidunt culpa.
+                Reiciendis quaerat voluptatum, quas doloribus corrupti iste magnam quod, repellendus fuga vel maiores nesciunt consequatur dolorem alias maxime debitis. Numquam consequuntur iure unde debitis fuga eius soluta, asperiores reprehenderit amet.</p>
+              </div>
+              
+            </div>
+            <a class="button works__button volume__button" href="#">Читать</a>
+          </section>
+          </div>
+        </div>
+        </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <nav class="footer-navigation">
+            <ul class="footer-navigation__list">
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link footer-navigation__link--current"><img alt="Врата" height="30" src="../img/Logo.png" width="100"></a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="works-catalog.html">Книги</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="gallery.html">Галерея</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="about.html">О нас</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="feedback.html">Отзывы</a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__link" href="FAQ.html">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          //= template/copyright.html
+          //= template/footer-social.html
+        </div>
+      </footer>
+      //= template/modal-login.html
+      //= template/modal-registration.html
+      <div class="overlay"></div>
+      //= template/main-js-inner.html
+    </body>
+    </html>
