@@ -41,6 +41,28 @@
     border-bottom: 1px solid #fff;
 }
 
+.user-profile__self {
+    width: 500px;
+}
+
+.user-profile__remove {
+    display: block;
+    width: 170px;
+    margin-left: auto;
+
+    background: #b49a7b;
+    border-color: darken(#b49a7b, 20%);
+
+    &:hover,
+    &:focus {
+        background: darken(#b49a7b, 20%);
+    }
+
+    &:active {
+        background: darken(#b49a7b, 30%);
+    }
+}
+
 #tab1:checked~#content1,
 #tab2:checked~#content2,
 #tab3:checked~#content3,
