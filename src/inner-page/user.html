@@ -13,12 +13,13 @@
 </head>
 
 <body class="page">
-        <div class="background-header"></div>
-        <header class="page-header">
-            <div class="page-header__wrapper">
-              <a class="page-header__logo"><img class="page-header__logo-image" alt="Логотип Врата" width="164" height="54" src="../img/Logo.png"></a>
-              </div>
-        </header>
+    <div class="background-header"></div>
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <a class="page-header__logo"><img class="page-header__logo-image" alt="Логотип Врата" width="164" height="54"
+                    src="../img/Logo.png"></a>
+        </div>
+    </header>
     //= template/page-navigation-inner.html
     <main class="page-main">
         <div class="container">
@@ -26,6 +27,114 @@
                 <div class="page-main__head">
                     <h1 class="title">Профиль пользователя</h1>
                     //= template/search-block.html
+                </div>
+                <div class="user-profile">
+                    <div class="user-profile__container">
+
+                        <input id="tab1" class="toggle" type="radio" name="tabs" checked>
+                        <label for="tab1" class="user-profile__title">Общая информация</label>
+
+                        <input id="tab2" class="toggle" type="radio" name="tabs">
+                        <label for="tab2" class="user-profile__title">Закладки</label>
+
+                        <input id="tab3" class="toggle" type="radio" name="tabs">
+                        <label for="tab3" class="user-profile__title">Любимое</label>
+
+                        <input id="tab4" class="toggle" type="radio" name="tabs">
+                        <label for="tab4" class="user-profile__title">Настройки</label>
+
+                        <input id="tab5" class="toggle" type="radio" name="tabs">
+                        <label for="tab5" class="user-profile__title">Выйти</label>
+
+                        <section id="content1" class="user-profile__content">
+                            <h2 class="visually-hidden">Общая информация</h2>
+                            <p>
+                                <p>Логин: Могрима</p>
+                                <p>Дата рождения: 01.12.1995</p>
+                                <p>Пол: не указан</p>
+                                <p>Электронная почта: <a href="mailto:rebel.rs@yandex.ru">Rebel.Rs@yandex.ru</a></p>
+                                <p>О себе: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates,
+                                    laudantium impedit nulla nesciunt sit hic quia, illo modi eaque quidem vero earum
+                                    eveniet architecto consequuntur dolorem doloribus et officia. Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Ea voluptates,
+                                    laudantium impedit nulla nesciunt sit hic quia, illo modi eaque quidem vero earum
+                                    eveniet architecto consequuntur dolorem doloribus et officia.</p>
+                            </p>
+
+                        </section>
+
+                        <section id="content2" class="user-profile__content">
+                            <h2 class="visually-hidden">Закладки</h2>
+                            <p>
+                                Здесь будут отображаться оставленные вами закладки в произведениях.
+                            </p>
+                        </section>
+
+                        <section id="content3" class="user-profile__content">
+                            <h2 class="visually-hidden">Любимое</h2>
+                            <p>
+                                Здесь будут отображаться отмеченные вами произведения или рисунки.
+                            </p>
+                        </section>
+
+                        <section id="content4" class="user-profile__content">
+                            <h2 class="visually-hidden">Настройки</h2>
+                            <p>
+                                Здесь вы можете изменить настройки
+                            </p>
+                            <form action="#" method="post">
+                                <p>
+                                    <label for="login">Ваш логин:</label>
+                                    <input class="input" id="login" type="text">
+                                </p>
+                                <p>
+                                    <label for="email">Ваша электронная почта:</label>
+                                    <input class="input" id="email" type="email">
+                                </p>
+                                <p>
+                                    <label for="date">Дата рождения: </label>
+                                    <input class="input" type="date" id="date" name="date">
+                                </p>
+                                <p>
+                                    Ваш пол:
+                                    <input class="checkbox" type="radio" id="contactChoice1" name="sex" value="undfind"
+                                        checked>
+                                    <label class="checkbox__name" for="contactChoice1">
+                                        <span class="checkbox__indicator"></span>
+                                        Не указан
+                                    </label>
+
+
+                                    <input class="checkbox" type="radio" id="contactChoice2" name="sex" value="woman">
+                                    <label class="checkbox__name" for="contactChoice2">
+                                        <span class="checkbox__indicator"></span>
+                                        Женский</label>
+
+                                    <input class="checkbox" type="radio" id="contactChoice3" name="sex" value="men">
+                                    <label class="checkbox__name" for="contactChoice3">
+                                        <span class="checkbox__indicator"></span>
+                                        Мужской</label>
+                                </p>
+                                <p>
+                                    <label for="self">Расскажите о себе:</label><br>
+                                    <textarea class="input user-profile__self" name="self" id="self" cols="30" rows="10"></textarea>
+                                </p>
+                                <p>
+                                        <a class="button--default" href="#">Сохранить</a>
+                                </p>
+                                <p>
+                                    <a class="button--default user-profile__remove" href="#">Удалить профиль</a>
+                                </p>
+                            </form>
+                        </section>
+                        <section id="content5" class="user-profile__content">
+                            <h2 class="visually-hidden">Выйти</h2>
+                            <p>
+                                <a class="button--default" href="#">Покинуть личный кабинет</a>
+                            </p>
+                        </section>
+
+                    </div>
                 </div>
             </div>
         </div>
