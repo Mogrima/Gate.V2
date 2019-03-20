@@ -42,7 +42,7 @@
                     </div>
                     <section class="profile__content fade">
                         <div class="profile__container profile__container--single">
-                            <h2 class="profile__subtitle">Общая информация</h2>
+                            <h2 class="visually-hidden">Общая информация</h2>
                             <p class="profile__description">Логин: Могрима</p>
                             <p class="profile__description">Дата рождения: 01.12.1995</p>
                             <p class="profile__description">Пол: не указан</p>
@@ -62,14 +62,14 @@
                     </section>
                     <section class="profile__content fade">
                         <div class="profile__container profile__container--single">
-                            <h2 class="profile__subtitle">Закладки</h2>
+                            <h2 class="visually-hidden">Закладки</h2>
                             <p class="profile__description">Здесь будут отображаться оставленные вами закладки в
                                 произведениях.</p>
                         </div>
                     </section>
                     <section class="profile__content fade">
                         <div class="profile__container profile__container--single">
-                            <h2 class="profile__subtitle">Любимое</h2>
+                            <h2 class="visually-hidden">Любимое</h2>
                             <p class="profile__description">Здесь будут отображаться отмеченные вами произведения
                                 или
                                 рисунки.</p>
@@ -77,18 +77,26 @@
                     </section>
                     <section class="profile__content fade">
                         <div class="profile__container profile__container--single">
-                            <h2 class="profile__subtitle">Настройки</h2>
+                            <h2 class="visually-hidden">Настройки</h2>
                             <p class="profile__description">
                                 Здесь вы можете изменить настройки
                             </p>
                             <form class="form-settings" action="#" method="post">
                                 <p class="form-settings__wrapper">
-                                    <label class="form-settings__sign" for="login">Ваш логин:</label>
+                                    <label class="form-settings__sign" for="avatar">Сменить аватар:</label>
+                                    <input class="profile__avatar-btn" id="avatar" type="file">
+                                </p>
+                                <p class="form-settings__wrapper">
+                                    <label class="form-settings__sign" for="login">Сменить логин:</label>
                                     <input class="input" id="login" type="text">
                                 </p>
                                 <p class="form-settings__wrapper">
-                                    <label class="form-settings__sign" for="email">Ваша электронная почта:</label>
+                                    <label class="form-settings__sign" for="email">Сменить электронную почту:</label>
                                     <input class="input" id="email" type="email">
+                                </p>
+                                <p class="form-settings__wrapper">
+                                    <label class="form-settings__sign" for="contact">Добавить контакты:</label>
+                                    <input class="input" id="contact" type="url">
                                 </p>
                                 <p class="form-settings__wrapper">
                                     <label class="form-settings__sign" for="date">Дата рождения: </label>
@@ -116,8 +124,8 @@
                                         Мужской</label>
                                 </p>
                                 <p class="form-settings__wrapper">
-                                    <label class="form-settings__sign" for="self">Расскажите о себе:</label><br>
-                                    <textarea class="input form-settings__text" name="self" id="self" cols="30" rows="10"></textarea>
+                                    <label class="form-settings__sign" for="self">Визитка:</label><br>
+                                    <textarea class="input form-settings__text" name="self" id="self" cols="30" rows="10">Расскажите о себе</textarea>
                                 </p>
                                 <button class="profile__btn" type="submit">Сохранить</button>
                             </form>
@@ -158,5 +166,6 @@
         </div>
     </footer>
     <script src="../js/profile.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>
