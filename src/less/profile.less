@@ -32,17 +32,17 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-}
+    &:hover {
+        color: @gen-light-color;
+    }
 
-.profile__toggle:after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 3px;
-    margin-top: 4px;
-    background-color: @newlink-light;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    &--active {
+        padding: 15px 10px;
+        color: @newlink-light;
+        background-color: @gen-color;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+    }
 }
 
 .profile__toggle:hover:after {
@@ -206,8 +206,5 @@
         padding: 10px 0;
         background-color: @gen-color;
         border-radius: 6px;
-        &::after {
-            display: none;
-        }
     }
 }
