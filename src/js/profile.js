@@ -5,13 +5,10 @@ window.addEventListener('DOMContentLoaded', function() {
     let info = document.querySelector('.profile__toggles');
     let tabContent = document.querySelectorAll('.profile__content');
 
-    console.log(tab);
-    console.log(info);
-    console.log(tabContent);
-
     function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++) {
             tabContent[i].classList.remove('show');
+            tab[i].classList.remove('profile__toggle--active');
             tabContent[i].classList.add('hide');
         }
     }
@@ -22,6 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
         if (tabContent[b].classList.contains('hide')) {
             tabContent[b].classList.remove('hide');
             tabContent[b].classList.add('show');
+            tab[b].classList.add('profile__toggle--active');
         }
     }
 
