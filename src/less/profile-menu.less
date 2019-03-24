@@ -1,0 +1,84 @@
+.profile-menu {
+    position: relative;
+    width: 250px;
+    // background-color: @gen-color;
+    border-radius: 6px;
+}
+
+.profile__name {
+    align-self: center;
+    font-family: @ff-title;
+    font-size: @subtitle-fz;
+    color: @newlink;
+}
+
+.profile-menu__list {
+    .set-ul();
+}
+
+.profile-menu__item {
+    // box-shadow: 0px -7px 10px -9px #000000;
+}
+
+.profile-menu__link {
+    display: block;
+    padding: 15px 10px;
+    color: @newlink;
+    background-color: fade(@gen-color,40%);
+    border-top: 1px solid @gen-light-color;
+    border-bottom: 1px solid @gen-dark-color;
+
+    &--bottom {
+        border: none;
+    }
+
+    &:hover,
+    &:focus {
+        color: @newlink-light;
+        background-color: @gen-light-color;
+    }
+
+    &:active {
+        background-color: @gen-dark-color;
+    }
+}
+
+.profile-menu__button {
+    display: flex;
+    justify-content: space-around;
+    // display: block;
+    // position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-menu--closed .profile-menu__list {
+    display: none;
+}
+
+.profile-menu__button {
+    // display: block;
+    width: 100%;
+
+    background-color: transparent;
+    background-color: @gen-color;
+    border: none;
+    border-radius: 6px;
+    // background-image: url("../img/user/user-avatar1x.png");
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: center;
+    &:hover {
+        color: @newlink-light;
+        background-color: @gen-light-color;
+    }
+}
+
+.profile-menu--nojs .profile-menu__button {
+    // display: none;
+}
