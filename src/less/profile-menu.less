@@ -1,7 +1,6 @@
 .profile-menu {
     position: relative;
     width: 250px;
-    // background-color: @gen-color;
     border-radius: 6px;
 }
 
@@ -14,10 +13,6 @@
 
 .profile-menu__list {
     .set-ul();
-}
-
-.profile-menu__item {
-    // box-shadow: 0px -7px 10px -9px #000000;
 }
 
 .profile-menu__link {
@@ -46,39 +41,18 @@
 .profile-menu__button {
     display: flex;
     justify-content: space-around;
-    // display: block;
-    // position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 20;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.profile-menu--closed .profile-menu__list {
-    display: none;
-}
-
-.profile-menu__button {
-    // display: block;
     width: 100%;
-
-    background-color: transparent;
     background-color: @gen-color;
     border: none;
     border-radius: 6px;
-    // background-image: url("../img/user/user-avatar1x.png");
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: center;
+    cursor: pointer;
+
     &:hover {
         color: @newlink-light;
         background-color: @gen-light-color;
     }
 }
 
-.profile-menu--nojs .profile-menu__button {
-    // display: none;
+.profile-menu--closed .profile-menu__list {
+    display: none;
 }
