@@ -1,6 +1,8 @@
 .profile-menu {
-    position: relative;
+    position: absolute;
+    right: 0;
     width: 250px;
+    margin-right: 45px;
 }
 
 .profile__name {
@@ -12,6 +14,10 @@
 
 .profile-menu__list {
     .set-ul();
+    position: relative;
+    animation: fadeIn 0.7s ease;
+    
+    
 }
 
 .profile-menu__link {
@@ -54,4 +60,11 @@
 
 .profile-menu--closed .profile-menu__list {
     display: none;
+}
+
+@media(max-width: @mobile-width) {
+    .profile-menu {
+        position: static;
+        margin-right: 0;
+    }
 }
