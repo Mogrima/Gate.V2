@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
     let tab = document.querySelectorAll('.profile__toggle');
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    info.addEventListener('click', function(event) {
+    info.addEventListener('click', function (event) {
         let target = event.target;
         if (target && target.classList.contains('profile__toggle')) {
             for (let i = 0; i < tab.length; i++) {
@@ -41,13 +41,31 @@ window.addEventListener('DOMContentLoaded', function() {
 
     profileMenu.classList.remove('profile-menu--nojs');
 
-    ProfileBtn.addEventListener('click', function() {
-      if (profileMenu.classList.contains('profile-menu--closed')) {
-        profileMenu.classList.remove('profile-menu--closed');
-        profileMenu.classList.add('profile-menu--opened');
-      } else {
-        profileMenu.classList.add('profile-menu--closed');
-        profileMenu.classList.remove('profile-menu--opened');
-      }
-});
+    ProfileBtn.addEventListener('click', function () {
+        if (profileMenu.classList.contains('profile-menu--closed')) {
+            profileMenu.classList.remove('profile-menu--closed');
+            profileMenu.classList.add('profile-menu--opened');
+        } else {
+            profileMenu.classList.add('profile-menu--closed');
+            profileMenu.classList.remove('profile-menu--opened');
+        }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+            evt.preventDefault();
+
+            if (profileMenu.classList.contains("profile-menu--opened")) {
+                profileMenu.classList.remove("profile-menu--opened");
+                profileMenu.classList.add("profile-menu--closed");
+            }
+        }
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!profileMenu.contains(event.target) && profileMenu.classList.contains("profile-menu--opened")) {
+            profileMenu.classList.remove("profile-menu--opened");
+            profileMenu.classList.add("profile-menu--closed");
+        }
+    });
 });
