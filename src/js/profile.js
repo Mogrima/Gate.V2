@@ -68,4 +68,18 @@ window.addEventListener('DOMContentLoaded', function () {
             profileMenu.classList.add("profile-menu--closed");
         }
     });
+
+    var openTab = document.querySelector('.profile__toggles-open');
+
+    openTab.addEventListener('click', function() {
+        if(info.classList.contains('profile__toggles--closed')) {
+            info.classList.remove('profile__toggles--closed');
+            info.classList.add('profile__toggles--opened');
+        } else {
+            info.classList.remove('profile__toggles--opened');
+            info.classList.add('profile__toggles--closed');
+            
+        }
+       
+    });
 });

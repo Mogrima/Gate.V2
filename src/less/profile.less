@@ -18,9 +18,18 @@
 }
 
 .profile__toggles {
+    position: relative;
+}
+
+.profile__toggles-open {
+    display: none;
+}
+
+.profile__toggles-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     min-height: 50px;
 }
@@ -32,6 +41,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
     &:hover {
         color: @gen-light-color;
     }
@@ -194,11 +204,13 @@
     width: 130px;
     margin-left: auto;
     color: @gen-light-color;
+
     &:hover,
     &focus {
         color: @gen-color;
         text-decoration: none;
     }
+
     &:active {
         color: @newlink;
     }
@@ -211,7 +223,8 @@
         padding: 30px;
     }
 
-    .profile__toggles {
+    .profile__toggles-list {
+        flex-wrap: nowrap;
         justify-content: flex-start;
     }
 
@@ -220,7 +233,6 @@
     }
 
     .profile__exit {
-        position: absolute;
         right: 0;
     }
 }
@@ -232,8 +244,74 @@
         padding: 10px;
     }
 
-    .profile__toggles {
+    .profile__toggles-open {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+
+        display: block;
+        width: 70px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        color: @main-color;
+    }
+
+    .profile__toggles--closed .profile__toggles-open::before {
+        content: "";
+
+        position: absolute;
+        top: 15px;
+        left: 17px;
+
+        width: 36px;
+        height: 2px;
+
+        background-color: @newlink;
+        box-shadow: 0 8px 00 @newlink, 0 16px 0 0 @newlink;
+    }
+
+    .profile__toggles--opened .profile__toggles-open {
+        top: 0;
+
+        &::before,
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 24px;
+            left: 18px;
+
+            width: 36px;
+            height: 2px;
+
+            background-color: @newlink;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .profile__toggles-list {
         flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+
+    .profile__toggles--closed .profile__toggle {
+        display: none;
+    }
+
+    .profile__toggles--opened .profile__toggle {
+        display: block;
     }
 
     .profile__toggle {
