@@ -54,8 +54,7 @@
                         <button class="profile__toggles-open" type="button"><span class="visually-hidden">Открыть
                                 меню</span></button>
                         <div class="profile__toggles-list">
-                            <button class="profile__toggle profile__toggle--active" type="button">Общая
-                                информация</button>
+                            <button class="profile__toggle profile__toggle--active" type="button">Профиль</button>
                             <button class="profile__toggle" type="button">Закладки</button>
                             <button class="profile__toggle" type="button">Любимое</button>
                             <button class="profile__toggle" type="button">Настройки</button>
@@ -76,9 +75,11 @@
                     <section class="profile__content fade">
                         <div class="profile__container profile__container--single">
                             <h2 class="visually-hidden">Общая информация</h2>
-                            <p class="profile__description"><span class="profile__desc-key">Дата рождения:</span> 01.12.1995</p>
+                            <p class="profile__description"><span class="profile__desc-key">Дата рождения:</span>
+                                01.12.1995</p>
                             <p class="profile__description"><span class="profile__desc-key">Пол:</span> не указан</p>
-                            <p class="profile__description"><span class="profile__desc-key">Визитка:</span><br> Таким образом, высокотехнологичная концепция
+                            <p class="profile__description"><span class="profile__desc-key">Визитка:</span><br> Таким
+                                образом, высокотехнологичная концепция
                                 общественного уклада не оставляет шанса для позиций, занимаемых участниками
                                 в отношении поставленных задач. Но сторонники тоталитаризма в науке призваны
                                 к ответу. Разнообразный и богатый опыт говорит нам, что сплоченность команды
@@ -89,8 +90,9 @@
                                 эмпатии, рациональное мышление требует от нас анализа экспериментов,
                                 поражающих по своей масштабности и грандиозности.
                             </p>
-                            <p class="profile__description"><span class="profile__desc-key">Электронная почта:</span> <a class="link link--profile"
-                                href="mailto:rebel.rs@yandex.ru">Rebel.Rs@yandex.ru</a></p>
+                            <p class="profile__description"><span class="profile__desc-key">Электронная почта:</span> <a
+                                    class="link link--profile" href="mailto:rebel.rs@yandex.ru">Rebel.Rs@yandex.ru</a>
+                            </p>
                         </div>
                     </section>
                     <section class="profile__content fade">
@@ -111,9 +113,6 @@
                     <section class="profile__content fade">
                         <div class="profile__container profile__container--single">
                             <h2 class="visually-hidden">Настройки</h2>
-                            <p class="profile__description">
-                                Здесь вы можете изменить настройки
-                            </p>
                             <form class="form-settings" action="#" method="post">
                                 <p class="form-settings__wrapper">
                                     <label class="form-settings__sign" for="avatar">Сменить аватар:</label>
@@ -135,8 +134,8 @@
                                     <label class="form-settings__sign" for="date">Дата рождения: </label>
                                     <input class="input" type="date" id="date" name="date">
                                 </p>
-                                <p class="form-settings__wrapper form-settings__sign">
-                                    Ваш пол:
+                                <span class="form-settings__sign">Ваш пол:</span>
+                                <p class="form-settings__wrapper">
                                     <input class="checkbox login__info-checkbox" type="radio" id="undfind" name="sex"
                                         value="undfind" checked>
                                     <label class="checkbox__name login__checkbox-name" for="undfind">
@@ -156,9 +155,11 @@
                                     <label class="checkbox__name login__checkbox-name" for="men">
                                         <span class="checkbox__indicator login__checkbox-indicator"></span>
                                         Мужской</label>
+
                                 </p>
                                 <p class="form-settings__wrapper">
-                                    <label class="form-settings__sign" for="self">Визитка:</label><br>
+                                    <label class="form-settings__sign form-settings__sign--mb"
+                                        for="self">Визитка:</label>
                                     <textarea class="input form-settings__text" name="self" id="self" cols="30"
                                         rows="10">Расскажите о себе</textarea>
                                 </p>
