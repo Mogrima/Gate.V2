@@ -36,39 +36,6 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    var profileMenu = document.querySelector('.profile-menu');
-    var ProfileBtn = document.querySelector('.profile-menu__button');
-
-    profileMenu.classList.remove('profile-menu--nojs');
-
-    ProfileBtn.addEventListener('click', function () {
-        if (profileMenu.classList.contains('profile-menu--closed')) {
-            profileMenu.classList.remove('profile-menu--closed');
-            profileMenu.classList.add('profile-menu--opened');
-        } else {
-            profileMenu.classList.add('profile-menu--closed');
-            profileMenu.classList.remove('profile-menu--opened');
-        }
-    });
-
-    window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-            evt.preventDefault();
-
-            if (profileMenu.classList.contains("profile-menu--opened")) {
-                profileMenu.classList.remove("profile-menu--opened");
-                profileMenu.classList.add("profile-menu--closed");
-            }
-        }
-    });
-
-    document.addEventListener('click', function (event) {
-        if (!profileMenu.contains(event.target) && profileMenu.classList.contains("profile-menu--opened")) {
-            profileMenu.classList.remove("profile-menu--opened");
-            profileMenu.classList.add("profile-menu--closed");
-        }
-    });
-
     var openTab = document.querySelector('.profile__toggles-open');
 
     openTab.addEventListener('click', function() {
