@@ -26,6 +26,7 @@ gulp.task("html:build", function () {
     .pipe(cssnano())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest("dist/css"))
+    .pipe(gulp.dest("C:/OpenServer/domains/localhost/Gate2/css/"))
     .pipe(server.stream());
 });
  gulp.task("scripts", function() {
