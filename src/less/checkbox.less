@@ -16,6 +16,12 @@
   color: @text;
   transition: color 250ms cubic-bezier(.4,.0,.23,1);
   cursor: pointer;
+  span {
+    color: lighten(@text, 50%);
+  }
+  p {
+    margin: 0;
+  }
 }
 
 .checkbox + .checkbox__name > .checkbox__indicator {
