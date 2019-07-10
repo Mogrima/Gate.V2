@@ -42,12 +42,27 @@
 }
 
 .page-main__intro-item {
+	position: relative;
 	margin-bottom: 10px;
 	padding-left: 40px;
+	font-size: 18px;
 	list-style: none;
 
 	&:last-child {
 		margin-bottom: 0;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -2px;
+		left: 0px;
+
+		width: 35px;
+		height: 35px;
+
+		background-image: url("../img/intro-icon.svg");
+		background-repeat: no-repeat;
 	}
 }
 
